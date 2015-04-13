@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+
+        <record id="clv_base.group_with_no_access" model="res.groups">
+            <field name="name">Group - No user</field>
+        </record>
+
+     </data>
+</openerp>
