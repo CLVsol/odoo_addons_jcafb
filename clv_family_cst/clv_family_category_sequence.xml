@@ -5,8 +5,8 @@
         <record id="clv_family.seq_clv_family_category" model="ir.sequence">
             <!--field name="padding" eval="9"/-->
             <!--field name="prefix">00000</field-->
-            <field name="padding" eval="8"/>
-            <field name="prefix">469</field>
+            <field name="padding" eval="3"/>
+            <field name="prefix">119</field>
         </record>
 
     </data>
