@@ -1,0 +1,488 @@
+QAN16:
+    model: survey.survey
+    title: 'JCAFB 2016 - Questionário para detecção de Anemia'
+    stage_id: survey.stage_in_progress
+    auth_required: False
+    users_can_go_back: True
+    description: 'Description.'
+    thank_you_message: 'Thank you message.'
+
+    QAN16_01:
+        model: clv_survey.page
+        title: 'Preâmbulo'
+        note: 'Preâmbulo'
+
+        QAN16_01_01:
+            model: clv_survey.question
+            question: 'Identificação do Paciente'
+            type: multiple_textboxes_diff_type
+            is_require_answer: 1
+            req_error_msg: 'Preencher o Nome e os Códigos.'
+            required_type: exactly
+            req_ans: 3
+
+            QAN16_01_01_01:
+                model: clv_survey.answer
+                answer: 'Nome do Paciente:'
+                type: char
+
+            QAN16_01_01_02:
+                model: clv_survey.answer
+                answer: 'Código do Paciente'
+                type: char
+
+            QAN16_01_01_03:
+                model: clv_survey.answer
+                answer: 'Código da Família:'
+                type: char
+
+        QAN16_01_02:
+            model: clv_survey.question
+            question: 'Aplicação do Questionário'
+            type: multiple_textboxes_diff_type
+            is_require_answer: 1
+            req_error_msg: 'Preencher o Nome, o Código e a Data.'
+            required_type: exactly
+            req_ans: 3
+
+            QAN16_01_02_01:
+                model: clv_survey.answer
+                answer: 'Aplicado por'
+                type: char
+
+            QAN16_01_02_02:
+                model: clv_survey.answer
+                answer: 'Código'
+                type: char
+
+            QAN16_01_02_03:
+                model: clv_survey.answer
+                answer: 'Data'
+                type: date
+
+        QAN16_01_03:
+            model: clv_survey.question
+            question: 'Entrevistado'
+            type: multiple_choice_only_one_ans
+            is_require_answer: 1
+            req_error_msg: 'Informar quem respondeu ao questionário.'
+            is_comment_require: True
+            comment_label: 'Nome e grau de parentesco do Responsável ou do Cuidador; se "Outro", especificar: '
+
+            QAN16_01_03_01:
+                model: clv_survey.answer
+                answer: 'a) Responsável'
+
+            QAN16_01_03_02:
+                model: clv_survey.answer
+                answer: 'b) Paciente'
+
+            QAN16_01_03_03:
+                model: clv_survey.answer
+                answer: 'c) Cuidador'
+
+            QAN16_01_03_04:
+                model: clv_survey.answer
+                answer: 'd) Outro'
+
+    QAN16_02:
+        model: clv_survey.page
+        title: 'Valores de Medições e Interpretação dos Resultados'
+        note: 'Valores de Medições e Interpretação dos Resultados'
+
+        QAN16_02_01:
+            model: clv_survey.question
+            question: 'Peso (kg)'
+            type: multiple_textboxes_diff_type
+            is_require_answer: 1
+            req_error_msg: 'Preencher o Valor e o Responsável.'
+            required_type: exactly
+            req_ans: 2
+
+            QAN16_02_01_01:
+                model: clv_survey.answer
+                answer: 'Valor:'
+                type: char
+
+            QAN16_02_01_02:
+                model: clv_survey.answer
+                answer: 'Responsável:'
+                type: char
+
+        QAN16_02_02:
+            model: clv_survey.question
+            question: 'Altura (cm)'
+            type: multiple_textboxes_diff_type
+            is_require_answer: 1
+            req_error_msg: 'Preencher o Valor e o Responsável.'
+            required_type: exactly
+            req_ans: 2
+
+            QAN16_02_02_01:
+                model: clv_survey.answer
+                answer: 'Valor:'
+                type: char
+
+            QAN16_02_02_02:
+                model: clv_survey.answer
+                answer: 'Responsável:'
+                type: char
+
+        QAN16_02_03:
+            model: clv_survey.question
+            question: 'Horário da coleta:'
+            type: multiple_textboxes_diff_type
+            is_require_answer: 1
+            req_error_msg: 'Preencher o horário da coleta e o Responsável'
+            required_type: exactly
+            req_ans: 2
+
+            QAN16_02_03_01:
+                model: clv_survey.answer
+                answer: 'Horário'
+                type: datetime
+
+            QAN16_02_03_02:
+                model: clv_survey.answer
+                answer: 'Responsável:'
+                type: char
+
+        QAN16_02_04:
+            model: clv_survey.question
+            question: 'Valor da Hemoglobina (g/dL)'
+            type: multiple_textboxes_diff_type
+            is_require_answer: 1
+            req_error_msg: 'Preencher o Valor e o Responsável.'
+            required_type: exactly
+            req_ans: 2
+
+            QAN16_02_04_01:
+                model: clv_survey.answer
+                answer: 'Valor:'
+                type: char
+
+            QAN16_02_04_02:
+                model: clv_survey.answer
+                answer: 'Responsável:'
+                type: char
+
+        QAN16_02_05:
+            model: clv_survey.question
+            question: 'Interpretação do Resultado de Hemoglobina (Wintrobe, 12ª ed., 2009) '
+            type: multiple_choice_only_one_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+            is_comment_require: True
+            comment_label: 'Observações:'
+
+            QAN16_02_05_01:
+                model: clv_survey.answer
+                answer: 'a) Normal'
+
+            QAN16_02_05_02:
+                model: clv_survey.answer
+                answer: 'b) Abaixo do normal (anemia)'
+
+            QAN16_02_05_03:
+                model: clv_survey.answer
+                answer: 'c) Acima do normal'
+
+    QAN16_03:
+        model: clv_survey.page
+        title: 'Histórico'
+        note: 'Histórico'
+
+        QAN16_03_01:
+            model: clv_survey.question
+            question: 'Já realizou exame para diagnosticar Anemia?'
+            type: multiple_choice_only_one_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+
+            QAN16_03_01_01:
+                model: clv_survey.answer
+                answer: 'a) Não'
+
+            QAN16_03_01_02:
+                model: clv_survey.answer
+                answer: 'b) Sim'
+
+            QAN16_03_01_03:
+                model: clv_survey.answer
+                answer: 'c) Não sabe'
+
+            QAN16_03_01_04:
+                model: clv_survey.answer
+                answer: 'd) Não quis responder'
+
+            QAN16_03_01_05:
+                model: clv_survey.answer
+                answer: 'e) Não se aplica'
+
+        QAN16_03_02:
+            model: clv_survey.question
+            question: 'Já teve Anemia diagnosticada?'
+            type: multiple_choice_only_one_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+
+            QAN16_03_02_01:
+                model: clv_survey.answer
+                answer: 'a) Não'
+
+            QAN16_03_02_02:
+                model: clv_survey.answer
+                answer: 'b) Sim'
+
+            QAN16_03_02_03:
+                model: clv_survey.answer
+                answer: 'c) Não sabe'
+
+            QAN16_03_02_04:
+                model: clv_survey.answer
+                answer: 'd) Não quis responder'
+
+            QAN16_03_02_05:
+                model: clv_survey.answer
+                answer: 'e) Não se aplica'
+
+        QAN16_03_03:
+            model: clv_survey.question
+            question: 'Se sim, o que fez para curar?'
+            type: multiple_choice_multiple_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+            required_type: at least
+            req_ans: 1
+            is_comment_require: True
+            comment_label: 'Se "Outras medidas", especificar'
+
+            QAN16_03_03_01:
+                model: clv_survey.answer
+                answer: 'a) Medicamentos'
+
+            QAN16_03_03_02:
+                model: clv_survey.answer
+                answer: 'b) Alimentação adequada'
+
+            QAN16_03_03_03:
+                model: clv_survey.answer
+                answer: 'c) Vitaminas'
+
+            QAN16_03_03_04:
+                model: clv_survey.answer
+                answer: 'd) Outras medidas'
+
+            QAN16_03_03_05:
+                model: clv_survey.answer
+                answer: 'e) Nada'
+
+            QAN16_03_03_06:
+                model: clv_survey.answer
+                answer: 'f) Não sabe'
+
+            QAN16_03_03_07:
+                model: clv_survey.answer
+                answer: 'g) Não quis responder'
+
+            QAN16_03_03_08:
+                model: clv_survey.answer
+                answer: 'h) Não se aplica'
+
+        QAN16_03_04:
+            model: clv_survey.question
+            question: 'Ainda tem?'
+            type: multiple_choice_only_one_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+
+            QAN16_03_04_01:
+                model: clv_survey.answer
+                answer: 'a) Não'
+
+            QAN16_03_04_02:
+                model: clv_survey.answer
+                answer: 'b) Sim'
+
+            QAN16_03_04_03:
+                model: clv_survey.answer
+                answer: 'c) Não sabe'
+
+            QAN16_03_04_04:
+                model: clv_survey.answer
+                answer: 'd) Não quis responder'
+
+            QAN16_03_04_05:
+                model: clv_survey.answer
+                answer: 'e) Não se aplica'
+
+        QAN16_03_05:
+            model: clv_survey.question
+            question: 'Toma algum cuidado para evitar a Anemia?'
+            type: multiple_choice_multiple_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+            required_type: at least
+            req_ans: 1
+            is_comment_require: True
+            comment_label: 'Se "Outro", especificar'
+
+            QAN16_03_05_01:
+                model: clv_survey.answer
+                answer: 'a) Consumo de feijão'
+
+            QAN16_03_05_02:
+                model: clv_survey.answer
+                answer: 'b) Consumo de verduras verde-escuras'
+
+            QAN16_03_05_03:
+                model: clv_survey.answer
+                answer: 'c) Consumo de frutas'
+
+            QAN16_03_05_04:
+                model: clv_survey.answer
+                answer: 'd) Consumo de carne vermelha'
+
+            QAN16_03_05_05:
+                model: clv_survey.answer
+                answer: 'e) Outro (especificar) '
+
+            QAN16_03_05_06:
+                model: clv_survey.answer
+                answer: 'f) Não toma nenhum cuidado'
+
+            QAN16_03_05_07:
+                model: clv_survey.answer
+                answer: 'g) Não sabe'
+
+            QAN16_03_05_08:
+                model: clv_survey.answer
+                answer: 'h) Não quis responder'
+
+            QAN16_03_05_09:
+                model: clv_survey.answer
+                answer: 'i) Não se aplica'
+
+    QAN16_04:
+        model: clv_survey.page
+        title: 'Alimentação'
+        note: 'Alimentação'
+
+        QAN16_04_01:
+            model: clv_survey.question
+            question: 'Alimentos que a criança consome (Alimentos ricos em Ferro, B12 e ácido fólico)'
+            type: matrix_of_choices_only_one_ans
+            is_require_answer: 1
+            req_error_msg: 'Preencher os alimentos que a criança consome.'
+
+            QAN16_04_01_01:
+                model: clv_survey.answer
+                answer: 'Feijão (leguminosas)'
+
+            QAN16_04_01_02:
+                model: clv_survey.answer
+                answer: 'Fígado de boi'
+
+            QAN16_04_01_03:
+                model: clv_survey.answer
+                answer: 'Carnes vermelhas'
+
+            QAN16_04_01_04:
+                model: clv_survey.answer
+                answer: 'Verduras e hortaliças verdes escuras (couve, brócolis, agrião, rúcula, escarola)'
+
+            QAN16_04_01_05:
+                model: clv_survey.answer
+                answer: 'Carne branca (peixe, frango)'
+
+            QAN16_04_01_06:
+                model: clv_survey.answer
+                answer: 'Miúdos (rim, coração)'
+
+            QAN16_04_01_07:
+                model: clv_survey.question.column.heading
+                title: '0 dias ou raramente'
+
+            QAN16_04_01_08:
+                model: clv_survey.question.column.heading
+                title: '1-2 dias'
+
+            QAN16_04_01_09:
+                model: clv_survey.question.column.heading
+                title: '3-4 dias'
+
+            QAN16_04_01_10:
+                model: clv_survey.question.column.heading
+                title: '5 ou mais dias'
+
+            QAN16_04_01_11:
+                model: clv_survey.question.column.heading
+                title: 'Não quis responder'
+
+            QAN16_04_01_12:
+                model: clv_survey.question.column.heading
+                title: 'Não sabe'
+
+            QAN16_04_01_13:
+                model: clv_survey.question.column.heading
+                title: 'Não se aplica'
+
+        QAN16_04_02:
+            model: clv_survey.question
+            question: 'Alimentos que a criança consome (Alimentos que interferem na absorção de Ferro)'
+            type: matrix_of_choices_only_one_ans
+            is_require_answer: 1
+            req_error_msg: 'Preencher os alimentos que a criança consome.'
+
+            QAN16_04_02_01:
+                model: clv_survey.answer
+                answer: 'Suco de limão, laranja, acerola, junto da refeição'
+
+            QAN16_04_02_02:
+                model: clv_survey.answer
+                answer: 'Laranja, após a refeição'
+
+            QAN16_04_02_03:
+                model: clv_survey.answer
+                answer: 'Leite e queijo (laticínios)'
+
+            QAN16_04_02_04:
+                model: clv_survey.answer
+                answer: 'Espinafre'
+
+            QAN16_04_02_05:
+                model: clv_survey.answer
+                answer: 'Café'
+
+            QAN16_04_02_06:
+                model: clv_survey.answer
+                answer: 'Refrigerante a base de cola'
+
+            QAN16_04_02_07:
+                model: clv_survey.question.column.heading
+                title: '0 dias ou raramente'
+
+            QAN16_04_02_08:
+                model: clv_survey.question.column.heading
+                title: '1-2 dias'
+
+            QAN16_04_02_09:
+                model: clv_survey.question.column.heading
+                title: '3-4 dias'
+
+            QAN16_04_02_10:
+                model: clv_survey.question.column.heading
+                title: '5 ou mais dias'
+
+            QAN16_04_02_11:
+                model: clv_survey.question.column.heading
+                title: 'Não quis responder'
+
+            QAN16_04_02_12:
+                model: clv_survey.question.column.heading
+                title: 'Não sabe'
+
+            QAN16_04_02_13:
+                model: clv_survey.question.column.heading
+                title: 'Não se aplica'
+

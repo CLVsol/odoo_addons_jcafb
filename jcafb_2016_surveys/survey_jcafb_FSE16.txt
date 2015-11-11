@@ -1,0 +1,99 @@
+[FSE16] JCAFB 2016 - Questionário Socioeconômico Familiar (Crianças e Idosos)
+    [FSE16_01] Preâmbulo
+        [FSE16_01_01] Identificação da Família (Nome)
+            (textbox)
+            ____________________________________
+        [FSE16_01_02] Identificação da Família (Código)
+            (textbox)
+            ____________________________________
+        [FSE16_01_03] Aplicação do Questionário (Nome)
+            (textbox)
+            ____________________________________
+        [FSE16_01_04] Aplicação do Questionário (Código)
+            (textbox)
+            ____________________________________
+        [FSE16_01_05] Aplicação do Questionário (Data)
+            (datetime)
+            ____________________________________
+        [FSE16_01_06] Entrevistador
+            (simple_choice)
+            Se "Outro", especificar.____________________________________
+        [FSE16_01_07] Entrevistado
+            (simple_choice)
+            Nome e grau de parentesco e, se a resposta for "Outro", especificar:____________________________________
+    [FSE16_02] Residência
+        [FSE16_02_01] Como é o banheiro da casa?
+            (simple_choice)
+            Se outro, como?____________________________________
+        [FSE16_02_02] A casa possui (preencher no caso de residência de idosos; se residência de crianças, escolher "Não se aplica"):
+            (multiple_choice)
+    [FSE16_03] Horta
+        [FSE16_03_01] Plantam alguma coisa para consumo? (vende, come..)
+            (simple_choice)
+        [FSE16_03_02] Usam adubo?
+            (multiple_choice)
+        [FSE16_03_03] Qual fonte de água é utilizada para irrigar a horta?
+            (simple_choice)
+            Se outros, quais?____________________________________
+    [FSE16_04] Água
+        [FSE16_04_01] De onde vem a água da casa?
+            (simple_choice)
+            Se outros, quais?____________________________________
+        [FSE16_04_02] Existe contato das pessoas da casa com o local de armazenamento?
+            (simple_choice)
+        [FSE16_04_03] Na falta de água, onde é obtida?
+            (simple_choice)
+            Se outros, quais?____________________________________
+        [FSE16_04_04] Antes do consumo de água, é realizado algum dos tratamentos abaixo? (pode-se marcar mais de uma opção)
+            (multiple_choice)
+            Se outros, quais?____________________________________
+    [FSE16_05] Alimentação / Animais
+        [FSE16_05_01] Criam animais de estimação?
+            (multiple_choice)
+            Se outros, quais?____________________________________
+        [FSE16_05_02] Como são criados?
+            (simple_choice)
+        [FSE16_05_03] Criam animais para a alimentação?
+            (multiple_choice)
+            Se outros, quais?____________________________________
+        [FSE16_05_04] Como são criados?
+            (simple_choice)
+        [FSE16_05_05] Costumam consumir carne proveniente de: (pode-se marcar mais de uma opção)
+            (multiple_choice)
+            Se outros, quais?____________________________________
+        [FSE16_05_06] Ao preparar os alimentos crus (pode-se marcar mais de uma opção), costumam:
+            (multiple_choice)
+            Se outros, quais?____________________________________
+    [FSE16_06] Medicamentos (geral)
+        [FSE16_06_01] Costumam tomar medicamentos sem receita médica?
+            (simple_choice)
+            Se sim, quais?____________________________________
+        [FSE16_06_02] Possuem remédios na residência?
+            (simple_choice)
+        [FSE16_06_03] De que modo adquirem os medicamentos que utilizam?
+            (multiple_choice)
+            Se "Outro", especificar____________________________________
+        [FSE16_06_04] Onde guardam os remédios?
+            (multiple_choice)
+            Se outros, onde?____________________________________
+        [FSE16_06_05] Como descartam os medicamentos?
+            (multiple_choice)
+            Se outros, quais?____________________________________
+        [FSE16_06_06] O que utilizam quando alguém tem diarreia?
+            (multiple_choice)
+            Se outros, quais?____________________________________
+        [FSE16_06_07] Conhecem o soro caseiro?
+            (simple_choice)
+        [FSE16_06_08] Sabem como preparar?
+            (simple_choice)
+    [FSE16_07] Parasitoses
+        [FSE16_07_01] Conhecem algum verme (parasitose)?
+            (multiple_choice)
+        [FSE16_07_02] Sabem como se prevenir de pegar vermes?
+            (simple_choice)
+        [FSE16_07_03] Alguém na casa já pegou verme? Qual?
+            (multiple_choice)
+    [FSE16_08] Aspecto Econômico
+        [FSE16_08_01] Qual o valor do rendimento mensal familiar aproximado?
+            (simple_choice)
+            Qual?____________________________________

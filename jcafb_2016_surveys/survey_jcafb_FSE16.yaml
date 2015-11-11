@@ -1,0 +1,1166 @@
+FSE16:
+    model: survey.survey
+    title: 'JCAFB 2016 - Questionário Socioeconômico Familiar (Crianças e Idosos)'
+    stage_id: survey.stage_in_progress
+    auth_required: False
+    users_can_go_back: True
+    description: 'Descrição.'
+    thank_you_message: 'Thank you message.'
+
+    FSE16_01:
+        model: survey.page
+        title: 'Preâmbulo'
+        description: 'Descrição.'
+
+        FSE16_01_01:
+            model: survey.question
+            question: 'Identificação da Família (Nome)'
+            type: textbox
+            constr_mandatory: True
+            constr_err_msg: 'Preencher o Nome da Família.'
+
+        FSE16_01_02:
+            model: survey.question
+            question: 'Identificação da Família (Código)'
+            type: textbox
+            constr_mandatory: True
+            constr_err_msg: 'Preencher o Código da Família.'
+
+        FSE16_01_03:
+            model: survey.question
+            question: 'Aplicação do Questionário (Nome)'
+            type: textbox
+            constr_mandatory: True
+            constr_err_msg: 'Preencher o Nome de quem aplicou o questionário.'
+
+        FSE16_01_04:
+            model: survey.question
+            question: 'Aplicação do Questionário (Código)'
+            type: textbox
+            constr_mandatory: True
+            constr_err_msg: 'Preencher o Código de quem aplicou o questionário.'
+
+        FSE16_01_05:
+            model: survey.question
+            question: 'Aplicação do Questionário (Data)'
+            type: datetime
+            constr_mandatory: True
+            constr_err_msg: 'Preencher a data de aplicação do questionário.'
+
+        FSE16_01_06:
+            model: survey.question
+            question: 'Entrevistador'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Informar quem fez a entrevista.'
+            comments_allowed: True
+            comments_message: 'Se "Outro", especificar.'
+            display_mode: dropdown
+            column_nb: 1
+
+            FSE16_01_03_01:
+                model: survey.answer
+                answer: 'a) Isabela Lucca e Karyna Roque'
+
+            FSE16_01_03_02:
+                model: survey.answer
+                answer: 'b) Gabriel Nakata e Isabelle Moscardini'
+
+            FSE16_01_03_03:
+                model: survey.answer
+                answer: 'c) Ana Mendes, Paula Benitez e Lucas Fonseca'
+
+            FSE16_01_03_04:
+                model: survey.answer
+                answer: 'd) Stéphanie Guassi, Beatriz Lucio e Jesus Daniel'
+
+            FSE16_01_03_05:
+                model: survey.answer
+                answer: 'e) Rafaela Fioroto e Camila Krokon'
+
+            FSE16_01_03_06:
+                model: survey.answer
+                answer: 'f) Victor Hugo, Ana Almeida, Marianna Olival'
+
+            FSE16_01_03_07:
+                model: survey.answer
+                answer: 'g) Gabriel Roth, Livia Freitas e Paloma Nascimento'
+
+            FSE16_01_03_08:
+                model: survey.answer
+                answer: 'h) Jonas Nieves e Beatriz Boiani'
+
+            FSE16_01_03_09:
+                model: survey.answer
+                answer: 'i) Aline Monteiro, Juliana Cintra e Alexandre Ravazi'
+
+            FSE16_01_03_10:
+                model: survey.answer
+                answer: 'j) Eduardo Carbone, Marina Mancini e Yumi Takagi'
+
+            FSE16_01_03_11:
+                model: survey.answer
+                answer: 'k) Thaiani Vianna, Guilherme Bellini, Carla Yamamoto'
+
+            FSE16_01_03_12:
+                model: survey.answer
+                answer: 'l) Caio Hofmann, Victoria Brigato e Bruna Nakamura'
+
+            FSE16_01_03_13:
+                model: survey.answer
+                answer: 'm) André Barrichelo, Beatriz Lemos e Juliana Oliveira'
+
+            FSE16_01_03_14:
+                model: survey.answer
+                answer: 'n) Renato Pavone, Carol Alves e Jessica Nacazume'
+
+            FSE16_01_03_15:
+                model: survey.answer
+                answer: 'o) Outro'
+
+        FSE16_01_07:
+            model: survey.question
+            question: 'Entrevistado'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Informar quem respondeu ao questionário.'
+            comments_allowed: True
+            comments_message: 'Nome e grau de parentesco e, se a resposta for "Outro", especificar:'
+            display_mode: dropdown
+            column_nb: 1
+
+            FSE16_01_04_01:
+                model: survey.answer
+                answer: 'a) Responsável pela(s) Criança(s) da casa'
+
+            FSE16_01_04_02:
+                model: survey.answer
+                answer: 'b) Paciente Idoso'
+
+            FSE16_01_04_03:
+                model: survey.answer
+                answer: 'c) Cuidador (da(s) Criança(s) ou do(s) Idoso(s) da casa'
+
+            FSE16_01_04_04:
+                model: survey.answer
+                answer: 'd) Outro (especificar)'
+
+    FSE16_02:
+        model: survey.page
+        title: 'Residência'
+        description: 'Descrição.'
+
+        FSE16_02_01:
+            model: survey.question
+            question: 'Como é o banheiro da casa?'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se outro, como?'
+            display_mode: dropdown
+            column_nb: 1
+
+            FSE16_02_01_01:
+                model: survey.answer
+                answer: 'a) Banheiro com rede de esgoto'
+
+            FSE16_02_01_02:
+                model: survey.answer
+                answer: 'b) Banheiro que dá na fossa'
+
+            FSE16_02_01_03:
+                model: survey.answer
+                answer: 'c) Outro'
+
+            FSE16_02_01_04:
+                model: survey.answer
+                answer: 'd) Não sabe'
+
+            FSE16_02_01_05:
+                model: survey.answer
+                answer: 'e) Não quis responder'
+
+            FSE16_02_01_06:
+                model: survey.answer
+                answer: 'f) Não se aplica'
+
+        FSE16_02_02:
+            model: survey.question
+            question: 'A casa possui (preencher no caso de residência de idosos; se residência de crianças, escolher "Não se aplica"):'
+            type: multiple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            column_nb: 1
+
+            FSE16_02_02_01:
+                model: survey.answer
+                answer: 'a) Degraus/desníveis'
+
+            FSE16_02_02_02:
+                model: survey.answer
+                answer: 'b) Tapetes'
+
+            FSE16_02_02_03:
+                model: survey.answer
+                answer: 'c) Locais com piso escorregadio'
+
+            FSE16_02_02_04:
+                model: survey.answer
+                answer: 'd) Móveis ou objetos que dificultam a circulação'
+
+            FSE16_02_02_05:
+                model: survey.answer
+                answer: 'e) Armários ou prateleiras muito altas'
+
+            FSE16_02_02_06:
+                model: survey.answer
+                answer: 'f) Nenhuma das alternativas citadas'
+
+            FSE16_02_02_07:
+                model: survey.answer
+                answer: 'g) Não sabe'
+
+            FSE16_02_02_08:
+                model: survey.answer
+                answer: 'h) Não quis responder'
+
+            FSE16_02_02_09:
+                model: survey.answer
+                answer: 'i) Não se aplica'
+
+    FSE16_03:
+        model: survey.page
+        title: 'Horta'
+        description: 'Descrição.'
+
+        FSE16_03_01:
+            model: survey.question
+            question: 'Plantam alguma coisa para consumo? (vende, come..)'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            display_mode: dropdown
+            column_nb: 1
+
+            FSE16_03_01_01:
+                model: survey.answer
+                answer: 'a) Não'
+
+            FSE16_03_01_02:
+                model: survey.answer
+                answer: 'b) Sim'
+
+            FSE16_03_01_03:
+                model: survey.answer
+                answer: 'c) Não sabe'
+
+            FSE16_03_01_04:
+                model: survey.answer
+                answer: 'd) Não quis responder'
+
+            FSE16_03_01_05:
+                model: survey.answer
+                answer: 'e) Não se aplica'
+
+        FSE16_03_02:
+            model: survey.question
+            question: 'Usam adubo?'
+            type: multiple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            column_nb: 1
+
+            FSE16_03_02_01:
+                model: survey.answer
+                answer: 'a) Não'
+
+            FSE16_03_02_02:
+                model: survey.answer
+                answer: 'b) Sim, adubo orgânico com esterco'
+
+            FSE16_03_02_03:
+                model: survey.answer
+                answer: 'c) Sim, adubo orgânico sem esterco'
+
+            FSE16_03_02_04:
+                model: survey.answer
+                answer: 'd) Sim, adubo comprado'
+
+            FSE16_03_02_05:
+                model: survey.answer
+                answer: 'e) Não sabe'
+
+            FSE16_03_02_06:
+                model: survey.answer
+                answer: 'f) Não quis responder'
+
+            FSE16_03_02_07:
+                model: survey.answer
+                answer: 'g) Não se aplica'
+
+        FSE16_03_03:
+            model: survey.question
+            question: 'Qual fonte de água é utilizada para irrigar a horta?'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            display_mode: dropdown
+            comments_allowed: True
+            comments_message: 'Se outros, quais?'
+            column_nb: 1
+
+            FSE16_03_03_01:
+                model: survey.answer
+                answer: 'a) Reservatório da prefeitura'
+
+            FSE16_03_03_02:
+                model: survey.answer
+                answer: 'b) Outros (Poço, lagoa, córrego, cisterna, etc).'
+
+            FSE16_03_03_03:
+                model: survey.answer
+                answer: 'c) Não sabe'
+
+            FSE16_03_03_04:
+                model: survey.answer
+                answer: 'd) Não quis responder'
+
+            FSE16_03_03_05:
+                model: survey.answer
+                answer: 'e) Não se aplica'
+
+    FSE16_04:
+        model: survey.page
+        title: 'Água'
+        description: 'Descrição.'
+
+        FSE16_04_01:
+            model: survey.question
+            question: 'De onde vem a água da casa?'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            display_mode: dropdown
+            comments_allowed: True
+            comments_message: 'Se outros, quais?'
+            column_nb: 1
+
+            FSE16_04_01_01:
+                model: survey.answer
+                answer: 'a) Reservatório da prefeitura'
+
+            FSE16_04_01_02:
+                model: survey.answer
+                answer: 'b) Outros (Poço, lagoa, córrego, cisterna, etc).'
+
+            FSE16_04_01_03:
+                model: survey.answer
+                answer: 'c) Não sabe'
+
+            FSE16_04_01_04:
+                model: survey.answer
+                answer: 'd) Não quis responder'
+
+            FSE16_04_01_05:
+                model: survey.answer
+                answer: 'e) Não se aplica'
+
+        FSE16_04_02:
+            model: survey.question
+            question: 'Existe contato das pessoas da casa com o local de armazenamento?'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            display_mode: dropdown
+            column_nb: 1
+
+            FSE16_04_02_01:
+                model: survey.answer
+                answer: 'a) Não'
+
+            FSE16_04_02_02:
+                model: survey.answer
+                answer: 'b) Sim'
+
+            FSE16_04_02_03:
+                model: survey.answer
+                answer: 'c) Não sabe'
+
+            FSE16_04_02_04:
+                model: survey.answer
+                answer: 'd) Não quis responder'
+
+            FSE16_04_02_05:
+                model: survey.answer
+                answer: 'e) Não se aplica'
+
+        FSE16_04_03:
+            model: survey.question
+            question: 'Na falta de água, onde é obtida?'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            display_mode: dropdown
+            comments_allowed: True
+            comments_message: 'Se outros, quais?'
+            column_nb: 1
+
+            FSE16_04_03_01:
+                model: survey.answer
+                answer: 'a) Reservatório da prefeitura'
+
+            FSE16_04_03_02:
+                model: survey.answer
+                answer: 'b) Outros (Poço, lagoa, córrego, cisterna, etc).'
+
+            FSE16_04_03_03:
+                model: survey.answer
+                answer: 'c) Não sabe'
+
+            FSE16_04_03_04:
+                model: survey.answer
+                answer: 'd) Não quis responder'
+
+            FSE16_04_03_05:
+                model: survey.answer
+                answer: 'e) Não se aplica'
+
+        FSE16_04_04:
+            model: survey.question
+            question: 'Antes do consumo de água, é realizado algum dos tratamentos abaixo? (pode-se marcar mais de uma opção)'
+            type: multiple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se outros, quais?'
+            column_nb: 1
+
+            FSE16_04_04_01:
+                model: survey.answer
+                answer: 'a) Filtração'
+
+            FSE16_04_04_02:
+                model: survey.answer
+                answer: 'b) Fervura'
+
+            FSE16_04_04_03:
+                model: survey.answer
+                answer: 'c) Hipoclorito'
+
+            FSE16_04_04_04:
+                model: survey.answer
+                answer: 'd) Nenhum'
+
+            FSE16_04_04_05:
+                model: survey.answer
+                answer: 'e) Outros'
+
+            FSE16_04_04_06:
+                model: survey.answer
+                answer: 'f) Não sabe'
+
+            FSE16_04_04_07:
+                model: survey.answer
+                answer: 'g) Não quis responder'
+
+            FSE16_04_04_08:
+                model: survey.answer
+                answer: 'h) Não se aplica'
+
+    FSE16_05:
+        model: survey.page
+        title: 'Alimentação / Animais'
+        description: 'Descrição.'
+
+        FSE16_05_01:
+            model: survey.question
+            question: 'Criam animais de estimação?'
+            type: multiple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se outros, quais?'
+            column_nb: 1
+
+            FSE16_05_01_01:
+                model: survey.answer
+                answer: 'a) Não criam'
+
+            FSE16_05_01_02:
+                model: survey.answer
+                answer: 'b) Galinha'
+
+            FSE16_05_01_03:
+                model: survey.answer
+                answer: 'c) Porco'
+
+            FSE16_05_01_04:
+                model: survey.answer
+                answer: 'd) Boi, vaca ou bezerro'
+
+            FSE16_05_01_05:
+                model: survey.answer
+                answer: 'e) Gato'
+
+            FSE16_05_01_06:
+                model: survey.answer
+                answer: 'f) Cachorro '
+
+            FSE16_05_01_07:
+                model: survey.answer
+                answer: 'g) Outros'
+
+            FSE16_05_01_08:
+                model: survey.answer
+                answer: 'h) Não sabe'
+
+            FSE16_05_01_09:
+                model: survey.answer
+                answer: 'i) Não quis responder'
+
+            FSE16_05_01_10:
+                model: survey.answer
+                answer: 'j) Não se aplica'
+
+        FSE16_05_02:
+            model: survey.question
+            question: 'Como são criados?'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            display_mode: dropdown
+            column_nb: 1
+
+            FSE16_05_02_01:
+                model: survey.answer
+                answer: 'a) Soltos (ou seja, vai pra rua, ou fora de cercados e chiqueiros)'
+
+            FSE16_05_02_02:
+                model: survey.answer
+                answer: 'b) Presos'
+
+            FSE16_05_02_03:
+                model: survey.answer
+                answer: 'c) Não sabe'
+
+            FSE16_05_02_04:
+                model: survey.answer
+                answer: 'd) Não quis responder'
+
+            FSE16_05_02_05:
+                model: survey.answer
+                answer: 'e) Não se aplica'
+
+        FSE16_05_03:
+            model: survey.question
+            question: 'Criam animais para a alimentação?'
+            type: multiple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se outros, quais?'
+            column_nb: 1
+
+            FSE16_05_03_01:
+                model: survey.answer
+                answer: 'a) Não criam'
+
+            FSE16_05_03_02:
+                model: survey.answer
+                answer: 'b) Galinha'
+
+            FSE16_05_03_03:
+                model: survey.answer
+                answer: 'c) Porco'
+
+            FSE16_05_03_04:
+                model: survey.answer
+                answer: 'd) Boi, vaca ou bezerro'
+
+            FSE16_05_03_05:
+                model: survey.answer
+                answer: 'e) Coelho'
+
+            FSE16_05_03_06:
+                model: survey.answer
+                answer: 'f) Outros'
+
+            FSE16_05_03_07:
+                model: survey.answer
+                answer: 'g) Não sabe'
+
+            FSE16_05_03_08:
+                model: survey.answer
+                answer: 'h) Não quis responder'
+
+            FSE16_05_03_09:
+                model: survey.answer
+                answer: 'i) Não se aplica'
+
+        FSE16_05_04:
+            model: survey.question
+            question: 'Como são criados?'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            display_mode: dropdown
+            column_nb: 1
+
+            FSE16_05_04_01:
+                model: survey.answer
+                answer: 'a) Soltos (ou seja, vai pra rua, ou fora de cercados e chiqueiros)'
+
+            FSE16_05_04_02:
+                model: survey.answer
+                answer: 'b) Presos'
+
+            FSE16_05_04_03:
+                model: survey.answer
+                answer: 'c) Não sabe'
+
+            FSE16_05_04_04:
+                model: survey.answer
+                answer: 'd) Não quis responder'
+
+            FSE16_05_04_05:
+                model: survey.answer
+                answer: 'e) Não se aplica'
+
+        FSE16_05_05:
+            model: survey.question
+            question: 'Costumam consumir carne proveniente de: (pode-se marcar mais de uma opção)'
+            type: multiple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se outros, quais?'
+            column_nb: 1
+
+            FSE16_05_05_01:
+                model: survey.answer
+                answer: 'a) Não consomem carne'
+
+            FSE16_05_05_02:
+                model: survey.answer
+                answer: 'b) Criação própria'
+
+            FSE16_05_05_03:
+                model: survey.answer
+                answer: 'c) Mercado/açougue'
+
+            FSE16_05_05_04:
+                model: survey.answer
+                answer: 'd) Criador de confiança'
+
+            FSE16_05_05_05:
+                model: survey.answer
+                answer: 'e) Outros'
+
+            FSE16_05_05_06:
+                model: survey.answer
+                answer: 'f) Não sabe'
+
+            FSE16_05_05_07:
+                model: survey.answer
+                answer: 'g) Não quis responder'
+
+            FSE16_05_05_08:
+                model: survey.answer
+                answer: 'h) Não se aplica'
+
+        FSE16_05_06:
+            model: survey.question
+            question: 'Ao preparar os alimentos crus (pode-se marcar mais de uma opção), costumam:'
+            type: multiple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se outros, quais?'
+            column_nb: 1
+
+            FSE16_05_06_01:
+                model: survey.answer
+                answer: 'a) Lavar em água corrente'
+
+            FSE16_05_06_02:
+                model: survey.answer
+                answer: 'b) Colocar de molho em água'
+
+            FSE16_05_06_03:
+                model: survey.answer
+                answer: 'c) Colocar de molho em água+vinagre'
+
+            FSE16_05_06_04:
+                model: survey.answer
+                answer: 'd) Colocar de molho em água+água sanitária / hipoclorito'
+
+            FSE16_05_06_05:
+                model: survey.answer
+                answer: 'e) Nenhum '
+
+            FSE16_05_06_06:
+                model: survey.answer
+                answer: 'f) Não sabe'
+
+            FSE16_05_06_07:
+                model: survey.answer
+                answer: 'g) Não quis responder'
+
+            FSE16_05_06_08:
+                model: survey.answer
+                answer: 'h) Não se aplica'
+
+    FSE16_06:
+        model: survey.page
+        title: 'Medicamentos (geral)'
+        description: 'Descrição.'
+
+        FSE16_06_01:
+            model: survey.question
+            question: 'Costumam tomar medicamentos sem receita médica?'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            display_mode: dropdown
+            comments_allowed: True
+            comments_message: 'Se sim, quais?'
+            column_nb: 1
+
+            FSE16_06_01_01:
+                model: survey.answer
+                answer: 'a) Não'
+
+            FSE16_06_01_02:
+                model: survey.answer
+                answer: 'b) Sim'
+
+            FSE16_06_01_03:
+                model: survey.answer
+                answer: 'c) Não sabe'
+
+            FSE16_06_01_04:
+                model: survey.answer
+                answer: 'd) Não quis responder'
+
+            FSE16_06_01_05:
+                model: survey.answer
+                answer: 'e) Não se aplica'
+
+        FSE16_06_02:
+            model: survey.question
+            question: 'Possuem remédios na residência?'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            display_mode: dropdown
+            column_nb: 1
+
+            FSE16_06_02_01:
+                model: survey.answer
+                answer: 'a) Não'
+
+            FSE16_06_02_02:
+                model: survey.answer
+                answer: 'b) Sim'
+
+            FSE16_06_02_03:
+                model: survey.answer
+                answer: 'c) Não sabe'
+
+            FSE16_06_02_04:
+                model: survey.answer
+                answer: 'd) Não quis responder'
+
+            FSE16_06_02_05:
+                model: survey.answer
+                answer: 'e) Não se aplica'
+
+        FSE16_06_03:
+            model: survey.question
+            question: 'De que modo adquirem os medicamentos que utilizam?'
+            type: multiple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se "Outro", especificar'
+            column_nb: 1
+
+            FSE16_06_03_01:
+                model: survey.answer
+                answer: 'a) Farmácia'
+
+            FSE16_06_03_02:
+                model: survey.answer
+                answer: 'b) Posto'
+
+            FSE16_06_03_03:
+                model: survey.answer
+                answer: 'c) Outro (especificar)'
+
+            FSE16_06_03_04:
+                model: survey.answer
+                answer: 'd) Não sabe'
+
+            FSE16_06_03_05:
+                model: survey.answer
+                answer: 'e) Não quis responder'
+
+            FSE16_06_03_06:
+                model: survey.answer
+                answer: 'f) Não se aplica'
+
+        FSE16_06_04:
+            model: survey.question
+            question: 'Onde guardam os remédios?'
+            type: multiple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se outros, onde?'
+            column_nb: 1
+
+            FSE16_06_04_01:
+                model: survey.answer
+                answer: 'a) Na cozinha'
+
+            FSE16_06_04_02:
+                model: survey.answer
+                answer: 'b) No banheiro'
+
+            FSE16_06_04_03:
+                model: survey.answer
+                answer: 'c) No quarto'
+
+            FSE16_06_04_04:
+                model: survey.answer
+                answer: 'd) Outros'
+
+            FSE16_06_04_05:
+                model: survey.answer
+                answer: 'e) Não sabe'
+
+            FSE16_06_04_06:
+                model: survey.answer
+                answer: 'f) Não quis responder'
+
+            FSE16_06_04_07:
+                model: survey.answer
+                answer: 'g) Não se aplica'
+
+        FSE16_06_05:
+            model: survey.question
+            question: 'Como descartam os medicamentos?'
+            type: multiple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se outros, quais?'
+            column_nb: 1
+
+            FSE16_06_05_01:
+                model: survey.answer
+                answer: 'a) Não descartam'
+
+            FSE16_06_05_02:
+                model: survey.answer
+                answer: 'b) Lixo'
+
+            FSE16_06_05_03:
+                model: survey.answer
+                answer: 'c) Vaso sanitário ou pia'
+
+            FSE16_06_05_04:
+                model: survey.answer
+                answer: 'd) Plantas ou terra'
+
+            FSE16_06_05_05:
+                model: survey.answer
+                answer: 'e) Devolvem no Posto de Saúde'
+
+            FSE16_06_05_06:
+                model: survey.answer
+                answer: 'f) Dão para algum conhecido '
+
+            FSE16_06_05_07:
+                model: survey.answer
+                answer: 'g) Outros'
+
+            FSE16_06_05_08:
+                model: survey.answer
+                answer: 'h) Não sabe'
+
+            FSE16_06_05_09:
+                model: survey.answer
+                answer: 'i) Não quis responder'
+
+            FSE16_06_05_10:
+                model: survey.answer
+                answer: 'j) Não se aplica'
+
+        FSE16_06_06:
+            model: survey.question
+            question: 'O que utilizam quando alguém tem diarreia?'
+            type: multiple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se outros, quais?'
+            column_nb: 1
+
+            FSE16_06_06_01:
+                model: survey.answer
+                answer: 'a) Nada. Esperam passar'
+
+            FSE16_06_06_02:
+                model: survey.answer
+                answer: 'b) Soro caseiro'
+
+            FSE16_06_06_03:
+                model: survey.answer
+                answer: 'c) Soro pronto'
+
+            FSE16_06_06_04:
+                model: survey.answer
+                answer: 'd) Outros'
+
+            FSE16_06_06_05:
+                model: survey.answer
+                answer: 'e) Não sabe'
+
+            FSE16_06_06_06:
+                model: survey.answer
+                answer: 'f) Não quis responder'
+
+            FSE16_06_06_07:
+                model: survey.answer
+                answer: 'g) Não se aplica'
+
+        FSE16_06_07:
+            model: survey.question
+            question: 'Conhecem o soro caseiro?'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            display_mode: dropdown
+            column_nb: 1
+
+            FSE16_06_07_01:
+                model: survey.answer
+                answer: 'a) Não'
+
+            FSE16_06_07_02:
+                model: survey.answer
+                answer: 'b) Sim'
+
+            FSE16_06_07_03:
+                model: survey.answer
+                answer: 'c) Não sabe'
+
+            FSE16_06_07_04:
+                model: survey.answer
+                answer: 'd) Não quis responder'
+
+            FSE16_06_07_05:
+                model: survey.answer
+                answer: 'e) Não se aplica'
+
+        FSE16_06_08:
+            model: survey.question
+            question: 'Sabem como preparar?'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            display_mode: dropdown
+            column_nb: 1
+
+            FSE16_06_08_01:
+                model: survey.answer
+                answer: 'a) Não'
+
+            FSE16_06_08_02:
+                model: survey.answer
+                answer: 'b) Sim'
+
+            FSE16_06_08_03:
+                model: survey.answer
+                answer: 'c) Não sabe'
+
+            FSE16_06_08_04:
+                model: survey.answer
+                answer: 'd) Não quis responder'
+
+            FSE16_06_08_05:
+                model: survey.answer
+                answer: 'e) Não se aplica'
+
+    FSE16_07:
+        model: survey.page
+        title: 'Parasitoses'
+        description: 'Descrição.'
+
+        FSE16_07_01:
+            model: survey.question
+            question: 'Conhecem algum verme (parasitose)?'
+            type: multiple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            column_nb: 1
+
+            FSE16_07_01_01:
+                model: survey.answer
+                answer: 'a) Não'
+
+            FSE16_07_01_02:
+                model: survey.answer
+                answer: 'b) Barriga d água, "xistose" (Esquistossomose)'
+
+            FSE16_07_01_03:
+                model: survey.answer
+                answer: 'c) "Bicha", "lombriga" (Ascaridíase)'
+
+            FSE16_07_01_04:
+                model: survey.answer
+                answer: 'd) "Amarelão" (Ancilostomose)'
+
+            FSE16_07_01_05:
+                model: survey.answer
+                answer: 'e) "Solitária" (Teníase)'
+
+            FSE16_07_01_06:
+                model: survey.answer
+                answer: 'f) "Ameba"(Amebíase/Giardíase)'
+
+            FSE16_07_01_07:
+                model: survey.answer
+                answer: 'g) Coceira (Enterobíase)'
+
+            FSE16_07_01_08:
+                model: survey.answer
+                answer: 'h) Não sabe'
+
+            FSE16_07_01_09:
+                model: survey.answer
+                answer: 'i) Não quis responder'
+
+            FSE16_07_01_10:
+                model: survey.answer
+                answer: 'j) Não se aplica'
+
+        FSE16_07_02:
+            model: survey.question
+            question: 'Sabem como se prevenir de pegar vermes?'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            display_mode: dropdown
+            column_nb: 1
+
+            FSE16_07_02_01:
+                model: survey.answer
+                answer: 'a) Não'
+
+            FSE16_07_02_02:
+                model: survey.answer
+                answer: 'b) Sim'
+
+            FSE16_07_02_03:
+                model: survey.answer
+                answer: 'c) Não sabe responder'
+
+            FSE16_07_02_04:
+                model: survey.answer
+                answer: 'd) Não quis responder'
+
+            FSE16_07_02_05:
+                model: survey.answer
+                answer: 'e) Não se aplica'
+
+        FSE16_07_03:
+            model: survey.question
+            question: 'Alguém na casa já pegou verme? Qual?'
+            type: multiple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            column_nb: 1
+
+            FSE16_07_03_01:
+                model: survey.answer
+                answer: 'a) Não'
+
+            FSE16_07_03_02:
+                model: survey.answer
+                answer: 'b) Sim, mas não sabe qual verme'
+
+            FSE16_07_03_03:
+                model: survey.answer
+                answer: 'c) "Solitária" (Teníase)'
+
+            FSE16_07_03_04:
+                model: survey.answer
+                answer: 'd) "Ameba" (Amebíase)'
+
+            FSE16_07_03_05:
+                model: survey.answer
+                answer: 'e) "Giárdia" (Giardíase)'
+
+            FSE16_07_03_06:
+                model: survey.answer
+                answer: 'f) Coceira (Enterobíase)'
+
+            FSE16_07_03_07:
+                model: survey.answer
+                answer: 'g) "Amarelão" (Ancilostomose)'
+
+            FSE16_07_03_08:
+                model: survey.answer
+                answer: 'h) "Bicha", "lombriga" (Ascaridíase)'
+
+            FSE16_07_03_09:
+                model: survey.answer
+                answer: 'i) Barriga d água, "xistose" (Esquistossomose)'
+
+            FSE16_07_03_10:
+                model: survey.answer
+                answer: 'j) Não sabe'
+
+            FSE16_07_03_11:
+                model: survey.answer
+                answer: 'k) Não quis responder'
+
+            FSE16_07_03_12:
+                model: survey.answer
+                answer: 'l) Não se aplica'
+
+    FSE16_08:
+        model: survey.page
+        title: 'Aspecto Econômico'
+        description: 'Descrição.'
+
+        FSE16_08_01:
+            model: survey.question
+            question: 'Qual o valor do rendimento mensal familiar aproximado?'
+            type: simple_choice
+            constr_mandatory: True
+            constr_err_msg: 'Esta questão precisa ser respondida.'
+            display_mode: dropdown
+            comments_allowed: True
+            comments_message: 'Qual?'
+            column_nb: 1
+
+            FSE16_08_01_01:
+                model: survey.answer
+                answer: 'a) Valor'
+
+            FSE16_08_01_02:
+                model: survey.answer
+                answer: 'b) Não sabe'
+
+            FSE16_08_01_03:
+                model: survey.answer
+                answer: 'c) Não quis responder'
+
+            FSE16_08_01_04:
+                model: survey.answer
+                answer: 'd) Não se aplica'
+
