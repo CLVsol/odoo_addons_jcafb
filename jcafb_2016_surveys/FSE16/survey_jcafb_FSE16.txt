@@ -16,23 +16,8 @@
             (datetime)
             ____________________________________
         [FSE16_01_06] Entrevistador
-            (simple_choice)
-            a) Isabela Lucca e Karyna Roque
-            b) Gabriel Nakata e Isabelle Moscardini
-            c) Ana Mendes, Paula Benitez e Lucas Fonseca
-            d) Stéphanie Guassi, Beatriz Lucio e Jesus Daniel
-            e) Rafaela Fioroto e Camila Krokon
-            f) Victor Hugo, Ana Almeida, Marianna Olival
-            g) Gabriel Roth, Livia Freitas e Paloma Nascimento
-            h) Jonas Nieves e Beatriz Boiani
-            i) Aline Monteiro, Juliana Cintra e Alexandre Ravazi
-            j) Eduardo Carbone, Marina Mancini e Yumi Takagi
-            k) Thaiani Vianna, Guilherme Bellini, Carla Yamamoto
-            l) Caio Hofmann, Victoria Brigato e Bruna Nakamura
-            m) André Barrichelo, Beatriz Lemos e Juliana Oliveira
-            n) Renato Pavone, Carol Alves e Jessica Nacazume
-            o) Outro
-            Se "Outro", especificar.____________________________________
+            (free_text)
+            ____________________________________
         [FSE16_01_07] Entrevistado
             (simple_choice)
             a) Responsável pela(s) Criança(s) da casa
@@ -191,7 +176,6 @@
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-            Se sim, quais?____________________________________
         [FSE16_06_02] Possuem remédios na residência?
             (simple_choice)
             a) Não
@@ -199,6 +183,7 @@
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
+            Se outros, quais?____________________________________
         [FSE16_06_03] De que modo adquirem os medicamentos que utilizam?
             (multiple_choice)
             a) Farmácia
