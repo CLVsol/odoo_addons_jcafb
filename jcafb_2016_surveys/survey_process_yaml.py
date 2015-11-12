@@ -87,6 +87,44 @@ def survey_answer(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, key4
     xml_file.write('                    </record>\n')
     xml_file.write('\n')
 
+def survey_label(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, key4, question_type, question_id, label_sequence):
+
+    _value_ = doc[key1][key2][key3][key4]['value'].encode("utf-8")
+    _model_ = doc[key1][key2][key3][key4]['model']
+    if label_sequence < 100:
+        _id_ = question_id + '_0' + str(label_sequence / 10)
+    else:
+        _id_ = question_id + '_' + str(label_sequence / 10)
+    _question_id_ = question_id
+    _sequence_ = str(label_sequence)
+
+    yaml_out_file.write('            %s:\n' % (_id_))
+    yaml_out_file.write('                model: %s\n' % (_model_))
+    yaml_out_file.write('                value: \'%s\'\n' % (_value_))
+
+    # _value_ = '[' + _id_ + '] ' + _value_
+
+    if  question_type == 'multiple_textboxes_diff_type':
+        txt_file.write('            %s____________________________________\n' % (_value_))
+    else:
+        txt_file.write('            %s\n' % (_value_))
+
+    xml_file.write('                    <record model="%s" id="%s">\n' % (_model_, _id_))
+    xml_file.write('                        <field name="value">%s</field>\n' % (_value_))
+    xml_file.write('                        <field name="question_id" ref="%s"/>\n' % (_question_id_))
+    xml_file.write('                        <field name="sequence" eval="%s"/>\n' % (_sequence_))
+    try:
+        _type_ = doc[key1][key2][key3][key4]['type']
+        yaml_out_file.write('                type: %s\n' % (_type_))
+        xml_file.write('                        <field name="type">%s</field>\n' % (_type_))
+    except Exception, e:
+        pass
+
+    yaml_out_file.write('\n')
+
+    xml_file.write('                    </record>\n')
+    xml_file.write('\n')
+
 def survey_question(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, page_id, question_sequence):
 
     _question_ = doc[key1][key2][key3]['question'].encode("utf-8")
@@ -99,14 +137,14 @@ def survey_question(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, pa
     _page_id_ = page_id
     _sequence_ = str(question_sequence)
     _constr_mandatory_ = str(doc[key1][key2][key3]['constr_mandatory'])
-    _constr_err_msg_ = doc[key1][key2][key3]['constr_err_msg'].encode("utf-8")
+    _constr_error_msg_ = doc[key1][key2][key3]['constr_error_msg'].encode("utf-8")
 
     yaml_out_file.write('        %s:\n' % (_id_))
     yaml_out_file.write('            model: %s\n' % (_model_))
     yaml_out_file.write('            question: \'%s\'\n' % (_question_))
     yaml_out_file.write('            type: %s\n' % (_type_))
     yaml_out_file.write('            constr_mandatory: %s\n' % (_constr_mandatory_))
-    yaml_out_file.write('            constr_err_msg: \'%s\'\n' % (_constr_err_msg_))
+    yaml_out_file.write('            constr_error_msg: \'%s\'\n' % (_constr_error_msg_))
 
     _question_ = '[' + _id_ + '] ' + _question_
 
@@ -119,7 +157,7 @@ def survey_question(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, pa
     xml_file.write('                    <field name="page_id" ref="%s"/>\n' % (_page_id_))
     xml_file.write('                    <field name="sequence" eval="%s"/>\n' % (_sequence_))
     xml_file.write('                    <field name="constr_mandatory">%s</field>\n' % (_constr_mandatory_))
-    xml_file.write('                    <field name="constr_err_msg">%s</field>\n' % (_constr_err_msg_))
+    xml_file.write('                    <field name="constr_error_msg">%s</field>\n' % (_constr_error_msg_))
 
     _comments_allowed_ = 'False'
     _comments_message_ = ''
@@ -159,28 +197,25 @@ def survey_question(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, pa
         (_type_ == 'datetime'):
         txt_file.write('            ' + '____________________________________\n')
 
-    # else:
-    #     answer_sequence = 0
-    #     for key4 in sorted(doc[key1][key2][key3].keys()):
-    #         try:
-    #             _model_ = doc[key1][key2][key3][key4]['model']
-    #             print '            ', key4, _model_
-    #             if _model_ == 'survey.answer':
-    #                 answer_sequence += 10
-    #                 survey_answer(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, key4, _type_, _id_, answer_sequence)
-    #             if _model_ == 'survey.question.column.heading':
-    #                 answer_sequence += 10
-    #                 survey_colunm(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, key4, _type_, _id_, answer_sequence)
-    #         except Exception, e:
-    #             pass
+    else:
+        label_sequence = 0
+        for key4 in sorted(doc[key1][key2][key3].keys()):
+            try:
+                _model_ = doc[key1][key2][key3][key4]['model']
+                print '            ', key4, _model_
+                if _model_ == 'survey.label':
+                    label_sequence += 10
+                    survey_label(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, key4, _type_, _id_, label_sequence)
+                # print '            ', key4, _model_
+                # if _model_ == 'survey.answer':
+                #     answer_sequence += 10
+                #     survey_answer(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, key4, _type_, _id_, answer_sequence)
+                # if _model_ == 'survey.question.column.heading':
+                #     answer_sequence += 10
+                #     survey_colunm(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, key4, _type_, _id_, answer_sequence)
+            except Exception, e:
+                pass
 
-    # try:
-    #     _comments_allowed_ = doc[key1][key2][key3]['comments_allowed']
-    #     if _comments_allowed_ == 'True':
-    #         _comments_message_ = doc[key1][key2][key3]['comments_message'].encode("utf-8")
-    #         txt_file.write('            %s____________________________________\n' % _comments_message_)
-    # except Exception, e:
-    #     pass
     if _comments_allowed_ == 'True':
         txt_file.write('            %s____________________________________\n' % _comments_message_)
 

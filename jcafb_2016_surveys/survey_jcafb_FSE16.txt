@@ -17,83 +17,283 @@
             ____________________________________
         [FSE16_01_06] Entrevistador
             (simple_choice)
+            a) Isabela Lucca e Karyna Roque
+            b) Gabriel Nakata e Isabelle Moscardini
+            c) Ana Mendes, Paula Benitez e Lucas Fonseca
+            d) Stéphanie Guassi, Beatriz Lucio e Jesus Daniel
+            e) Rafaela Fioroto e Camila Krokon
+            f) Victor Hugo, Ana Almeida, Marianna Olival
+            g) Gabriel Roth, Livia Freitas e Paloma Nascimento
+            h) Jonas Nieves e Beatriz Boiani
+            i) Aline Monteiro, Juliana Cintra e Alexandre Ravazi
+            j) Eduardo Carbone, Marina Mancini e Yumi Takagi
+            k) Thaiani Vianna, Guilherme Bellini, Carla Yamamoto
+            l) Caio Hofmann, Victoria Brigato e Bruna Nakamura
+            m) André Barrichelo, Beatriz Lemos e Juliana Oliveira
+            n) Renato Pavone, Carol Alves e Jessica Nacazume
+            o) Outro
             Se "Outro", especificar.____________________________________
         [FSE16_01_07] Entrevistado
             (simple_choice)
+            a) Responsável pela(s) Criança(s) da casa
+            b) Paciente Idoso
+            c) Cuidador (da(s) Criança(s) ou do(s) Idoso(s) da casa
+            d) Outro (especificar)
             Nome e grau de parentesco e, se a resposta for "Outro", especificar:____________________________________
     [FSE16_02] Residência
         [FSE16_02_01] Como é o banheiro da casa?
             (simple_choice)
+            a) Banheiro com rede de esgoto
+            b) Banheiro que dá na fossa
+            c) Outro
+            d) Não sabe
+            e) Não quis responder
+            f) Não se aplica
             Se outro, como?____________________________________
         [FSE16_02_02] A casa possui (preencher no caso de residência de idosos; se residência de crianças, escolher "Não se aplica"):
             (multiple_choice)
+            a) Degraus/desníveis
+            b) Tapetes
+            c) Locais com piso escorregadio
+            d) Móveis ou objetos que dificultam a circulação
+            e) Armários ou prateleiras muito altas
+            f) Nenhuma das alternativas citadas
+            g) Não sabe
+            h) Não quis responder
+            i) Não se aplica
     [FSE16_03] Horta
         [FSE16_03_01] Plantam alguma coisa para consumo? (vende, come..)
             (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
         [FSE16_03_02] Usam adubo?
             (multiple_choice)
+            a) Não
+            b) Sim, adubo orgânico com esterco
+            c) Sim, adubo orgânico sem esterco
+            d) Sim, adubo comprado
+            e) Não sabe
+            f) Não quis responder
+            g) Não se aplica
         [FSE16_03_03] Qual fonte de água é utilizada para irrigar a horta?
             (simple_choice)
+            a) Reservatório da prefeitura
+            b) Outros (Poço, lagoa, córrego, cisterna, etc).
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
             Se outros, quais?____________________________________
     [FSE16_04] Água
         [FSE16_04_01] De onde vem a água da casa?
             (simple_choice)
+            a) Reservatório da prefeitura
+            b) Outros (Poço, lagoa, córrego, cisterna, etc).
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
             Se outros, quais?____________________________________
         [FSE16_04_02] Existe contato das pessoas da casa com o local de armazenamento?
             (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
         [FSE16_04_03] Na falta de água, onde é obtida?
             (simple_choice)
+            a) Reservatório da prefeitura
+            b) Outros (Poço, lagoa, córrego, cisterna, etc).
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
             Se outros, quais?____________________________________
         [FSE16_04_04] Antes do consumo de água, é realizado algum dos tratamentos abaixo? (pode-se marcar mais de uma opção)
             (multiple_choice)
+            a) Filtração
+            b) Fervura
+            c) Hipoclorito
+            d) Nenhum
+            e) Outros
+            f) Não sabe
+            g) Não quis responder
+            h) Não se aplica
             Se outros, quais?____________________________________
     [FSE16_05] Alimentação / Animais
         [FSE16_05_01] Criam animais de estimação?
             (multiple_choice)
+            a) Não criam
+            b) Galinha
+            c) Porco
+            d) Boi, vaca ou bezerro
+            e) Gato
+            f) Cachorro 
+            g) Outros
+            h) Não sabe
+            i) Não quis responder
+            j) Não se aplica
             Se outros, quais?____________________________________
         [FSE16_05_02] Como são criados?
             (simple_choice)
+            a) Soltos (ou seja, vai pra rua, ou fora de cercados e chiqueiros)
+            b) Presos
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
         [FSE16_05_03] Criam animais para a alimentação?
             (multiple_choice)
+            a) Não criam
+            b) Galinha
+            c) Porco
+            d) Boi, vaca ou bezerro
+            e) Coelho
+            f) Outros
+            g) Não sabe
+            h) Não quis responder
+            i) Não se aplica
             Se outros, quais?____________________________________
         [FSE16_05_04] Como são criados?
             (simple_choice)
+            a) Soltos (ou seja, vai pra rua, ou fora de cercados e chiqueiros)
+            b) Presos
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
         [FSE16_05_05] Costumam consumir carne proveniente de: (pode-se marcar mais de uma opção)
             (multiple_choice)
+            a) Não consomem carne
+            b) Criação própria
+            c) Mercado/açougue
+            d) Criador de confiança
+            e) Outros
+            f) Não sabe
+            g) Não quis responder
+            h) Não se aplica
             Se outros, quais?____________________________________
         [FSE16_05_06] Ao preparar os alimentos crus (pode-se marcar mais de uma opção), costumam:
             (multiple_choice)
+            a) Lavar em água corrente
+            b) Colocar de molho em água
+            c) Colocar de molho em água+vinagre
+            d) Colocar de molho em água+água sanitária / hipoclorito
+            e) Nenhum 
+            f) Não sabe
+            g) Não quis responder
+            h) Não se aplica
             Se outros, quais?____________________________________
     [FSE16_06] Medicamentos (geral)
         [FSE16_06_01] Costumam tomar medicamentos sem receita médica?
             (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
             Se sim, quais?____________________________________
         [FSE16_06_02] Possuem remédios na residência?
             (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
         [FSE16_06_03] De que modo adquirem os medicamentos que utilizam?
             (multiple_choice)
+            a) Farmácia
+            b) Posto
+            c) Outro (especificar)
+            d) Não sabe
+            e) Não quis responder
+            f) Não se aplica
             Se "Outro", especificar____________________________________
         [FSE16_06_04] Onde guardam os remédios?
             (multiple_choice)
+            a) Na cozinha
+            b) No banheiro
+            c) No quarto
+            d) Outros
+            e) Não sabe
+            f) Não quis responder
+            g) Não se aplica
             Se outros, onde?____________________________________
         [FSE16_06_05] Como descartam os medicamentos?
             (multiple_choice)
+            a) Não descartam
+            b) Lixo
+            c) Vaso sanitário ou pia
+            d) Plantas ou terra
+            e) Devolvem no Posto de Saúde
+            f) Dão para algum conhecido 
+            g) Outros
+            h) Não sabe
+            i) Não quis responder
+            j) Não se aplica
             Se outros, quais?____________________________________
         [FSE16_06_06] O que utilizam quando alguém tem diarreia?
             (multiple_choice)
+            a) Nada. Esperam passar
+            b) Soro caseiro
+            c) Soro pronto
+            d) Outros
+            e) Não sabe
+            f) Não quis responder
+            g) Não se aplica
             Se outros, quais?____________________________________
         [FSE16_06_07] Conhecem o soro caseiro?
             (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
         [FSE16_06_08] Sabem como preparar?
             (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
     [FSE16_07] Parasitoses
         [FSE16_07_01] Conhecem algum verme (parasitose)?
             (multiple_choice)
+            a) Não
+            b) Barriga d água, "xistose" (Esquistossomose)
+            c) "Bicha", "lombriga" (Ascaridíase)
+            d) "Amarelão" (Ancilostomose)
+            e) "Solitária" (Teníase)
+            f) "Ameba"(Amebíase/Giardíase)
+            g) Coceira (Enterobíase)
+            h) Não sabe
+            i) Não quis responder
+            j) Não se aplica
         [FSE16_07_02] Sabem como se prevenir de pegar vermes?
             (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe responder
+            d) Não quis responder
+            e) Não se aplica
         [FSE16_07_03] Alguém na casa já pegou verme? Qual?
             (multiple_choice)
+            a) Não
+            b) Sim, mas não sabe qual verme
+            c) "Solitária" (Teníase)
+            d) "Ameba" (Amebíase)
+            e) "Giárdia" (Giardíase)
+            f) Coceira (Enterobíase)
+            g) "Amarelão" (Ancilostomose)
+            h) "Bicha", "lombriga" (Ascaridíase)
+            i) Barriga d água, "xistose" (Esquistossomose)
+            j) Não sabe
+            k) Não quis responder
+            l) Não se aplica
     [FSE16_08] Aspecto Econômico
         [FSE16_08_01] Qual o valor do rendimento mensal familiar aproximado?
             (simple_choice)
+            a) Valor
+            b) Não sabe
+            c) Não quis responder
+            d) Não se aplica
             Qual?____________________________________
