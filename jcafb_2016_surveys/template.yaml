@@ -37,7 +37,7 @@ ID:
             model: survey.question
             question: 'Question'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Error Message.'
