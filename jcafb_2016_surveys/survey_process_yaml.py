@@ -338,12 +338,12 @@ if __name__ == '__main__':
     print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
     survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
 
-    # yaml_filename = 'CSE16/survey_jcafb_CSE16.yaml'
-    # yaml_out_filename = 'CSE16/survey_jcafb_CSE16_out.yaml'
-    # xml_filename = 'CSE16/survey_jcafb_CSE16.xml'
-    # txt_filename = 'CSE16/survey_jcafb_CSE16.txt'
-    # print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
-    # survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
+    yaml_filename = 'CSE16/survey_jcafb_CSE16.yaml'
+    yaml_out_filename = 'CSE16/survey_jcafb_CSE16_out.yaml'
+    xml_filename = 'CSE16/survey_jcafb_CSE16.xml'
+    txt_filename = 'CSE16/survey_jcafb_CSE16.txt'
+    print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
+    survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
 
     # yaml_filename = 'QMD16/survey_jcafb_QMD16.yaml'
     # yaml_out_filename = 'QMD16/survey_jcafb_QMD16_out.yaml'
