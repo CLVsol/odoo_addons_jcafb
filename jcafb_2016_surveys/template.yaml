@@ -5,7 +5,7 @@ ID:
     auth_required: False
     users_can_go_back: True
     description: 'Description.'
-    thank_you_message: 'Thenk You Message'
+    thank_you_message: 'Thank You Message'
 
     ID_01:
         model: survey.page

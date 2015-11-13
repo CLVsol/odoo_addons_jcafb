@@ -33,7 +33,7 @@ This module will install all the JCAF 2016 surveys.
     'data': [
         # 'survey_jcafb_2016_data.xml',
         'FSE16/survey_jcafb_FSE16.xml',
-        # 'ISE16/survey_jcafb_ISE16.xml',
+        'ISE16/survey_jcafb_ISE16.xml',
         # 'CSE16/survey_jcafb_CSE16.xml',
         # 'QMD16/survey_jcafb_QMD16.xml',
         # 'QAN16/survey_jcafb_QAN16.xml',
