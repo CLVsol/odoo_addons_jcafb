@@ -58,7 +58,7 @@ FSE16:
             model: survey.question
             question: 'Entrevistado'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Informar quem respondeu ao questionário.'
@@ -90,7 +90,7 @@ FSE16:
             model: survey.question
             question: 'Como é o banheiro da casa?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -176,7 +176,7 @@ FSE16:
             model: survey.question
             question: 'Plantam alguma coisa para consumo? (vende, come..)'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -245,7 +245,7 @@ FSE16:
             model: survey.question
             question: 'Qual fonte de água é utilizada para irrigar a horta?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -281,7 +281,7 @@ FSE16:
             model: survey.question
             question: 'De onde vem a água da casa?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -312,7 +312,7 @@ FSE16:
             model: survey.question
             question: 'Existe contato das pessoas da casa com o local de armazenamento?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -343,7 +343,7 @@ FSE16:
             model: survey.question
             question: 'Na falta de água, onde é obtida?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -471,7 +471,7 @@ FSE16:
             model: survey.question
             question: 'Como são criados?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -548,7 +548,7 @@ FSE16:
             model: survey.question
             question: 'Como são criados?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -668,7 +668,7 @@ FSE16:
             model: survey.question
             question: 'Costumam tomar medicamentos sem receita médica?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -699,7 +699,7 @@ FSE16:
             model: survey.question
             question: 'Possuem remédios na residência?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -890,7 +890,7 @@ FSE16:
             model: survey.question
             question: 'Conhecem o soro caseiro?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -921,7 +921,7 @@ FSE16:
             model: survey.question
             question: 'Sabem como preparar?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -1007,7 +1007,7 @@ FSE16:
             model: survey.question
             question: 'Sabem como se prevenir de pegar vermes?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -1101,7 +1101,7 @@ FSE16:
             model: survey.question
             question: 'Qual o valor do rendimento mensal familiar aproximado?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'

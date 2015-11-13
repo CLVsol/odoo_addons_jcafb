@@ -72,7 +72,7 @@ ISE16:
             model: survey.question
             question: 'Entrevistado'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Informar quem respondeu ao questionário.'
@@ -150,7 +150,7 @@ ISE16:
             model: survey.question
             question: 'Tempo de Escolaridade do cuidador'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -193,7 +193,7 @@ ISE16:
             model: survey.question
             question: 'O(A) Sr.(a) é:'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -278,7 +278,7 @@ ISE16:
             model: survey.question
             question: 'O Sr(a) tem filhos?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -309,7 +309,7 @@ ISE16:
             model: survey.question
             question: 'Escolaridade do paciente ("Qual a última série (e de que grau) da escola que o Sr.(a) obteve aprovação?")'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -376,7 +376,7 @@ ISE16:
             model: survey.question
             question: 'O(A) Sr.(a) sabe ler e escrever um recado?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -407,7 +407,7 @@ ISE16:
             model: survey.question
             question: 'Qual destas opções o(a) descreve melhor:'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -454,7 +454,7 @@ ISE16:
             model: survey.question
             question: 'Qual é a sua religião?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -564,7 +564,7 @@ ISE16:
             model: survey.question
             question: 'O(A) Sr.(a) realiza alguma atividade ou ocupação que não seja remunerada?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -595,7 +595,7 @@ ISE16:
             model: survey.question
             question: 'Com que frequência caminha ou pratica exercícios?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -650,7 +650,7 @@ ISE16:
             model: survey.question
             question: 'O(A) Sr.(a) tem ou teve o hábito de fumar?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -685,7 +685,7 @@ ISE16:
             model: survey.question
             question: 'O(A) Sr. (a) tem o hábito de tomar bebidas alcoólicas?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -791,7 +791,7 @@ ISE16:
             model: survey.question
             question: 'O(A) Sr.(a) diria que sua saúde é:'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -834,7 +834,7 @@ ISE16:
             model: survey.question
             question: 'Comparando sua saúde de hoje com a de 12 meses atrás, o(a) Sr.(a) diria que agora a sua saúde é'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -916,7 +916,7 @@ ISE16:
             model: survey.question
             question: 'Nos últimos 12 meses, visitou o médico frequentemente (todo mês)?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -947,7 +947,7 @@ ISE16:
             model: survey.question
             question: 'Nos últimos 12 meses, quantas vezes o(a) Sr.(a) esteve internado?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -994,7 +994,7 @@ ISE16:
             model: survey.question
             question: 'O Sr. (a) teve alguma queda depois que completou 60 anos?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -1025,7 +1025,7 @@ ISE16:
             model: survey.question
             question: 'Alguma vez um médico lhe disse que tem alguma doença?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -1061,7 +1061,7 @@ ISE16:
             model: survey.question
             question: 'Como o Sr(a) costuma consumir a carne?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -1177,7 +1177,7 @@ ISE16:
             model: survey.question
             question: 'Já tomou vermífugo (lombrigueira)?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -1225,7 +1225,7 @@ ISE16:
             model: survey.question
             question: 'O(A) Sr.(a) trabalha?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -1260,7 +1260,7 @@ ISE16:
             model: survey.question
             question: 'O(A) Sr.(a) trabalha (remunerado) atualmente?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
@@ -1291,7 +1291,7 @@ ISE16:
             model: survey.question
             question: 'Qual o valor do(s) seu(s) rendimento(s) mensal(ais) aproximado(s) (independente do rendimento familiar)?'
             type: simple_choice
-            display_mode: dropdown
+            display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
