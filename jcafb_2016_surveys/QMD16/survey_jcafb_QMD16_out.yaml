@@ -1,0 +1,377 @@
+QMD16:
+    model: survey.survey
+    title: 'JCAFB 2016 - Questionário Medicamento'
+    stage_id: survey.stage_in_progress
+    auth_required: False
+    users_can_go_back: True
+    description: 'Description.'
+    thank_you_message: 'Thank you message.'
+
+    QMD16_01:
+        model: survey.page
+        title: 'Preâmbulo'
+        description: 'Descrição.'
+
+        QMD16_01_01:
+            model: survey.question
+            question: 'Identificação do Paciente (Nome)'
+            type: textbox
+            constr_mandatory: True
+            constr_error_msg: 'Preencher o Nome do Paciente.'
+
+        QMD16_01_02:
+            model: survey.question
+            question: 'Identificação do Paciente (Código)'
+            type: textbox
+            constr_mandatory: True
+            constr_error_msg: 'Preencher o Código do Paciente.'
+
+        QMD16_01_03:
+            model: survey.question
+            question: 'Identificação da Família (Nome)'
+            type: textbox
+            constr_mandatory: True
+            constr_error_msg: 'Preencher o Nome da Família.'
+
+        QMD16_01_04:
+            model: survey.question
+            question: 'Identificação da Família (Código)'
+            type: textbox
+            constr_mandatory: True
+            constr_error_msg: 'Preencher o Código da Família.'
+
+        QMD16_01_05:
+            model: survey.question
+            question: 'Aplicação do Questionário (Nome)'
+            type: textbox
+            constr_mandatory: True
+            constr_error_msg: 'Preencher o Nome de quem aplicou o questionário.'
+
+        QMD16_01_06:
+            model: survey.question
+            question: 'Aplicação do Questionário (Código)'
+            type: textbox
+            constr_mandatory: True
+            constr_error_msg: 'Preencher o Código de quem aplicou o questionário.'
+
+        QMD16_01_07:
+            model: survey.question
+            question: 'Aplicação do Questionário (Data)'
+            type: datetime
+            constr_mandatory: True
+            constr_error_msg: 'Preencher a data de aplicação do questionário.'
+
+        QMD16_01_08:
+            model: survey.question
+            question: 'Entrevistador'
+            type: free_text
+            constr_mandatory: True
+            constr_error_msg: 'Informar quem fez a entrevista.'
+
+        QMD16_01_09:
+            model: survey.question
+            question: 'Entrevistado'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Informar quem respondeu ao questionário.'
+            comments_allowed: True
+            comments_message: 'Nome do Cuidador e, se a resposta for "Outro", especificar nome e grau de parentesco'
+
+            QMD16_01_09_01:
+                model: survey.label
+                value: 'a) Paciente'
+
+            QMD16_01_09_02:
+                model: survey.label
+                value: 'b) Cuidador'
+
+            QMD16_01_09_03:
+                model: survey.label
+                value: 'c) Outra pessoa (especificar)'
+
+    QMD16_02:
+        model: survey.page
+        title: 'Questionário'
+        description: 'Descrição.'
+
+        QMD16_02_01:
+            model: survey.question
+            question: 'Quem administra os medicamentos do(a) Sr.(a)?'
+            type: multiple_choice
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se outra pessoa, especificar'
+
+            QMD16_02_01_01:
+                model: survey.label
+                value: 'a) Cuidador não remunerado'
+
+            QMD16_02_01_02:
+                model: survey.label
+                value: 'b) Cuidador remunerado'
+
+            QMD16_02_01_03:
+                model: survey.label
+                value: 'c) Administra sozinho'
+
+            QMD16_02_01_04:
+                model: survey.label
+                value: 'd) Outra pessoa'
+
+            QMD16_02_01_05:
+                model: survey.label
+                value: 'e) Não sabe'
+
+            QMD16_02_01_06:
+                model: survey.label
+                value: 'f) Não quis responder'
+
+            QMD16_02_01_07:
+                model: survey.label
+                value: 'g) Não se aplica'
+
+        QMD16_02_02:
+            model: survey.question
+            question: 'Pratica automedicação?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QMD16_02_02_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QMD16_02_02_02:
+                model: survey.label
+                value: 'b) Sim'
+
+            QMD16_02_02_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QMD16_02_02_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QMD16_02_02_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QMD16_02_03:
+            model: survey.question
+            question: 'O(a) Sr.(a) tomou medicamentos, sem prescrição, nos últimos 15 dias?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se sim, especificar'
+
+            QMD16_02_03_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QMD16_02_03_02:
+                model: survey.label
+                value: 'b) Sim (especificar)'
+
+            QMD16_02_03_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QMD16_02_03_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QMD16_02_03_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QMD16_02_04:
+            model: survey.question
+            question: 'De modo geral, como o Sr.(a) identifica seus remédios? (Pode assinalar mais de uma alternativa)?'
+            type: multiple_choice
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se "Outro", especificar'
+
+            QMD16_02_04_01:
+                model: survey.label
+                value: 'a) Pelo tamanho'
+
+            QMD16_02_04_02:
+                model: survey.label
+                value: 'b) Pela cor'
+
+            QMD16_02_04_03:
+                model: survey.label
+                value: 'c) Pela forma'
+
+            QMD16_02_04_04:
+                model: survey.label
+                value: 'd) Pelo nome'
+
+            QMD16_02_04_05:
+                model: survey.label
+                value: 'e) Pela embalagem'
+
+            QMD16_02_04_06:
+                model: survey.label
+                value: 'f) Outro (especificar)'
+
+            QMD16_02_04_07:
+                model: survey.label
+                value: 'g) Não identifica'
+
+            QMD16_02_04_08:
+                model: survey.label
+                value: 'h) Não sabe'
+
+            QMD16_02_04_09:
+                model: survey.label
+                value: 'i) Não quis responder'
+
+            QMD16_02_04_10:
+                model: survey.label
+                value: 'j) Não se aplica'
+
+        QMD16_02_05:
+            model: survey.question
+            question: 'O(A) Sr.(a) utilizou algum chá ou alguma planta medicinal nos últimos 15 dias?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se sim, especificar'
+
+            QMD16_02_05_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QMD16_02_05_02:
+                model: survey.label
+                value: 'b) Sim (especificar)'
+
+            QMD16_02_05_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QMD16_02_05_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QMD16_02_05_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QMD16_02_06:
+            model: survey.question
+            question: 'O idoso possui diagnóstico de hipertensão?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QMD16_02_06_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QMD16_02_06_02:
+                model: survey.label
+                value: 'b) Sim'
+
+            QMD16_02_06_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QMD16_02_06_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QMD16_02_06_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QMD16_02_07:
+            model: survey.question
+            question: 'O Sr.(a) às vezes esquece de tomar os seus remédios para pressão?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QMD16_02_07_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QMD16_02_07_02:
+                model: survey.label
+                value: 'b) Sim'
+
+            QMD16_02_07_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QMD16_02_07_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QMD16_02_07_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QMD16_02_08:
+            model: survey.question
+            question: 'O Sr.(a) já parou de tomar seus remédios ou diminuiu a dose sem avisar seu médico porque se sentia pior quando os tomava?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QMD16_02_08_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QMD16_02_08_02:
+                model: survey.label
+                value: 'b) Sim'
+
+            QMD16_02_08_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QMD16_02_08_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QMD16_02_08_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+    QMD16_03:
+        model: survey.page
+        title: 'Lista de todos os medicamentos que o paciente utilizou nos últimos 15 dias, incluindo as receitas que tiver.'
+        description: 'Preencher os medicamentos que o paciente utilizou.'
+

@@ -1,0 +1,116 @@
+[QAN16] JCAFB 2016 - Questionário para detecção de Anemia
+    [QAN16_01] Preâmbulo
+        [QAN16_01_01] Identificação do Paciente (Nome)
+            (textbox)
+            ____________________________________
+        [QAN16_01_02] Identificação do Paciente (Código)
+            (textbox)
+            ____________________________________
+        [QAN16_01_03] Identificação da Família (Nome)
+            (textbox)
+            ____________________________________
+        [QAN16_01_04] Identificação da Família (Código)
+            (textbox)
+            ____________________________________
+        [QAN16_01_05] Aplicação do Questionário (Nome)
+            (textbox)
+            ____________________________________
+        [QAN16_01_06] Aplicação do Questionário (Código)
+            (textbox)
+            ____________________________________
+        [QAN16_01_07] Aplicação do Questionário (Data)
+            (datetime)
+            ____________________________________
+        [QAN16_01_08] Entrevistador
+            (free_text)
+            ____________________________________
+        [QAN16_01_09] Entrevistado
+            (simple_choice)
+            a) Responsável
+            b) Paciente
+            c) Cuidador
+            d) Outro
+            Nome e grau de parentesco do Responsável ou do Cuidador; se "Outro", especificar:____________________________________
+    [QAN16_02] Valores de Medições e Interpretação dos Resultados
+        [QAN16_02_05] Interpretação do Resultado de Hemoglobina (Wintrobe, 12ª ed., 2009)
+            (simple_choice)
+            a) Normal
+            b) Abaixo do normal (anemia)
+            c) Acima do normal
+            Observações:____________________________________
+    [QAN16_03] Histórico
+        [QAN16_03_01] Já realizou exame para diagnosticar Anemia?
+            (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QAN16_03_02] Já teve Anemia diagnosticada?
+            (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QAN16_03_03] Se sim, o que fez para curar?
+            (multiple_choice)
+            a) Medicamentos
+            b) Alimentação adequada
+            c) Vitaminas
+            d) Outras medidas
+            e) Nada
+            f) Não sabe
+            g) Não quis responder
+            h) Não se aplica
+            Se "Outras medidas", especificar____________________________________
+        [QAN16_03_04] Ainda tem?
+            (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QAN16_03_05] Toma algum cuidado para evitar a Anemia?
+            (multiple_choice)
+            a) Consumo de feijão
+            b) Consumo de verduras verde-escuras
+            c) Consumo de frutas
+            d) Consumo de carne vermelha
+            e) Outro (especificar) 
+            f) Não toma nenhum cuidado
+            g) Não sabe
+            h) Não quis responder
+            i) Não se aplica
+            Se "Outro", especificar____________________________________
+    [QAN16_04] Alimentação
+        [QAN16_04_01] Alimentos que a criança consome (Alimentos ricos em Ferro, B12 e ácido fólico)
+            (matrix, simple)
+            [col]0 dias ou raramente
+            [col]1-2 dias
+            [col]3-4 dias
+            [col]5 ou mais dias
+            [col]Não quis responder
+            [col]Não sabe
+            [col]Não se aplica
+            [row]Feijão (leguminosas)
+            [row]Fígado de boi
+            [row]Carnes vermelhas
+            [row]Verduras e hortaliças verdes escuras (couve, brócolis, agrião, rúcula, escarola)
+            [row]Carne branca (peixe, frango)
+            [row]Miúdos (rim, coração)
+        [QAN16_04_02] Alimentos que a criança consome (Alimentos que interferem na absorção de Ferro)
+            (matrix, simple)
+            [col]0 dias ou raramente
+            [col]1-2 dias
+            [col]3-4 dias
+            [col]5 ou mais dias
+            [col]Não quis responder
+            [col]Não sabe
+            [col]Não se aplica
+            [row]Suco de limão, laranja, acerola, junto da refeição
+            [row]Laranja, após a refeição
+            [row]Leite e queijo (laticínios)
+            [row]Espinafre
+            [row]Café
+            [row]Refrigerante a base de cola

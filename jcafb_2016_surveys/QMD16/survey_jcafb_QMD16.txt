@@ -1,0 +1,101 @@
+[QMD16] JCAFB 2016 - Questionário Medicamento
+    [QMD16_01] Preâmbulo
+        [QMD16_01_01] Identificação do Paciente (Nome)
+            (textbox)
+            ____________________________________
+        [QMD16_01_02] Identificação do Paciente (Código)
+            (textbox)
+            ____________________________________
+        [QMD16_01_03] Identificação da Família (Nome)
+            (textbox)
+            ____________________________________
+        [QMD16_01_04] Identificação da Família (Código)
+            (textbox)
+            ____________________________________
+        [QMD16_01_05] Aplicação do Questionário (Nome)
+            (textbox)
+            ____________________________________
+        [QMD16_01_06] Aplicação do Questionário (Código)
+            (textbox)
+            ____________________________________
+        [QMD16_01_07] Aplicação do Questionário (Data)
+            (datetime)
+            ____________________________________
+        [QMD16_01_08] Entrevistador
+            (free_text)
+            ____________________________________
+        [QMD16_01_09] Entrevistado
+            (simple_choice)
+            a) Paciente
+            b) Cuidador
+            c) Outra pessoa (especificar)
+            Nome do Cuidador e, se a resposta for "Outro", especificar nome e grau de parentesco____________________________________
+    [QMD16_02] Questionário
+        [QMD16_02_01] Quem administra os medicamentos do(a) Sr.(a)?
+            (multiple_choice)
+            a) Cuidador não remunerado
+            b) Cuidador remunerado
+            c) Administra sozinho
+            d) Outra pessoa
+            e) Não sabe
+            f) Não quis responder
+            g) Não se aplica
+            Se outra pessoa, especificar____________________________________
+        [QMD16_02_02] Pratica automedicação?
+            (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QMD16_02_03] O(a) Sr.(a) tomou medicamentos, sem prescrição, nos últimos 15 dias?
+            (simple_choice)
+            a) Não
+            b) Sim (especificar)
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+            Se sim, especificar____________________________________
+        [QMD16_02_04] De modo geral, como o Sr.(a) identifica seus remédios? (Pode assinalar mais de uma alternativa)?
+            (multiple_choice)
+            a) Pelo tamanho
+            b) Pela cor
+            c) Pela forma
+            d) Pelo nome
+            e) Pela embalagem
+            f) Outro (especificar)
+            g) Não identifica
+            h) Não sabe
+            i) Não quis responder
+            j) Não se aplica
+            Se "Outro", especificar____________________________________
+        [QMD16_02_05] O(A) Sr.(a) utilizou algum chá ou alguma planta medicinal nos últimos 15 dias?
+            (simple_choice)
+            a) Não
+            b) Sim (especificar)
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+            Se sim, especificar____________________________________
+        [QMD16_02_06] O idoso possui diagnóstico de hipertensão?
+            (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QMD16_02_07] O Sr.(a) às vezes esquece de tomar os seus remédios para pressão?
+            (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QMD16_02_08] O Sr.(a) já parou de tomar seus remédios ou diminuiu a dose sem avisar seu médico porque se sentia pior quando os tomava?
+            (simple_choice)
+            a) Não
+            b) Sim
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+    [QMD16_03] Lista de todos os medicamentos que o paciente utilizou nos últimos 15 dias, incluindo as receitas que tiver.

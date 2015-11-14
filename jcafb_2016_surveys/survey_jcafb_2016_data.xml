@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <!-- JCAFB 2016 clv_survey type -->
+        <record model="clv_survey.type" id="clv_survey_type_JCAFB_2016">
+            <field name="name">JCAFB 2016</field>
+            <field name="code">JCAFB 2016</field>
+        </record>
+
+    </data>
+</openerp>
