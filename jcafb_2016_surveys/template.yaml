@@ -61,3 +61,20 @@ ID:
             ID_01_05_01:
                 model: survey.label
                 value: 'Answer Label'
+
+        ID_01_06:
+            model: survey.question
+            question: 'Question'
+            type: matrix
+            matrix_subtype: simple
+            constr_mandatory: True
+            constr_error_msg: 'Error Message.'
+
+            ID_01_06_01:
+                model: survey.label.col
+                value: 'Column Label'
+
+            ID_01_06_02:
+                model: survey.label.row
+                value: 'Row Label'
+

@@ -20,6 +20,41 @@
 
 import yaml
 
+def survey_label_matrix(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, key4, question_type, question_id, label_sequence):
+
+    _value_ = doc[key1][key2][key3][key4]['value'].encode("utf-8")
+    _model_ = doc[key1][key2][key3][key4]['model']
+    if label_sequence < 100:
+        _id_ = question_id + '_0' + str(label_sequence / 10)
+    else:
+        _id_ = question_id + '_' + str(label_sequence / 10)
+    _question_id_ = question_id
+    _sequence_ = str(label_sequence)
+
+    yaml_out_file.write('            %s:\n' % (_id_))
+    yaml_out_file.write('                model: %s\n' % (_model_))
+    yaml_out_file.write('                value: \'%s\'\n' % (_value_))
+
+    # _value_ = '[' + _id_ + '] ' + _value_
+
+    if _model_ == 'survey.label.col':
+        txt_file.write('            [col]%s\n' % (_value_))
+    if _model_ == 'survey.label.row':
+        txt_file.write('            [row]%s\n' % (_value_))
+
+    xml_file.write('                    <record model="%s" id="%s">\n' % ('survey.label', _id_))
+    xml_file.write('                        <field name="value">%s</field>\n' % (_value_))
+    if _model_ == 'survey.label.col':
+        xml_file.write('                        <field name="question_id" ref="%s"/>\n' % (_question_id_))
+    if _model_ == 'survey.label.row':
+        xml_file.write('                        <field name="question_id_2" ref="%s"/>\n' % (_question_id_))
+    xml_file.write('                        <field name="sequence" eval="%s"/>\n' % (_sequence_))
+
+    yaml_out_file.write('\n')
+
+    xml_file.write('                    </record>\n')
+    xml_file.write('\n')
+
 def survey_label(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, key4, question_type, question_id, label_sequence):
 
     _value_ = doc[key1][key2][key3][key4]['value'].encode("utf-8")
@@ -194,6 +229,59 @@ def survey_question(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, pa
         if _comments_allowed_ == 'True':
             txt_file.write('            %s____________________________________\n' % (_comments_message_))
 
+    if _type_ == 'matrix':
+
+        # _display_mode_ = doc[key1][key2][key3]['display_mode']
+        # _column_nb_ = doc[key1][key2][key3]['column_nb']
+        # _comments_allowed_ = str(doc[key1][key2][key3]['comments_allowed'])
+        # _comments_message_ = doc[key1][key2][key3]['comments_message'].encode("utf-8")
+        _matrix_subtype_ = str(doc[key1][key2][key3]['matrix_subtype'])
+
+        yaml_out_file.write('        %s:\n' % (_id_))
+        yaml_out_file.write('            model: %s\n' % (_model_))
+        yaml_out_file.write('            question: \'%s\'\n' % (_question_))
+        yaml_out_file.write('            type: %s\n' % (_type_))
+        yaml_out_file.write('            matrix_subtype: %s\n' % (_matrix_subtype_))
+        # yaml_out_file.write('            display_mode: %s\n' % (_display_mode_))
+        # yaml_out_file.write('            column_nb: %s\n' % (_column_nb_))
+        yaml_out_file.write('            constr_mandatory: %s\n' % (_constr_mandatory_))
+        yaml_out_file.write('            constr_error_msg: \'%s\'\n' % (_constr_error_msg_))
+        # yaml_out_file.write('            comments_allowed: %s\n' % (_comments_allowed_))
+        # yaml_out_file.write('            comments_message: \'%s\'\n' % (_comments_message_))
+        yaml_out_file.write('\n')
+
+        _question_ = '[' + _id_ + '] ' + _question_
+
+        txt_file.write('        %s\n' % (_question_))
+        txt_file.write('            (%s, %s)\n' % (_type_, _matrix_subtype_))
+
+        xml_file.write('                <!-- %s -->\n' % (_question_))
+        xml_file.write('                <record model="%s" id="%s">\n' % (_model_, _id_))
+        xml_file.write('                    <field name="question">%s</field>\n' % (_question_))
+        xml_file.write('                    <field name="type">%s</field>\n' % (_type_))
+        xml_file.write('                    <field name="matrix_subtype">%s</field>\n' % (_matrix_subtype_))
+        xml_file.write('                    <field name="page_id" ref="%s"/>\n' % (_page_id_))
+        xml_file.write('                    <field name="sequence" eval="%s"/>\n' % (_sequence_))
+        # xml_file.write('                    <field name="display_mode">%s</field>\n' % (_display_mode_))
+        # xml_file.write('                    <field name="column_nb">%s</field>\n' % (_column_nb_))
+        xml_file.write('                    <field name="constr_mandatory">%s</field>\n' % (_constr_mandatory_))
+        xml_file.write('                    <field name="constr_error_msg">%s</field>\n' % (_constr_error_msg_))
+        # xml_file.write('                    <field name="comments_allowed">%s</field>\n' % (_comments_allowed_))
+        # xml_file.write('                    <field name="comments_message">%s</field>\n' % (_comments_message_))
+        xml_file.write('                </record>\n')
+        xml_file.write('\n')
+
+        label_sequence = 0
+        for key4 in sorted(doc[key1][key2][key3].keys()):
+            try:
+                _model_ = doc[key1][key2][key3][key4]['model']
+                print '            ', key4, _model_
+                if _model_ == 'survey.label.col' or _model_ == 'survey.label.row':
+                    label_sequence += 10
+                    survey_label_matrix(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, key4, _type_, _id_, label_sequence)
+            except Exception, e:
+                pass
+
 def survey_page(doc, yaml_out_file, xml_file, txt_file, key1, key2, survey_id, page_sequence):
 
     _title_ = doc[key1][key2]['title'].encode("utf-8")
@@ -352,12 +440,12 @@ if __name__ == '__main__':
     print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
     survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
 
-    # yaml_filename = 'QAN16/survey_jcafb_QAN16.yaml'
-    # yaml_out_filename = 'QAN16/survey_jcafb_QAN16_out.yaml'
-    # xml_filename = 'QAN16/survey_jcafb_QAN16.xml'
-    # txt_filename = 'QAN16/survey_jcafb_QAN16.txt'
-    # print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
-    # survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
+    yaml_filename = 'QAN16/survey_jcafb_QAN16.yaml'
+    yaml_out_filename = 'QAN16/survey_jcafb_QAN16_out.yaml'
+    xml_filename = 'QAN16/survey_jcafb_QAN16.xml'
+    txt_filename = 'QAN16/survey_jcafb_QAN16.txt'
+    print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
+    survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
 
     # yaml_filename = 'QDH16/survey_jcafb_QDH16.yaml'
     # yaml_out_filename = 'QDH16/survey_jcafb_QDH16_out.yaml'
