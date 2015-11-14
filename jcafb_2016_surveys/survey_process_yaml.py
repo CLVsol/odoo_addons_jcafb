@@ -447,12 +447,12 @@ if __name__ == '__main__':
     print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
     survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
 
-    # yaml_filename = 'QDH16/survey_jcafb_QDH16.yaml'
-    # yaml_out_filename = 'QDH16/survey_jcafb_QDH16_out.yaml'
-    # xml_filename = 'QDH16/survey_jcafb_QDH16.xml'
-    # txt_filename = 'QDH16/survey_jcafb_QDH16.txt'
-    # print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
-    # survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
+    yaml_filename = 'QDH16/survey_jcafb_QDH16.yaml'
+    yaml_out_filename = 'QDH16/survey_jcafb_QDH16_out.yaml'
+    xml_filename = 'QDH16/survey_jcafb_QDH16.xml'
+    txt_filename = 'QDH16/survey_jcafb_QDH16.txt'
+    print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
+    survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
 
     print '--> survey_process_yaml.py'
     print '--> Execution time:', secondsToStr(time() - start)

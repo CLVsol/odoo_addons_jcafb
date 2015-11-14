@@ -1,0 +1,1688 @@
+QDH16:
+    model: survey.survey
+    title: 'JCAFB 2016 - Questionário - Diabetes, Hipertensão Arterial e Hipercolesterolemia'
+    stage_id: survey.stage_in_progress
+    auth_required: False
+    users_can_go_back: True
+    description: 'Description.'
+    thank_you_message: 'Thank you message.'
+
+    QDH16_01:
+        model: survey.page
+        title: 'Preâmbulo'
+        description: 'Descrição.'
+
+        QDH16_01_01:
+            model: survey.question
+            question: 'Identificação do Paciente (Nome)'
+            type: textbox
+            constr_mandatory: True
+            constr_error_msg: 'Preencher o Nome do Paciente.'
+
+        QDH16_01_02:
+            model: survey.question
+            question: 'Identificação do Paciente (Código)'
+            type: textbox
+            constr_mandatory: True
+            constr_error_msg: 'Preencher o Código do Paciente.'
+
+        QDH16_01_03:
+            model: survey.question
+            question: 'Identificação da Família (Nome)'
+            type: textbox
+            constr_mandatory: True
+            constr_error_msg: 'Preencher o Nome da Família (se pertencer ao Projeto).'
+
+        QDH16_01_04:
+            model: survey.question
+            question: 'Identificação da Família (Código)'
+            type: textbox
+            constr_mandatory: True
+            constr_error_msg: 'Preencher o Código da Família (se pertencer ao Projeto).'
+
+        QDH16_01_05:
+            model: survey.question
+            question: 'Aplicação do Questionário (Nome)'
+            type: textbox
+            constr_mandatory: True
+            constr_error_msg: 'Preencher o Nome de quem aplicou o questionário.'
+
+        QDH16_01_06:
+            model: survey.question
+            question: 'Aplicação do Questionário (Código)'
+            type: textbox
+            constr_mandatory: True
+            constr_error_msg: 'Preencher o Código de quem aplicou o questionário.'
+
+        QDH16_01_07:
+            model: survey.question
+            question: 'Aplicação do Questionário (Data)'
+            type: datetime
+            constr_mandatory: True
+            constr_error_msg: 'Preencher a data de aplicação do questionário.'
+
+        QDH16_01_08:
+            model: survey.question
+            question: 'Entrevistador'
+            type: free_text
+            constr_mandatory: True
+            constr_error_msg: 'Informar quem fez a entrevista.'
+
+        QDH16_01_09:
+            model: survey.question
+            question: 'Entrevistado'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Informar quem respondeu ao questionário.'
+            comments_allowed: True
+            comments_message: 'Nome e grau de parentesco do Responsável ou do Cuidador; se "Outro", especificar.'
+
+            QDH16_01_09_01:
+                model: survey.label
+                value: 'a) Responsável'
+
+            QDH16_01_09_02:
+                model: survey.label
+                value: 'b) Paciente'
+
+            QDH16_01_09_03:
+                model: survey.label
+                value: 'c) Cuidador'
+
+            QDH16_01_09_04:
+                model: survey.label
+                value: 'd) Outro'
+
+    QDH16_02:
+        model: survey.page
+        title: 'Geral'
+        description: 'Descrição.'
+
+        QDH16_02_01:
+            model: survey.question
+            question: 'Escolaridade do paciente ("Qual a última série (e de que grau) da escola que o Sr.(a) obteve aprovação?")'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_02_01_01:
+                model: survey.label
+                value: 'a) É analfabeto'
+
+            QDH16_02_01_02:
+                model: survey.label
+                value: 'b) Não é analfabeto, mas não frequentou a escola'
+
+            QDH16_02_01_03:
+                model: survey.label
+                value: 'c) Ensino Fundamental incompleto = 1º grau incompleto = antigo Primário'
+
+            QDH16_02_01_04:
+                model: survey.label
+                value: 'd) Ensino Fundamental completo = 1º grau completo = antigos Primário + Ginásio'
+
+            QDH16_02_01_05:
+                model: survey.label
+                value: 'e) Ensino Médio incompleto = ant. Clássico/Científico/Normal (Magistério) incompleto'
+
+            QDH16_02_01_06:
+                model: survey.label
+                value: 'f) Ensino Médio Completo = antigo Clássico/Científico/Normal (Magistério) completo'
+
+            QDH16_02_01_07:
+                model: survey.label
+                value: 'g) Ensino Médio – Técnico (técnico em contabilidade, laboratório, etc)'
+
+            QDH16_02_01_08:
+                model: survey.label
+                value: 'h) Ensino Superior incompleto'
+
+            QDH16_02_01_09:
+                model: survey.label
+                value: 'i) Ensino Superior completo'
+
+            QDH16_02_01_10:
+                model: survey.label
+                value: 'j) Especialização'
+
+            QDH16_02_01_11:
+                model: survey.label
+                value: 'k) Pós-graduação (Mestrado/Doutorado)'
+
+            QDH16_02_01_12:
+                model: survey.label
+                value: 'l) Não sabe'
+
+            QDH16_02_01_13:
+                model: survey.label
+                value: 'm) Não quis responder'
+
+            QDH16_02_01_14:
+                model: survey.label
+                value: 'n) Não se aplica'
+
+        QDH16_02_02:
+            model: survey.question
+            question: 'Tempo de Jejum'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Observações:'
+
+            QDH16_02_02_01:
+                model: survey.label
+                value: 'a) Menor que 8 hs'
+
+            QDH16_02_02_02:
+                model: survey.label
+                value: 'b) Entre 8 e 12 hs'
+
+            QDH16_02_02_03:
+                model: survey.label
+                value: 'c) Maior que 12 hs'
+
+            QDH16_02_02_04:
+                model: survey.label
+                value: 'd) Não sabe'
+
+            QDH16_02_02_05:
+                model: survey.label
+                value: 'e) Não quis responder'
+
+            QDH16_02_02_06:
+                model: survey.label
+                value: 'f) Não se aplica'
+
+    QDH16_03:
+        model: survey.page
+        title: 'Valores de Medições e Interpretação dos Resultados'
+        description: 'Descrição.'
+
+        QDH16_03_04:
+            model: survey.question
+            question: 'Interpretação do valor de Circunferência Abdominal (ABESO; Adultos)'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Responder'
+            comments_allowed: True
+            comments_message: 'Observações:'
+
+            QDH16_03_04_01:
+                model: survey.label
+                value: 'a) Normal (H:&#60;94 cm; M:&#60;80 cm)'
+
+            QDH16_03_04_02:
+                model: survey.label
+                value: 'b) Risco aumentado (H:&#62;=94 cm; M:&#62;=80 cm)'
+
+            QDH16_03_04_03:
+                model: survey.label
+                value: 'c) Risco aumentado substancialmente (H:&#62;=102 cm; M:&#62;=88 cm))'
+
+            QDH16_03_04_04:
+                model: survey.label
+                value: 'd) Não interpretado (justificar em observações)'
+
+            QDH16_03_04_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_03_06:
+            model: survey.question
+            question: 'Interpretação do valor de Glicemia (Assosciação Americana de Diabetes (2014))'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Outras situações:'
+
+            QDH16_03_06_01:
+                model: survey.label
+                value: 'a) Normal para jejum de 8-12 hs(&#60;= 99 mg/dL)'
+
+            QDH16_03_06_02:
+                model: survey.label
+                value: 'b) Pré-diabetes (para jejum de 8-12 hs) = risco aumentado para diabetes (100-25 mg/dL)'
+
+            QDH16_03_06_03:
+                model: survey.label
+                value: 'c) Diabetes - para jejum de 8-12 hs (&#62;126 mg/dL, )'
+
+            QDH16_03_06_04:
+                model: survey.label
+                value: 'd) Jejum INFERIOR a 8 hs: Normal (até 140 mg/dL)'
+
+            QDH16_03_06_05:
+                model: survey.label
+                value: 'e) Jejum INFERIOR a 8 hs: Aumentado (&#62;=140 mg/dL)'
+
+            QDH16_03_06_06:
+                model: survey.label
+                value: 'f) Não avaliado (justificar)'
+
+            QDH16_03_06_07:
+                model: survey.label
+                value: 'g) Não se aplica'
+
+        QDH16_03_09:
+            model: survey.question
+            question: 'Interpretação do valor de Pressão Arterial (Diretrizes Brasileiras de Hipertensão Arterial de 2010)'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Observações:'
+
+            QDH16_03_09_01:
+                model: survey.label
+                value: 'a) Normal (PAS&#60;130 mmHg e PAD&#60;85 mmHg)'
+
+            QDH16_03_09_02:
+                model: survey.label
+                value: 'b) Limítrofe (PAS:130-139 mmHg e PAD:85-89 mmHg)'
+
+            QDH16_03_09_03:
+                model: survey.label
+                value: 'c) Alta (PAS:&#62;=140 mmHg e PAD:&#62;=90 mmHg)'
+
+            QDH16_03_09_04:
+                model: survey.label
+                value: 'd) Não interpretado (justificar em "Observações")'
+
+            QDH16_03_09_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_03_11:
+            model: survey.question
+            question: 'Interpretação do valor de Colesterol (Diretrizes Brasileiras de Dislipidemias e Prevenção da Aterosclerose-2013)'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Observações:'
+
+            QDH16_03_11_01:
+                model: survey.label
+                value: 'a) Desejável:Acima de 20 anos:&#60;200 mg/dL;2-19 anos:&#60;150 mg/dL'
+
+            QDH16_03_11_02:
+                model: survey.label
+                value: 'b) Limítrofe:Acima de 20 anos:200–39 mg/dL;2-19 anos:150-169 mg/dL'
+
+            QDH16_03_11_03:
+                model: survey.label
+                value: 'c) Elevado: Acima de 20 anos:&#62;=240 mg/dL;2-19 anos:&#62;=170 mg/dL'
+
+            QDH16_03_11_04:
+                model: survey.label
+                value: 'd) Não interpretado (justificar em "Observações")'
+
+            QDH16_03_11_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_03_13:
+            model: survey.question
+            question: 'Interpretação do valor de IMC (OMS; Adultos.: 19 a 64 anos; Idosos:&#62;=65 anos)'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Observações:'
+
+            QDH16_03_13_01:
+                model: survey.label
+                value: 'a) Baixo peso (Adultos:&#60;18,5; Idosos (M e F):&#60;21,9)'
+
+            QDH16_03_13_02:
+                model: survey.label
+                value: 'b) Peso Normal (Adultos: 18,5 a 24,9; Idosos (M e F): 22,0 a 27,0)'
+
+            QDH16_03_13_03:
+                model: survey.label
+                value: 'c) Sobrepeso (Pré-obeso) (Adultos: 25,0 a 29,9; Idosos(M): 27,1 a 30,0/Idosos(F): 27,1 a 32,0)'
+
+            QDH16_03_13_04:
+                model: survey.label
+                value: 'd) Obesidade Grau I (Adultos: 30,0 a 34,9; Idosos(M): 30,1,1 a 35,0/Idosos(F): 32,1 a 37,0)'
+
+            QDH16_03_13_05:
+                model: survey.label
+                value: 'e) Obesidade Grau II (Adultos: 35,0 a 39,9; Idosos(M): 35,1 a 39,0/Idosos(F): 37,1 a 41,9)'
+
+            QDH16_03_13_06:
+                model: survey.label
+                value: 'f) Obesidade Grau III (Adultos:&#62;=40,0; Idosos(M):&#62;=40,0/Idosos(F):&#62;=42,0)'
+
+            QDH16_03_13_07:
+                model: survey.label
+                value: 'g) Não interpretado (justificar em "Observações")'
+
+            QDH16_03_13_08:
+                model: survey.label
+                value: 'h) Não se aplica'
+
+    QDH16_04:
+        model: survey.page
+        title: 'Histórico de Doenças'
+        description: 'Descrição.'
+
+        QDH16_04_01:
+            model: survey.question
+            question: 'Possui alguma dessas doenças: Doença de Chagas, Hepatite, Vírus HIV (AIDS)? (se possível, especificar)'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Observações:'
+
+            QDH16_04_01_01:
+                model: survey.label
+                value: 'a) Sim (especificar em "Observações", se possível)'
+
+            QDH16_04_01_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_04_01_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_04_01_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_04_01_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+    QDH16_05:
+        model: survey.page
+        title: 'Histórico de DHC'
+        description: 'Descrição.'
+
+        QDH16_05_01:
+            model: survey.question
+            question: 'Possui DIABETES?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_05_01_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_05_01_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_01_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_05_01_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_05_01_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_05_02:
+            model: survey.question
+            question: 'Faz uso de medicamento para tratamento de DIABETES?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Error Message.'
+            comments_allowed: True
+            comments_message: 'Esta questão precisa ser respondida.'
+
+            QDH16_05_02_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QDH16_05_02_02:
+                model: survey.label
+                value: 'b) Hipoglicemiante'
+
+            QDH16_05_02_03:
+                model: survey.label
+                value: 'c) Insulina'
+
+            QDH16_05_02_04:
+                model: survey.label
+                value: 'd) Não sabe'
+
+            QDH16_05_02_05:
+                model: survey.label
+                value: 'e) Não quis responder'
+
+            QDH16_05_02_06:
+                model: survey.label
+                value: 'f) Não se aplica'
+
+        QDH16_05_03:
+            model: survey.question
+            question: 'Fez uso hoje (do medicamento para DIABETES)?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_05_03_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_05_03_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_03_03:
+                model: survey.label
+                value: 'd) Não sabe'
+
+            QDH16_05_03_04:
+                model: survey.label
+                value: 'e) Não quis responder'
+
+            QDH16_05_03_05:
+                model: survey.label
+                value: 'f) Não se aplica'
+
+        QDH16_05_04:
+            model: survey.question
+            question: 'Já realizou exame para diagnosticar DIABETES?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_05_04_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_05_04_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_04_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_05_04_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_05_04_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_05_05:
+            model: survey.question
+            question: 'Teve DIABETES em alguma gestação?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_05_05_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_05_05_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_05_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_05_05_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_05_05_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_05_06:
+            model: survey.question
+            question: 'Possui HIPERTENSÃO?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_05_06_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_05_06_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_06_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_05_06_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_05_06_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_05_07:
+            model: survey.question
+            question: 'Faz uso de medicamento para tratamento de HIPERTENSÃO?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se a resposta for "a) Sim", especificar:'
+
+            QDH16_05_07_01:
+                model: survey.label
+                value: 'a) Sim (especificar)'
+
+            QDH16_05_07_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_07_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_05_07_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_05_07_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_05_08:
+            model: survey.question
+            question: 'Fez uso hoje (do medicamento para HIPERTENSÃO)?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_05_08_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_05_08_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_08_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_05_08_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_05_08_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_05_09:
+            model: survey.question
+            question: 'Já realizou exame para diagnosticar HIPERTENSÃO?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_05_09_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_05_09_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_09_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_05_09_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_05_09_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_05_10:
+            model: survey.question
+            question: 'Teve HIPERTENSÃO em alguma gestação?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_05_10_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_05_10_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_10_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_05_10_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_05_10_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_05_11:
+            model: survey.question
+            question: 'Possui HIPERCOLESTEROLEMIA?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_05_11_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_05_11_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_11_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_05_11_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_05_11_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_05_12:
+            model: survey.question
+            question: 'Faz uso de medicamento para tratamento de HIPERCOLESTEROLEMIA?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se a resposta for "a) Sim", especificar:'
+
+            QDH16_05_12_01:
+                model: survey.label
+                value: 'a) Sim (especificar)'
+
+            QDH16_05_12_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_12_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_05_12_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_05_12_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_05_13:
+            model: survey.question
+            question: 'Fez uso hoje (do medicamento para HIPERCOLESTEROLEMIA)?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_05_13_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_05_13_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_13_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_05_13_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_05_13_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_05_14:
+            model: survey.question
+            question: 'Já realizou exame para diagnosticar HIPERCOLESTEROLEMIA?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_05_14_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_05_14_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_14_03:
+                model: survey.label
+                value: 'd) Não sabe'
+
+            QDH16_05_14_04:
+                model: survey.label
+                value: 'e) Não quis responder'
+
+            QDH16_05_14_05:
+                model: survey.label
+                value: 'f) Não se aplica'
+
+        QDH16_05_15:
+            model: survey.question
+            question: 'Teve HIPERCOLESTEROLEMIA em alguma gestação?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_05_15_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_05_15_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_05_15_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_05_15_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_05_15_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+    QDH16_06:
+        model: survey.page
+        title: 'Histórico Familiar'
+        description: 'Descrição.'
+
+        QDH16_06_01:
+            model: survey.question
+            question: 'Possui algum parente de sangue que sofre/sofreu de OBESIDADE?'
+            type: multiple_choice
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_06_01_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QDH16_06_01_02:
+                model: survey.label
+                value: 'b) Sim. Avós, tios ou primos'
+
+            QDH16_06_01_03:
+                model: survey.label
+                value: 'b) Sim. Pais, irmãos ou filhos'
+
+            QDH16_06_01_04:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_06_01_05:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_06_01_06:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_06_02:
+            model: survey.question
+            question: 'Possui algum parente de sangue que sofre/sofreu de DIABETES?'
+            type: multiple_choice
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_06_02_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QDH16_06_02_02:
+                model: survey.label
+                value: 'b) Sim. Avós, tios ou primos'
+
+            QDH16_06_02_03:
+                model: survey.label
+                value: 'b) Sim. Pais, irmãos ou filhos'
+
+            QDH16_06_02_04:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_06_02_05:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_06_02_06:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_06_03:
+            model: survey.question
+            question: 'Possui algum parente de sangue que sofre/sofreu de DOENÇAS DO CORAÇÃO?'
+            type: multiple_choice
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_06_03_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QDH16_06_03_02:
+                model: survey.label
+                value: 'b) Sim. Avós, tios ou primos'
+
+            QDH16_06_03_03:
+                model: survey.label
+                value: 'b) Sim. Pais, irmãos ou filhos'
+
+            QDH16_06_03_04:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_06_03_05:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_06_03_06:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_06_04:
+            model: survey.question
+            question: 'Possui algum parente de sangue que sofre/sofreu de PRESSÃO ALTA?'
+            type: multiple_choice
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_06_04_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QDH16_06_04_02:
+                model: survey.label
+                value: 'b) Sim. Avós, tios ou primos'
+
+            QDH16_06_04_03:
+                model: survey.label
+                value: 'b) Sim. Pais, irmãos ou filhos'
+
+            QDH16_06_04_04:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_06_04_05:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_06_04_06:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_06_05:
+            model: survey.question
+            question: 'Possui algum parente de sangue que sofre/sofreu de COLESTEROL ALTO?'
+            type: multiple_choice
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_06_05_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QDH16_06_05_02:
+                model: survey.label
+                value: 'b) Sim. Avós, tios ou primos'
+
+            QDH16_06_05_03:
+                model: survey.label
+                value: 'b) Sim. Pais, irmãos ou filhos'
+
+            QDH16_06_05_04:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_06_05_05:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_06_05_06:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+    QDH16_07:
+        model: survey.page
+        title: 'Hábitos de Vida'
+        description: 'Descrição.'
+
+        QDH16_07_01:
+            model: survey.question
+            question: 'Que motivo(s) o leva(m) a procurar atendimento médico?'
+            type: multiple_choice
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se outros, quais?'
+
+            QDH16_07_01_01:
+                model: survey.label
+                value: 'a) Somente quando está doente'
+
+            QDH16_07_01_02:
+                model: survey.label
+                value: 'b) Realizam tratamento'
+
+            QDH16_07_01_03:
+                model: survey.label
+                value: 'c) Exames de rotina'
+
+            QDH16_07_01_04:
+                model: survey.label
+                value: 'd) Ocorrência de acidente'
+
+            QDH16_07_01_05:
+                model: survey.label
+                value: 'e) Outros'
+
+            QDH16_07_01_06:
+                model: survey.label
+                value: 'f) Não sabe'
+
+            QDH16_07_01_07:
+                model: survey.label
+                value: 'g) Não quis responder'
+
+            QDH16_07_01_08:
+                model: survey.label
+                value: 'h) Não se aplica'
+
+        QDH16_07_02:
+            model: survey.question
+            question: 'O(A) Sr.(a) tem ou teve o hábito de fumar?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Error Message.'
+            comments_allowed: True
+            comments_message: 'Esta questão precisa ser respondida.'
+
+            QDH16_07_02_01:
+                model: survey.label
+                value: 'a) Nunca fumou'
+
+            QDH16_07_02_02:
+                model: survey.label
+                value: 'b) Fuma atualmente'
+
+            QDH16_07_02_03:
+                model: survey.label
+                value: 'c) Já fumou, mas não fuma atualmente'
+
+            QDH16_07_02_04:
+                model: survey.label
+                value: 'd) Não sabe'
+
+            QDH16_07_02_05:
+                model: survey.label
+                value: 'e) Não quis responder'
+
+            QDH16_07_02_06:
+                model: survey.label
+                value: 'f) Não se aplica'
+
+        QDH16_07_03:
+            model: survey.question
+            question: 'Alguém na casa fuma?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_07_03_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_07_03_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_07_03_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_07_03_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_07_03_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_07_04:
+            model: survey.question
+            question: 'O(A) Sr. (a) tem o hábito de tomar bebidas alcoólicas?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se a resposta for diferente de "Não", especificar o tipo de bebida e a quantidade. Se for "Outra resposta", colocar também a resposta dada, além do tipo de bebida e quantidade).'
+
+            QDH16_07_04_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QDH16_07_04_02:
+                model: survey.label
+                value: 'b) Sim, esporadicamente (menos que 1 vez por mês)'
+
+            QDH16_07_04_03:
+                model: survey.label
+                value: 'c) Sim, 1 vez por mês'
+
+            QDH16_07_04_04:
+                model: survey.label
+                value: 'd) Sim, 1 vez por semana (ou em finais de semana)'
+
+            QDH16_07_04_05:
+                model: survey.label
+                value: 'e) Sim, todos os dias'
+
+            QDH16_07_04_06:
+                model: survey.label
+                value: 'f) Outra resposta'
+
+            QDH16_07_04_07:
+                model: survey.label
+                value: 'g) Não sabe'
+
+            QDH16_07_04_08:
+                model: survey.label
+                value: 'h) Não quis responder'
+
+            QDH16_07_04_09:
+                model: survey.label
+                value: 'i) Não se aplica'
+
+        QDH16_07_05:
+            model: survey.question
+            question: 'Nos últimos 30 dias, chegou a consumir 4 ou mais doses de bebida alcoólica em uma única ocasião? (4 doses seria equivalente a 4 latas de cerveja, 4 taças de vinho ou 4 doses de qualquer outra bebida alcoólica destilada)'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se a resposta for diferente de "Não", especificar o tipo de bebida e a quantidade. Se for "Outra resposta", colocar também a resposta dada, além do tipo de bebida e quantidade).'
+
+            QDH16_07_05_01:
+                model: survey.label
+                value: 'a) Não'
+
+            QDH16_07_05_02:
+                model: survey.label
+                value: 'b) Sim, em um único dia no mês'
+
+            QDH16_07_05_03:
+                model: survey.label
+                value: 'c) Sim, em 2 dias'
+
+            QDH16_07_05_04:
+                model: survey.label
+                value: 'd) Sim, em 4 dias'
+
+            QDH16_07_05_05:
+                model: survey.label
+                value: 'e) Sim, em 6 dias'
+
+            QDH16_07_05_06:
+                model: survey.label
+                value: 'f) Sim, todos os dias'
+
+            QDH16_07_05_07:
+                model: survey.label
+                value: 'g) Outra resposta'
+
+            QDH16_07_05_08:
+                model: survey.label
+                value: 'h) Não sabe'
+
+            QDH16_07_05_09:
+                model: survey.label
+                value: 'i) Não quis responder'
+
+            QDH16_07_05_10:
+                model: survey.label
+                value: 'j) Não se aplica'
+
+        QDH16_07_06:
+            model: survey.question
+            question: 'Pratica uma ou mais das atividades físicas abaixo?'
+            type: multiple_choice
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se outros, quais?'
+
+            QDH16_07_06_01:
+                model: survey.label
+                value: 'a) Não pratica nenhuma atividade'
+
+            QDH16_07_06_02:
+                model: survey.label
+                value: 'b) Atividades domésticas (faxina)'
+
+            QDH16_07_06_03:
+                model: survey.label
+                value: 'c) Atividades pesadas (lavoura/olaria)'
+
+            QDH16_07_06_04:
+                model: survey.label
+                value: 'd) Atividade específica com duração de 30 minutos ou mais (treina algum esporte, caminha, corre)'
+
+            QDH16_07_06_05:
+                model: survey.label
+                value: 'e) Outros'
+
+            QDH16_07_06_06:
+                model: survey.label
+                value: 'f) Não sabe'
+
+            QDH16_07_06_07:
+                model: survey.label
+                value: 'g) Não quis responder'
+
+            QDH16_07_06_08:
+                model: survey.label
+                value: 'h) Não se aplica'
+
+        QDH16_07_07:
+            model: survey.question
+            question: 'Se a resposta for diferente de "Não", especificar o tipo de bebida e a quantidade. Se for "Outra resposta", colocar também a resposta dada, além do tipo de bebida e quantidade).'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_07_07_01:
+                model: survey.label
+                value: 'a) 1 a 2 dias por semana'
+
+            QDH16_07_07_02:
+                model: survey.label
+                value: 'b) a 4 dias por semana'
+
+            QDH16_07_07_03:
+                model: survey.label
+                value: 'c) 5 a 6 dias por semana'
+
+            QDH16_07_07_04:
+                model: survey.label
+                value: 'd) Todos os dias'
+
+            QDH16_07_07_05:
+                model: survey.label
+                value: 'e) Não sabe'
+
+            QDH16_07_07_06:
+                model: survey.label
+                value: 'f) Não quis responder'
+
+            QDH16_07_07_07:
+                model: survey.label
+                value: 'g) Não se aplica'
+
+    QDH16_08:
+        model: survey.page
+        title: 'Hábitos Alimentares'
+        description: 'Descrição.'
+
+        QDH16_08_01:
+            model: survey.question
+            question: 'Você toma alguma das bebidas abaixo com açúcar?'
+            type: multiple_choice
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: True
+            comments_message: 'Se outra, especificar'
+
+            QDH16_08_01_01:
+                model: survey.label
+                value: 'a) Café ou Leite'
+
+            QDH16_08_01_02:
+                model: survey.label
+                value: 'b) Suco'
+
+            QDH16_08_01_03:
+                model: survey.label
+                value: 'c) Chá'
+
+            QDH16_08_01_04:
+                model: survey.label
+                value: 'd) Outra (especificar)'
+
+            QDH16_08_01_05:
+                model: survey.label
+                value: 'e) Não sabe'
+
+            QDH16_08_01_06:
+                model: survey.label
+                value: 'f) Não quis responder'
+
+            QDH16_08_01_07:
+                model: survey.label
+                value: 'g) Não se aplica'
+
+        QDH16_08_02:
+            model: survey.question
+            question: 'Utiliza tempero pronto? (Knorr, Sazon, etc.)?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_08_02_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_08_02_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_08_02_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_08_02_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_08_02_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_08_03:
+            model: survey.question
+            question: 'Costuma adicionar sal na comida, depois de pronta? (Tem saleiro na mesa?)'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_08_03_01:
+                model: survey.label
+                value: 'a) Sim'
+
+            QDH16_08_03_02:
+                model: survey.label
+                value: 'b) Não'
+
+            QDH16_08_03_03:
+                model: survey.label
+                value: 'c) Não sabe'
+
+            QDH16_08_03_04:
+                model: survey.label
+                value: 'd) Não quis responder'
+
+            QDH16_08_03_05:
+                model: survey.label
+                value: 'e) Não se aplica'
+
+        QDH16_08_04:
+            model: survey.question
+            question: 'Com que frequência consome fritura? (alimento submerso em óleo quente)?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_08_04_01:
+                model: survey.label
+                value: 'a) Não consome'
+
+            QDH16_08_04_02:
+                model: survey.label
+                value: 'b) 1 a 2x por semana'
+
+            QDH16_08_04_03:
+                model: survey.label
+                value: 'c) 3 a 4x por semana'
+
+            QDH16_08_04_04:
+                model: survey.label
+                value: 'd) 5 a 6x por semana'
+
+            QDH16_08_04_05:
+                model: survey.label
+                value: 'e) Todos os dias'
+
+            QDH16_08_04_06:
+                model: survey.label
+                value: 'f) Não sabe'
+
+            QDH16_08_04_07:
+                model: survey.label
+                value: 'g) Não quis responder'
+
+            QDH16_08_04_08:
+                model: survey.label
+                value: 'h) Não se aplica'
+
+        QDH16_08_05:
+            model: survey.question
+            question: 'Consome carne vermelha com gordura?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_08_05_01:
+                model: survey.label
+                value: 'a) Não consome carne vermelha'
+
+            QDH16_08_05_02:
+                model: survey.label
+                value: 'b) Retira o excesso de gordura'
+
+            QDH16_08_05_03:
+                model: survey.label
+                value: 'c) Consome com gordura'
+
+            QDH16_08_05_04:
+                model: survey.label
+                value: 'd) Não sabe'
+
+            QDH16_08_05_05:
+                model: survey.label
+                value: 'e) Não quis responder'
+
+            QDH16_08_05_06:
+                model: survey.label
+                value: 'f) Não se aplica'
+
+        QDH16_08_06:
+            model: survey.question
+            question: 'Consome frango/galinha com pele?'
+            type: simple_choice
+            display_mode: columns
+            column_nb: 12
+            constr_mandatory: True
+            constr_error_msg: 'Esta questão precisa ser respondida.'
+            comments_allowed: False
+            comments_message: ''
+
+            QDH16_08_06_01:
+                model: survey.label
+                value: 'a) Não consome frango/galinha'
+
+            QDH16_08_06_02:
+                model: survey.label
+                value: 'b) Retira o excesso de gordura'
+
+            QDH16_08_06_03:
+                model: survey.label
+                value: 'c) Consome com gordura'
+
+            QDH16_08_06_04:
+                model: survey.label
+                value: 'd) Não sabe'
+
+            QDH16_08_06_05:
+                model: survey.label
+                value: 'e) Não quis responder'
+
+            QDH16_08_06_06:
+                model: survey.label
+                value: 'f) Não se aplica'
+
+    QDH16_09:
+        model: survey.page
+        title: 'Hábitos Alimentares 2'
+        description: 'Descrição.'
+
+        QDH16_09_01:
+            model: survey.question
+            question: 'Consome qual dos itens abaixo e com que frequência na semana?'
+            type: matrix
+            matrix_subtype: simple
+            constr_mandatory: True
+            constr_error_msg: 'Preencher os alimentos que o paciente consome.'
+
+            QDH16_09_01_01:
+                model: survey.label.row
+                value: 'Frutas ou suco natural'
+
+            QDH16_09_01_02:
+                model: survey.label.row
+                value: 'Salada crua'
+
+            QDH16_09_01_03:
+                model: survey.label.row
+                value: 'Verduras e legumes cozidos'
+
+            QDH16_09_01_04:
+                model: survey.label.row
+                value: 'Arroz, pão, massas, farinha'
+
+            QDH16_09_01_05:
+                model: survey.label.row
+                value: 'Alimentos integrais (pão, macarrão ou arroz)'
+
+            QDH16_09_01_06:
+                model: survey.label.row
+                value: 'Feijão'
+
+            QDH16_09_01_07:
+                model: survey.label.row
+                value: 'Carne Vermelha'
+
+            QDH16_09_01_08:
+                model: survey.label.row
+                value: 'Miúdos'
+
+            QDH16_09_01_09:
+                model: survey.label.row
+                value: 'Embutidos'
+
+            QDH16_09_01_10:
+                model: survey.label.row
+                value: 'Frango'
+
+            QDH16_09_01_11:
+                model: survey.label.row
+                value: 'Peixe'
+
+            QDH16_09_01_12:
+                model: survey.label.row
+                value: 'Leite integral, queijo amarelo'
+
+            QDH16_09_01_13:
+                model: survey.label.row
+                value: 'Leite semi ou desnatado, queijo branco'
+
+            QDH16_09_01_14:
+                model: survey.label.row
+                value: 'Bolacha recheada, salgadinho, miojo'
+
+            QDH16_09_01_15:
+                model: survey.label.row
+                value: 'Margarina, manteiga, maionese'
+
+            QDH16_09_01_16:
+                model: survey.label.row
+                value: 'Refrigerante, suco de saquinho'
+
+            QDH16_09_01_17:
+                model: survey.label.row
+                value: 'Doces'
+
+            QDH16_09_01_18:
+                model: survey.label.col
+                value: '0 dias ou raramente'
+
+            QDH16_09_01_19:
+                model: survey.label.col
+                value: '1-2 dias'
+
+            QDH16_09_01_20:
+                model: survey.label.col
+                value: '3-4 dias'
+
+            QDH16_09_01_21:
+                model: survey.label.col
+                value: '5 ou mais dias'
+
+            QDH16_09_01_22:
+                model: survey.label.col
+                value: 'Não quis responder'
+
+            QDH16_09_01_23:
+                model: survey.label.col
+                value: 'Não sabe'
+
+            QDH16_09_01_24:
+                model: survey.label.col
+                value: 'Não se aplica'
+
