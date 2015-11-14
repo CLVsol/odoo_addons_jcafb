@@ -231,10 +231,6 @@ def survey_question(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, pa
 
     if _type_ == 'matrix':
 
-        # _display_mode_ = doc[key1][key2][key3]['display_mode']
-        # _column_nb_ = doc[key1][key2][key3]['column_nb']
-        # _comments_allowed_ = str(doc[key1][key2][key3]['comments_allowed'])
-        # _comments_message_ = doc[key1][key2][key3]['comments_message'].encode("utf-8")
         _matrix_subtype_ = str(doc[key1][key2][key3]['matrix_subtype'])
 
         yaml_out_file.write('        %s:\n' % (_id_))
@@ -242,12 +238,8 @@ def survey_question(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, pa
         yaml_out_file.write('            question: \'%s\'\n' % (_question_))
         yaml_out_file.write('            type: %s\n' % (_type_))
         yaml_out_file.write('            matrix_subtype: %s\n' % (_matrix_subtype_))
-        # yaml_out_file.write('            display_mode: %s\n' % (_display_mode_))
-        # yaml_out_file.write('            column_nb: %s\n' % (_column_nb_))
         yaml_out_file.write('            constr_mandatory: %s\n' % (_constr_mandatory_))
         yaml_out_file.write('            constr_error_msg: \'%s\'\n' % (_constr_error_msg_))
-        # yaml_out_file.write('            comments_allowed: %s\n' % (_comments_allowed_))
-        # yaml_out_file.write('            comments_message: \'%s\'\n' % (_comments_message_))
         yaml_out_file.write('\n')
 
         _question_ = '[' + _id_ + '] ' + _question_
@@ -262,12 +254,8 @@ def survey_question(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, pa
         xml_file.write('                    <field name="matrix_subtype">%s</field>\n' % (_matrix_subtype_))
         xml_file.write('                    <field name="page_id" ref="%s"/>\n' % (_page_id_))
         xml_file.write('                    <field name="sequence" eval="%s"/>\n' % (_sequence_))
-        # xml_file.write('                    <field name="display_mode">%s</field>\n' % (_display_mode_))
-        # xml_file.write('                    <field name="column_nb">%s</field>\n' % (_column_nb_))
         xml_file.write('                    <field name="constr_mandatory">%s</field>\n' % (_constr_mandatory_))
         xml_file.write('                    <field name="constr_error_msg">%s</field>\n' % (_constr_error_msg_))
-        # xml_file.write('                    <field name="comments_allowed">%s</field>\n' % (_comments_allowed_))
-        # xml_file.write('                    <field name="comments_message">%s</field>\n' % (_comments_message_))
         xml_file.write('                </record>\n')
         xml_file.write('\n')
 
