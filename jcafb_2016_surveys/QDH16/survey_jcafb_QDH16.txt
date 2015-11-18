@@ -1,30 +1,33 @@
 [QDH16] JCAFB 2016 - Questionário - Diabetes, Hipertensão Arterial e Hipercolesterolemia
     [QDH16_01] Preâmbulo
-        [QDH16_01_01] Identificação do Paciente (Nome)
+        [QDH16_01_01] Identificação do Questionário (Código)
             (textbox)
             ____________________________________
-        [QDH16_01_02] Identificação do Paciente (Código)
+        [QDH16_01_02] Identificação do Paciente (Nome)
             (textbox)
             ____________________________________
-        [QDH16_01_03] Identificação da Família (Nome)
+        [QDH16_01_03] Identificação do Paciente (Código)
             (textbox)
             ____________________________________
-        [QDH16_01_04] Identificação da Família (Código)
+        [QDH16_01_04] Identificação da Família (Nome)
             (textbox)
             ____________________________________
-        [QDH16_01_05] Aplicação do Questionário (Nome)
+        [QDH16_01_05] Identificação da Família (Código)
             (textbox)
             ____________________________________
-        [QDH16_01_06] Aplicação do Questionário (Código)
+        [QDH16_01_06] Aplicação do Questionário (Nome)
             (textbox)
             ____________________________________
-        [QDH16_01_07] Aplicação do Questionário (Data)
+        [QDH16_01_07] Aplicação do Questionário (Código)
+            (textbox)
+            ____________________________________
+        [QDH16_01_08] Aplicação do Questionário (Data)
             (datetime)
             ____________________________________
-        [QDH16_01_08] Entrevistador
+        [QDH16_01_09] Entrevistador
             (free_text)
             ____________________________________
-        [QDH16_01_09] Entrevistado
+        [QDH16_01_10] Entrevistado
             (simple_choice)
             a) Responsável
             b) Paciente

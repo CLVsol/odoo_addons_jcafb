@@ -14,61 +14,68 @@ QDH16:
 
         QDH16_01_01:
             model: survey.question
+            question: 'Identificação do Questionário (Código)'
+            type: textbox
+            constr_mandatory: True
+            constr_error_msg: 'Preencher o Código do Questionário.'
+
+        QDH16_01_02:
+            model: survey.question
             question: 'Identificação do Paciente (Nome)'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher o Nome do Paciente.'
 
-        QDH16_01_02:
+        QDH16_01_03:
             model: survey.question
             question: 'Identificação do Paciente (Código)'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher o Código do Paciente.'
 
-        QDH16_01_03:
+        QDH16_01_04:
             model: survey.question
             question: 'Identificação da Família (Nome)'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher o Nome da Família (se pertencer ao Projeto).'
 
-        QDH16_01_04:
+        QDH16_01_05:
             model: survey.question
             question: 'Identificação da Família (Código)'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher o Código da Família (se pertencer ao Projeto).'
 
-        QDH16_01_05:
+        QDH16_01_06:
             model: survey.question
             question: 'Aplicação do Questionário (Nome)'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher o Nome de quem aplicou o questionário.'
 
-        QDH16_01_06:
+        QDH16_01_07:
             model: survey.question
             question: 'Aplicação do Questionário (Código)'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher o Código de quem aplicou o questionário.'
 
-        QDH16_01_07:
+        QDH16_01_08:
             model: survey.question
             question: 'Aplicação do Questionário (Data)'
             type: datetime
             constr_mandatory: True
             constr_error_msg: 'Preencher a data de aplicação do questionário.'
 
-        QDH16_01_08:
+        QDH16_01_09:
             model: survey.question
             question: 'Entrevistador'
             type: free_text
             constr_mandatory: True
             constr_error_msg: 'Informar quem fez a entrevista.'
 
-        QDH16_01_09:
+        QDH16_01_10:
             model: survey.question
             question: 'Entrevistado'
             type: simple_choice
@@ -79,19 +86,19 @@ QDH16:
             comments_allowed: True
             comments_message: 'Nome e grau de parentesco do Responsável ou do Cuidador; se "Outro", especificar.'
 
-            QDH16_01_09_01:
+            QDH16_01_10_01:
                 model: survey.label
                 value: 'a) Responsável'
 
-            QDH16_01_09_02:
+            QDH16_01_10_02:
                 model: survey.label
                 value: 'b) Paciente'
 
-            QDH16_01_09_03:
+            QDH16_01_10_03:
                 model: survey.label
                 value: 'c) Cuidador'
 
-            QDH16_01_09_04:
+            QDH16_01_10_04:
                 model: survey.label
                 value: 'd) Outro'
 
