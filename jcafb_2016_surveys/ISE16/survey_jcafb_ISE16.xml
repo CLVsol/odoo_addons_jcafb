@@ -20,92 +20,102 @@
                 <field name="description">&lt;p&gt;[ISE16_01] Descrição.&lt;/p&gt;</field>
             </record>
 
-                <!-- [ISE16_01_01] Identificação do Paciente (Nome) -->
+                <!-- [ISE16_01_01] Identificação do Questionário (Código) -->
                 <record model="survey.question" id="ISE16_01_01">
-                    <field name="question">[ISE16_01_01] Identificação do Paciente (Nome)</field>
+                    <field name="question">[ISE16_01_01] Identificação do Questionário (Código)</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="ISE16_01"/>
                     <field name="sequence" eval="10"/>
                     <field name="constr_mandatory">True</field>
-                    <field name="constr_error_msg">Preencher o Nome do Paciente.</field>
+                    <field name="constr_error_msg">Preencher o Código do Questionário.</field>
                 </record>
 
-                <!-- [ISE16_01_02] Identificação do Paciente (Código) -->
+                <!-- [ISE16_01_02] Identificação do Paciente (Nome) -->
                 <record model="survey.question" id="ISE16_01_02">
-                    <field name="question">[ISE16_01_02] Identificação do Paciente (Código)</field>
+                    <field name="question">[ISE16_01_02] Identificação do Paciente (Nome)</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="ISE16_01"/>
                     <field name="sequence" eval="20"/>
                     <field name="constr_mandatory">True</field>
-                    <field name="constr_error_msg">Preencher o Código do Paciente.</field>
+                    <field name="constr_error_msg">Preencher o Nome do Paciente.</field>
                 </record>
 
-                <!-- [ISE16_01_03] Identificação da Família (Nome) -->
+                <!-- [ISE16_01_03] Identificação do Paciente (Código) -->
                 <record model="survey.question" id="ISE16_01_03">
-                    <field name="question">[ISE16_01_03] Identificação da Família (Nome)</field>
+                    <field name="question">[ISE16_01_03] Identificação do Paciente (Código)</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="ISE16_01"/>
                     <field name="sequence" eval="30"/>
                     <field name="constr_mandatory">True</field>
-                    <field name="constr_error_msg">Preencher o Nome da Família.</field>
+                    <field name="constr_error_msg">Preencher o Código do Paciente.</field>
                 </record>
 
-                <!-- [ISE16_01_04] Identificação da Família (Código) -->
+                <!-- [ISE16_01_04] Identificação da Família (Nome) -->
                 <record model="survey.question" id="ISE16_01_04">
-                    <field name="question">[ISE16_01_04] Identificação da Família (Código)</field>
+                    <field name="question">[ISE16_01_04] Identificação da Família (Nome)</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="ISE16_01"/>
                     <field name="sequence" eval="40"/>
                     <field name="constr_mandatory">True</field>
-                    <field name="constr_error_msg">Preencher o Código da Família.</field>
+                    <field name="constr_error_msg">Preencher o Nome da Família.</field>
                 </record>
 
-                <!-- [ISE16_01_05] Aplicação do Questionário (Nome) -->
+                <!-- [ISE16_01_05] Identificação da Família (Código) -->
                 <record model="survey.question" id="ISE16_01_05">
-                    <field name="question">[ISE16_01_05] Aplicação do Questionário (Nome)</field>
+                    <field name="question">[ISE16_01_05] Identificação da Família (Código)</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="ISE16_01"/>
                     <field name="sequence" eval="50"/>
                     <field name="constr_mandatory">True</field>
-                    <field name="constr_error_msg">Preencher o Nome de quem aplicou o questionário.</field>
+                    <field name="constr_error_msg">Preencher o Código da Família.</field>
                 </record>
 
-                <!-- [ISE16_01_06] Aplicação do Questionário (Código) -->
+                <!-- [ISE16_01_06] Aplicação do Questionário (Nome) -->
                 <record model="survey.question" id="ISE16_01_06">
-                    <field name="question">[ISE16_01_06] Aplicação do Questionário (Código)</field>
+                    <field name="question">[ISE16_01_06] Aplicação do Questionário (Nome)</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="ISE16_01"/>
                     <field name="sequence" eval="60"/>
                     <field name="constr_mandatory">True</field>
+                    <field name="constr_error_msg">Preencher o Nome de quem aplicou o questionário.</field>
+                </record>
+
+                <!-- [ISE16_01_07] Aplicação do Questionário (Código) -->
+                <record model="survey.question" id="ISE16_01_07">
+                    <field name="question">[ISE16_01_07] Aplicação do Questionário (Código)</field>
+                    <field name="type">textbox</field>
+                    <field name="page_id" ref="ISE16_01"/>
+                    <field name="sequence" eval="70"/>
+                    <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Preencher o Código de quem aplicou o questionário.</field>
                 </record>
 
-                <!-- [ISE16_01_07] Aplicação do Questionário (Data) -->
-                <record model="survey.question" id="ISE16_01_07">
-                    <field name="question">[ISE16_01_07] Aplicação do Questionário (Data)</field>
+                <!-- [ISE16_01_08] Aplicação do Questionário (Data) -->
+                <record model="survey.question" id="ISE16_01_08">
+                    <field name="question">[ISE16_01_08] Aplicação do Questionário (Data)</field>
                     <field name="type">datetime</field>
                     <field name="page_id" ref="ISE16_01"/>
-                    <field name="sequence" eval="70"/>
+                    <field name="sequence" eval="80"/>
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Preencher a data de aplicação do questionário.</field>
                 </record>
 
-                <!-- [ISE16_01_08] Entrevistador -->
-                <record model="survey.question" id="ISE16_01_08">
-                    <field name="question">[ISE16_01_08] Entrevistador</field>
+                <!-- [ISE16_01_09] Entrevistador -->
+                <record model="survey.question" id="ISE16_01_09">
+                    <field name="question">[ISE16_01_09] Entrevistador</field>
                     <field name="type">free_text</field>
                     <field name="page_id" ref="ISE16_01"/>
-                    <field name="sequence" eval="80"/>
+                    <field name="sequence" eval="90"/>
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Informar quem fez a entrevista.</field>
                 </record>
 
-                <!-- [ISE16_01_09] Entrevistado -->
-                <record model="survey.question" id="ISE16_01_09">
-                    <field name="question">[ISE16_01_09] Entrevistado</field>
+                <!-- [ISE16_01_10] Entrevistado -->
+                <record model="survey.question" id="ISE16_01_10">
+                    <field name="question">[ISE16_01_10] Entrevistado</field>
                     <field name="type">simple_choice</field>
                     <field name="page_id" ref="ISE16_01"/>
-                    <field name="sequence" eval="90"/>
+                    <field name="sequence" eval="100"/>
                     <field name="display_mode">columns</field>
                     <field name="column_nb">12</field>
                     <field name="constr_mandatory">True</field>
@@ -114,21 +124,21 @@
                     <field name="comments_message">Nome e, se a resposta for "Outro", especificar</field>
                 </record>
 
-                    <record model="survey.label" id="ISE16_01_09_01">
+                    <record model="survey.label" id="ISE16_01_10_01">
                         <field name="value">a) Paciente</field>
-                        <field name="question_id" ref="ISE16_01_09"/>
+                        <field name="question_id" ref="ISE16_01_10"/>
                         <field name="sequence" eval="10"/>
                     </record>
 
-                    <record model="survey.label" id="ISE16_01_09_02">
+                    <record model="survey.label" id="ISE16_01_10_02">
                         <field name="value">b) Cuidador</field>
-                        <field name="question_id" ref="ISE16_01_09"/>
+                        <field name="question_id" ref="ISE16_01_10"/>
                         <field name="sequence" eval="20"/>
                     </record>
 
-                    <record model="survey.label" id="ISE16_01_09_03">
+                    <record model="survey.label" id="ISE16_01_10_03">
                         <field name="value">c) Outro</field>
-                        <field name="question_id" ref="ISE16_01_09"/>
+                        <field name="question_id" ref="ISE16_01_10"/>
                         <field name="sequence" eval="30"/>
                     </record>
 
