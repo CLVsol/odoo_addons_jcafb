@@ -1,24 +1,27 @@
 [FSE16] JCAFB 2016 - Questionário Socioeconômico Familiar (Crianças e Idosos)
     [FSE16_01] Preâmbulo
-        [FSE16_01_01] Identificação da Família (Nome)
+        [FSE16_01_01] Identificação do Questionário (Código)
             (textbox)
             ____________________________________
-        [FSE16_01_02] Identificação da Família (Código)
+        [FSE16_01_02] Identificação da Família (Nome)
             (textbox)
             ____________________________________
-        [FSE16_01_03] Aplicação do Questionário (Nome)
+        [FSE16_01_03] Identificação da Família (Código)
             (textbox)
             ____________________________________
-        [FSE16_01_04] Aplicação do Questionário (Código)
+        [FSE16_01_04] Aplicação do Questionário (Nome)
             (textbox)
             ____________________________________
-        [FSE16_01_05] Aplicação do Questionário (Data)
+        [FSE16_01_05] Aplicação do Questionário (Código)
+            (textbox)
+            ____________________________________
+        [FSE16_01_06] Aplicação do Questionário (Data)
             (datetime)
             ____________________________________
-        [FSE16_01_06] Entrevistador
+        [FSE16_01_07] Entrevistador
             (free_text)
             ____________________________________
-        [FSE16_01_07] Entrevistado
+        [FSE16_01_08] Entrevistado
             (simple_choice)
             a) Responsável pela(s) Criança(s) da casa
             b) Paciente Idoso
