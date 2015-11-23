@@ -2,11 +2,13 @@
 <openerp>
     <data noupdate="1">
 
-        <record id="clv_tag.seq_clv_tag" model="ir.sequence">
+        <record id="clv_document.seq_clv_document" model="ir.sequence">
             <!--field name="padding" eval="9"/-->
             <!--field name="prefix">00000</field-->
             <field name="padding" eval="4"/>
-            <field name="prefix">01</field>
+            <field name="prefix">04</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
         </record>
 
     </data>

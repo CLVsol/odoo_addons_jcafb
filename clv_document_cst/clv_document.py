@@ -17,30 +17,12 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.        #
 ################################################################################
 
-{
-    'name': 'JCAF 2015 Surveys',
-    'version': '1.0',
-    'author': 'Carlos Eduardo Vercelino - CLVsol',
-    'category': 'Generic Modules/Others',
-    'license': 'AGPL-3',
-    'website': 'http://clvsol.com',
-    'description': '''
-This module will install all the JCAF 2015 surveys.
-    ''',
-    'depends': [
-        'clv_survey',
-        ],
-    'data': [
-        'clv_survey_jcafb_2015_data.xml',
-        #'clv_survey_jcafb_QSE15.xml',
-        'clv_survey_jcafb_FSE15.xml',
-        'clv_survey_jcafb_ISE15.xml',
-        'clv_survey_jcafb_CSE15.xml',
-        'clv_survey_jcafb_QMD15.xml',
-        'clv_survey_jcafb_QAN15.xml',
-        'clv_survey_jcafb_QDH15.xml',
-        ],
-    'test': [],
-    'installable': True,
-    'active': False,
-}
+from openerp import models
+
+
+class clv_document(models.Model):
+    _inherit = 'clv_document'
+
+    _defaults = {
+        'active_history': True,
+        }
