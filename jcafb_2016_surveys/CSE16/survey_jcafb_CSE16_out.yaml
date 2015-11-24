@@ -14,68 +14,54 @@ CSE16:
 
         CSE16_01_01:
             model: survey.question
-            question: 'Identificação do Questionário (Código)'
+            question: 'Código do Questionário (preencher somente após a validação das respostas):'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Código do Questionário.'
+            constr_error_msg: 'Preencher com o Código do Questionário.'
 
         CSE16_01_02:
             model: survey.question
-            question: 'Identificação da Criança (Nome)'
+            question: 'Data da Entrevista (yyyy-mm-dd):'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Nome da Criança.'
+            constr_error_msg: 'Preencher com a data da entrevista.'
 
         CSE16_01_03:
             model: survey.question
-            question: 'Identificação da Criança (Código)'
-            type: textbox
+            question: 'Códigos do(s) Entrevistador(es) (um em cada linha):'
+            type: free_text
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Código da Criança.'
+            constr_error_msg: 'Informar os Códigos quem fez a entrevista.'
 
         CSE16_01_04:
             model: survey.question
-            question: 'Identificação da Família (Nome)'
+            question: 'Nome da Criança:'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Nome da Família.'
+            constr_error_msg: 'Preencher com o Nome da Criança.'
 
         CSE16_01_05:
             model: survey.question
-            question: 'Identificação da Família (Código)'
+            question: 'Código da Criança:'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Código da Família.'
+            constr_error_msg: 'Preencher com o Código da Criança.'
 
         CSE16_01_06:
             model: survey.question
-            question: 'Aplicação do Questionário (Nome)'
+            question: 'Nome da Família'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Nome de quem aplicou o questionário.'
+            constr_error_msg: 'Preencher com o Nome da Família.'
 
         CSE16_01_07:
             model: survey.question
-            question: 'Aplicação do Questionário (Código)'
+            question: 'Código da Família'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Código de quem aplicou o questionário.'
+            constr_error_msg: 'Preencher com o Código da Família.'
 
         CSE16_01_08:
-            model: survey.question
-            question: 'Aplicação do Questionário (Data)'
-            type: datetime
-            constr_mandatory: True
-            constr_error_msg: 'Preencher a data de aplicação do questionário.'
-
-        CSE16_01_09:
-            model: survey.question
-            question: 'Entrevistador'
-            type: free_text
-            constr_mandatory: True
-            constr_error_msg: 'Informar quem fez a entrevista.'
-
-        CSE16_01_10:
             model: survey.question
             question: 'Entrevistado'
             type: simple_choice
@@ -86,15 +72,15 @@ CSE16:
             comments_allowed: True
             comments_message: 'Nome e grau de parentesco e, se a resposta for "Outro", especificar'
 
-            CSE16_01_10_01:
+            CSE16_01_08_01:
                 model: survey.label
                 value: 'a) Responsável'
 
-            CSE16_01_10_02:
+            CSE16_01_08_02:
                 model: survey.label
                 value: 'b) Cuidador'
 
-            CSE16_01_10_03:
+            CSE16_01_08_03:
                 model: survey.label
                 value: 'c) Outro (especificar)'
 

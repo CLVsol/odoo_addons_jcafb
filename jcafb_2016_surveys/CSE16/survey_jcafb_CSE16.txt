@@ -1,33 +1,27 @@
 [CSE16] JCAFB 2016 - Questionário Socioeconômico Individual (Crianças)
     [CSE16_01] Preâmbulo
-        [CSE16_01_01] Identificação do Questionário (Código)
+        [CSE16_01_01] Código do Questionário (preencher somente após a validação das respostas):
             (textbox)
             ____________________________________
-        [CSE16_01_02] Identificação da Criança (Nome)
+        [CSE16_01_02] Data da Entrevista (yyyy-mm-dd):
             (textbox)
             ____________________________________
-        [CSE16_01_03] Identificação da Criança (Código)
-            (textbox)
-            ____________________________________
-        [CSE16_01_04] Identificação da Família (Nome)
-            (textbox)
-            ____________________________________
-        [CSE16_01_05] Identificação da Família (Código)
-            (textbox)
-            ____________________________________
-        [CSE16_01_06] Aplicação do Questionário (Nome)
-            (textbox)
-            ____________________________________
-        [CSE16_01_07] Aplicação do Questionário (Código)
-            (textbox)
-            ____________________________________
-        [CSE16_01_08] Aplicação do Questionário (Data)
-            (datetime)
-            ____________________________________
-        [CSE16_01_09] Entrevistador
+        [CSE16_01_03] Códigos do(s) Entrevistador(es) (um em cada linha):
             (free_text)
             ____________________________________
-        [CSE16_01_10] Entrevistado
+        [CSE16_01_04] Nome da Criança:
+            (textbox)
+            ____________________________________
+        [CSE16_01_05] Código da Criança:
+            (textbox)
+            ____________________________________
+        [CSE16_01_06] Nome da Família
+            (textbox)
+            ____________________________________
+        [CSE16_01_07] Código da Família
+            (textbox)
+            ____________________________________
+        [CSE16_01_08] Entrevistado
             (simple_choice)
             a) Responsável
             b) Cuidador
