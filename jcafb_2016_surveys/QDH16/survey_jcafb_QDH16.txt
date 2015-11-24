@@ -386,7 +386,7 @@
             (simple_choice)
             a) Não consome frango/galinha
             b) Retira o excesso de gordura
-            c) Consome com gordura
+            c) Consome com pele
             d) Não sabe
             e) Não quis responder
             f) Não se aplica

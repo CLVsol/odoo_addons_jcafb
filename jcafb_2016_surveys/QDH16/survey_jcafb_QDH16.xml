@@ -2253,7 +2253,7 @@
                     </record>
 
                     <record model="survey.label" id="QDH16_08_06_03">
-                        <field name="value">c) Consome com gordura</field>
+                        <field name="value">c) Consome com pele</field>
                         <field name="question_id" ref="QDH16_08_06"/>
                         <field name="sequence" eval="30"/>
                     </record>
