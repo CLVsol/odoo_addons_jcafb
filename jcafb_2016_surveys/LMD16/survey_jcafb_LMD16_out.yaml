@@ -421,7 +421,7 @@ LMD16:
 
             LMD16_05_01_10:
                 model: survey.label
-                value: 'i) Não quiz responder'
+                value: 'i) Não quis responder'
 
     LMD16_06:
         model: survey.page
@@ -488,7 +488,7 @@ LMD16:
 
             LMD16_06_01_13:
                 model: survey.label
-                value: 'j) Não quiz responder'
+                value: 'j) Não quis responder'
 
     LMD16_07:
         model: survey.page
@@ -527,7 +527,7 @@ LMD16:
 
             LMD16_07_01_06:
                 model: survey.label
-                value: 'f) Não quiz responder'
+                value: 'f) Não quis responder'
 
         LMD16_07_02:
             model: survey.question
@@ -566,7 +566,7 @@ LMD16:
 
             LMD16_07_02_07:
                 model: survey.label
-                value: 'f) Não quiz responder'
+                value: 'f) Não quis responder'
 
     LMD16_08:
         model: survey.page
@@ -626,7 +626,7 @@ LMD16:
 
             LMD16_08_01_11:
                 model: survey.label
-                value: 'k) Não quiz responder'
+                value: 'k) Não quis responder'
 
         LMD16_08_02:
             model: survey.question
@@ -688,7 +688,7 @@ LMD16:
 
             LMD16_08_03_11:
                 model: survey.label
-                value: 'não quiz responder'
+                value: 'não quis responder'
 
         LMD16_08_04:
             model: survey.question
@@ -730,7 +730,7 @@ LMD16:
 
             LMD16_08_05_06:
                 model: survey.label
-                value: 'e) Não quiz responder.'
+                value: 'e) Não quis responder.'
 
         LMD16_08_06:
             model: survey.question
@@ -761,7 +761,7 @@ LMD16:
 
             LMD16_08_06_05:
                 model: survey.label
-                value: 'Não quiz responder'
+                value: 'Não quis responder'
 
         LMD16_08_07:
             model: survey.question
@@ -808,7 +808,7 @@ LMD16:
 
             LMD16_08_07_09:
                 model: survey.label
-                value: 'h) Não quiz responder'
+                value: 'h) Não quis responder'
 
         LMD16_08_08:
             model: survey.question
@@ -843,7 +843,7 @@ LMD16:
 
             LMD16_08_08_06:
                 model: survey.label
-                value: 'f) Não quiz responder'
+                value: 'f) Não quis responder'
 
         LMD16_08_09:
             model: survey.question
@@ -913,7 +913,7 @@ LMD16:
 
             LMD16_09_01_06:
                 model: survey.label
-                value: 'f) Não quiz responder'
+                value: 'f) Não quis responder'
 
         LMD16_09_02:
             model: survey.question

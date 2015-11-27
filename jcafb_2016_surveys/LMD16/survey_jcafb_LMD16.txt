@@ -126,7 +126,7 @@
             f) HC - Ribeirão Preto
             g) Outros
             h) Não sabe
-            i) Não quiz responder
+            i) Não quis responder
             Se "Outros", especificar____________________________________
     [LMD16_06] Motivo de Uso segundo o Paciente
         [LMD16_06_01] Para que o Sr.(a) acha tem que tomar/utilizar este medicamento?
@@ -143,7 +143,7 @@
             j) "Afinar o Sangue"
             k) Outros
             l) Não sabe
-            j) Não quiz responder
+            j) Não quis responder
             Em caso de outros, especifique:____________________________________
     [LMD16_07] Conservação do Medicament
         [LMD16_07_01] Onde guarda o Medicamento?
@@ -153,7 +153,7 @@
             c) Sala/Quarto
             d) Em outro lugar
             e) Não sabe
-            f) Não quiz responder
+            f) Não quis responder
             Se em outro lugar, especificar:____________________________________
         [LMD16_07_02] Como conserva o Medicamento?
             (simple_choice)
@@ -163,7 +163,7 @@
             d) Blíster inteiro
             e) Não se Aplica
             f) Não sabe
-            f) Não quiz responder
+            f) Não quis responder
     [LMD16_08] Como o paciente utiliza o Medicamento
         [LMD16_08_01] Via de Administração
             (simple_choice)
@@ -177,7 +177,7 @@
             i) outra
             j) Não se aplica
             k) Não sabe
-            k) Não quiz responder
+            k) Não quis responder
             Se "outra", especificar.____________________________________
         [LMD16_08_02] Dose:
             (textbox)
@@ -194,7 +194,7 @@
             outra
             não se aplica
             não sabe
-            não quiz responder
+            não quis responder
             Se "outra", especificar____________________________________
         [LMD16_08_04] Usa de quantas em quantas horas:
             (textbox)
@@ -206,7 +206,7 @@
             c) Usa somente em caso de necessidade (se dor, se febre, etc.)
             d) Não se aplica.
             e) Não sabe.
-            e) Não quiz responder.
+            e) Não quis responder.
             Em caso de Período Definido, por quanto tempo irá usar?____________________________________
         [LMD16_08_06] O Medicamento está sendo usado em jejum?
             (simple_choice)
@@ -214,7 +214,7 @@
             Não
             Não se Aplica
             Não sabe
-            Não quiz responder
+            Não quis responder
         [LMD16_08_07] O Medicamento está sendo usado em horário determinado?
             (simple_choice)
             a) Com as refeições
@@ -225,7 +225,7 @@
             f) Não
             g) Não se aplica
             h) Não sabe
-            h) Não quiz responder
+            h) Não quis responder
             Se "Outro", informar o horário determinado.____________________________________
         [LMD16_08_08] Há quanto tempo o Sr.(a) utiliza este medicamento?
             (simple_choice)
@@ -234,7 +234,7 @@
             c) Mais que 1 ano
             d) Não se aplica
             e) Não sabe
-            f) Não quiz responder
+            f) Não quis responder
             Comments____________________________________
         [LMD16_08_09] Comentários sobre o modo de uso pelo paciente:
             (free_text)
@@ -256,7 +256,7 @@
             c) 4 ou mais vezes
             d) Não se aplica
             e) Não sabe
-            f) Não quiz responder
+            f) Não quis responder
             Comentários:____________________________________
         [LMD16_09_02] Adere?
             (simple_choice)

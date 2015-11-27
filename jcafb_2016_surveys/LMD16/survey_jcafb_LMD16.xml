@@ -606,7 +606,7 @@
                     </record>
 
                     <record model="survey.label" id="LMD16_05_01_10">
-                        <field name="value">i) Não quiz responder</field>
+                        <field name="value">i) Não quis responder</field>
                         <field name="question_id" ref="LMD16_05_01"/>
                         <field name="sequence" eval="100"/>
                     </record>
@@ -705,7 +705,7 @@
                     </record>
 
                     <record model="survey.label" id="LMD16_06_01_13">
-                        <field name="value">j) Não quiz responder</field>
+                        <field name="value">j) Não quis responder</field>
                         <field name="question_id" ref="LMD16_06_01"/>
                         <field name="sequence" eval="130"/>
                     </record>
@@ -762,7 +762,7 @@
                     </record>
 
                     <record model="survey.label" id="LMD16_07_01_06">
-                        <field name="value">f) Não quiz responder</field>
+                        <field name="value">f) Não quis responder</field>
                         <field name="question_id" ref="LMD16_07_01"/>
                         <field name="sequence" eval="60"/>
                     </record>
@@ -818,7 +818,7 @@
                     </record>
 
                     <record model="survey.label" id="LMD16_07_02_07">
-                        <field name="value">f) Não quiz responder</field>
+                        <field name="value">f) Não quis responder</field>
                         <field name="question_id" ref="LMD16_07_02"/>
                         <field name="sequence" eval="70"/>
                     </record>
@@ -906,7 +906,7 @@
                     </record>
 
                     <record model="survey.label" id="LMD16_08_01_11">
-                        <field name="value">k) Não quiz responder</field>
+                        <field name="value">k) Não quis responder</field>
                         <field name="question_id" ref="LMD16_08_01"/>
                         <field name="sequence" eval="110"/>
                     </record>
@@ -996,7 +996,7 @@
                     </record>
 
                     <record model="survey.label" id="LMD16_08_03_11">
-                        <field name="value">não quiz responder</field>
+                        <field name="value">não quis responder</field>
                         <field name="question_id" ref="LMD16_08_03"/>
                         <field name="sequence" eval="110"/>
                     </record>
@@ -1056,7 +1056,7 @@
                     </record>
 
                     <record model="survey.label" id="LMD16_08_05_06">
-                        <field name="value">e) Não quiz responder.</field>
+                        <field name="value">e) Não quis responder.</field>
                         <field name="question_id" ref="LMD16_08_05"/>
                         <field name="sequence" eval="60"/>
                     </record>
@@ -1100,7 +1100,7 @@
                     </record>
 
                     <record model="survey.label" id="LMD16_08_06_05">
-                        <field name="value">Não quiz responder</field>
+                        <field name="value">Não quis responder</field>
                         <field name="question_id" ref="LMD16_08_06"/>
                         <field name="sequence" eval="50"/>
                     </record>
@@ -1168,7 +1168,7 @@
                     </record>
 
                     <record model="survey.label" id="LMD16_08_07_09">
-                        <field name="value">h) Não quiz responder</field>
+                        <field name="value">h) Não quis responder</field>
                         <field name="question_id" ref="LMD16_08_07"/>
                         <field name="sequence" eval="90"/>
                     </record>
@@ -1218,7 +1218,7 @@
                     </record>
 
                     <record model="survey.label" id="LMD16_08_08_06">
-                        <field name="value">f) Não quiz responder</field>
+                        <field name="value">f) Não quis responder</field>
                         <field name="question_id" ref="LMD16_08_08"/>
                         <field name="sequence" eval="60"/>
                     </record>
@@ -1318,7 +1318,7 @@
                     </record>
 
                     <record model="survey.label" id="LMD16_09_01_06">
-                        <field name="value">f) Não quiz responder</field>
+                        <field name="value">f) Não quis responder</field>
                         <field name="question_id" ref="LMD16_09_01"/>
                         <field name="sequence" eval="60"/>
                     </record>
