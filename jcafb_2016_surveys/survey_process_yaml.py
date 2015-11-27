@@ -113,7 +113,13 @@ def survey_question(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, pa
 
         txt_file.write('        %s\n' % (_question_))
         txt_file.write('            (%s)\n' % (_type_))
-        txt_file.write('            ' + '____________________________________\n')
+        if _type_ == 'free_text':
+            txt_file.write('            ' + '____________________________________\n' +
+                           '            ' + '____________________________________\n' +
+                           '            ' + '____________________________________\n' +
+                           '            ' + '____________________________________\n')
+        else:
+            txt_file.write('            ' + '____________________________________\n')
 
         xml_file.write('                <!-- %s -->\n' % (_question_))
         xml_file.write('                <record model="%s" id="%s">\n' % (_model_, _id_))
@@ -425,6 +431,13 @@ if __name__ == '__main__':
     yaml_out_filename = 'QMD16/survey_jcafb_QMD16_out.yaml'
     xml_filename = 'QMD16/survey_jcafb_QMD16.xml'
     txt_filename = 'QMD16/survey_jcafb_QMD16.txt'
+    print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
+    survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
+
+    yaml_filename = 'LMD16/survey_jcafb_LMD16.yaml'
+    yaml_out_filename = 'LMD16/survey_jcafb_LMD16_out.yaml'
+    xml_filename = 'LMD16/survey_jcafb_LMD16.xml'
+    txt_filename = 'LMD16/survey_jcafb_LMD16.txt'
     print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
     survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
 

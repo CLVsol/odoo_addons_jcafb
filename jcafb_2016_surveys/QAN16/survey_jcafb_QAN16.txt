@@ -1,62 +1,84 @@
 [QAN16] JCAFB 2016 - Questionário para detecção de Anemia
     [QAN16_01] Preâmbulo
-        [QAN16_01_01] Identificação do Questionário (Código)
+        [QAN16_01_01] Código do Questionário (preencher somente após a validação das respostas):
             (textbox)
             ____________________________________
-        [QAN16_01_02] Identificação do Paciente (Nome)
+        [QAN16_01_02] Data da Entrevista (yyyy-mm-dd):
             (textbox)
             ____________________________________
-        [QAN16_01_03] Identificação do Paciente (Código)
-            (textbox)
-            ____________________________________
-        [QAN16_01_04] Identificação da Família (Nome)
-            (textbox)
-            ____________________________________
-        [QAN16_01_05] Identificação da Família (Código)
-            (textbox)
-            ____________________________________
-        [QAN16_01_06] Aplicação do Questionário (Nome)
-            (textbox)
-            ____________________________________
-        [QAN16_01_07] Aplicação do Questionário (Código)
-            (textbox)
-            ____________________________________
-        [QAN16_01_08] Aplicação do Questionário (Data)
-            (datetime)
-            ____________________________________
-        [QAN16_01_09] Entrevistador
+        [QAN16_01_03] Códigos do(s) Entrevistador(es) (um em cada linha):
             (free_text)
             ____________________________________
-        [QAN16_01_10] Entrevistado
+            ____________________________________
+            ____________________________________
+            ____________________________________
+        [QAN16_01_04] Nome do Paciente:
+            (textbox)
+            ____________________________________
+        [QAN16_01_05] Código do Paciente:
+            (textbox)
+            ____________________________________
+        [QAN16_01_06] Nome da Família
+            (textbox)
+            ____________________________________
+        [QAN16_01_07] Código da Família
+            (textbox)
+            ____________________________________
+        [QAN16_01_08] Entrevistado
             (simple_choice)
             a) Responsável
             b) Paciente
             c) Cuidador
-            d) Outro
+            c) Outra pessoa (especificar)
             Nome e grau de parentesco do Responsável ou do Cuidador; se "Outro", especificar:____________________________________
-    [QAN16_02] Valores de Medições e Interpretação dos Resultados
-        [QAN16_02_05] Interpretação do Resultado de Hemoglobina (Wintrobe, 12ª ed., 2009)
+    [QAN16_02] Peso e Altura
+        [QAN16_02_01] Peso (kg):
+            (textbox)
+            ____________________________________
+        [QAN16_02_02] Responsável pela medida:
+            (textbox)
+            ____________________________________
+        [QAN16_02_03] Altura (cm):
+            (textbox)
+            ____________________________________
+        [QAN16_02_04] Responsável pela medida:
+            (textbox)
+            ____________________________________
+    [QAN16_03] Hemoglobina
+        [QAN16_03_01] Horário da coleta:
+            (textbox)
+            ____________________________________
+        [QAN16_03_02] Responsável pela coleta:
+            (textbox)
+            ____________________________________
+        [QAN16_03_03] Valor da Hemoglobina (g/dL):
+            (textbox)
+            ____________________________________
+        [QAN16_03_04] Responsável pela anállise:
+            (textbox)
+            ____________________________________
+        [QAN16_03_05] Interpretação do Resultado de Hemoglobina (Wintrobe, 12ª ed., 2009)
             (simple_choice)
             a) Normal
             b) Abaixo do normal (anemia)
             c) Acima do normal
             Observações:____________________________________
-    [QAN16_03] Histórico
-        [QAN16_03_01] Já realizou exame para diagnosticar Anemia?
+    [QAN16_04] Histórico
+        [QAN16_04_01] Já realizou exame para diagnosticar Anemia?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QAN16_03_02] Já teve Anemia diagnosticada?
+        [QAN16_04_02] Já teve Anemia diagnosticada?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QAN16_03_03] Se sim, o que fez para curar?
+        [QAN16_04_03] Se sim, o que fez para curar?
             (multiple_choice)
             a) Medicamentos
             b) Alimentação adequada
@@ -67,14 +89,14 @@
             g) Não quis responder
             h) Não se aplica
             Se "Outras medidas", especificar____________________________________
-        [QAN16_03_04] Ainda tem?
+        [QAN16_04_04] Ainda tem?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QAN16_03_05] Toma algum cuidado para evitar a Anemia?
+        [QAN16_04_05] Toma algum cuidado para evitar a Anemia?
             (multiple_choice)
             a) Consumo de feijão
             b) Consumo de verduras verde-escuras
@@ -86,8 +108,8 @@
             h) Não quis responder
             i) Não se aplica
             Se "Outro", especificar____________________________________
-    [QAN16_04] Alimentação
-        [QAN16_04_01] Alimentos que a criança consome (Alimentos ricos em Ferro, B12 e ácido fólico)
+    [QAN16_05] Alimentação
+        [QAN16_05_01] Alimentos que a criança consome (Alimentos ricos em Ferro, B12 e ácido fólico)
             (matrix, simple)
             [col]0 dias ou raramente
             [col]1-2 dias
@@ -102,7 +124,7 @@
             [row]Verduras e hortaliças verdes escuras (couve, brócolis, agrião, rúcula, escarola)
             [row]Carne branca (peixe, frango)
             [row]Miúdos (rim, coração)
-        [QAN16_04_02] Alimentos que a criança consome (Alimentos que interferem na absorção de Ferro)
+        [QAN16_05_02] Alimentos que a criança consome (Alimentos que interferem na absorção de Ferro)
             (matrix, simple)
             [col]0 dias ou raramente
             [col]1-2 dias

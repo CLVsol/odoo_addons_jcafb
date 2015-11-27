@@ -14,68 +14,54 @@ QMD16:
 
         QMD16_01_01:
             model: survey.question
-            question: 'Identificação do Questionário (Código)'
+            question: 'Código do Questionário (preencher somente após a validação das respostas):'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Código do Questionário.'
+            constr_error_msg: 'Preencher com o Código do Questionário.'
 
         QMD16_01_02:
             model: survey.question
-            question: 'Identificação do Paciente (Nome)'
+            question: 'Data da Entrevista (yyyy-mm-dd):'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Nome do Paciente.'
+            constr_error_msg: 'Preencher com a data da entrevista.'
 
         QMD16_01_03:
             model: survey.question
-            question: 'Identificação do Paciente (Código)'
-            type: textbox
+            question: 'Códigos do(s) Entrevistador(es) (um em cada linha):'
+            type: free_text
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Código do Paciente.'
+            constr_error_msg: 'Informar os Códigos quem fez a entrevista.'
 
         QMD16_01_04:
             model: survey.question
-            question: 'Identificação da Família (Nome)'
+            question: 'Nome do Paciente:'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Nome da Família.'
+            constr_error_msg: 'Preencher com o Nome do Paciente.'
 
         QMD16_01_05:
             model: survey.question
-            question: 'Identificação da Família (Código)'
+            question: 'Código do Paciente:'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Código da Família.'
+            constr_error_msg: 'Preencher com o Código do Paciente.'
 
         QMD16_01_06:
             model: survey.question
-            question: 'Aplicação do Questionário (Nome)'
+            question: 'Nome da Família'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Nome de quem aplicou o questionário.'
+            constr_error_msg: 'Preencher com o Nome da Família.'
 
         QMD16_01_07:
             model: survey.question
-            question: 'Aplicação do Questionário (Código)'
+            question: 'Código da Família'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Código de quem aplicou o questionário.'
+            constr_error_msg: 'Preencher com o Código da Família.'
 
         QMD16_01_08:
-            model: survey.question
-            question: 'Aplicação do Questionário (Data)'
-            type: datetime
-            constr_mandatory: True
-            constr_error_msg: 'Preencher a data de aplicação do questionário.'
-
-        QMD16_01_09:
-            model: survey.question
-            question: 'Entrevistador'
-            type: free_text
-            constr_mandatory: True
-            constr_error_msg: 'Informar quem fez a entrevista.'
-
-        QMD16_01_10:
             model: survey.question
             question: 'Entrevistado'
             type: simple_choice
@@ -86,15 +72,15 @@ QMD16:
             comments_allowed: True
             comments_message: 'Nome do Cuidador e, se a resposta for "Outro", especificar nome e grau de parentesco'
 
-            QMD16_01_10_01:
+            QMD16_01_08_01:
                 model: survey.label
                 value: 'a) Paciente'
 
-            QMD16_01_10_02:
+            QMD16_01_08_02:
                 model: survey.label
                 value: 'b) Cuidador'
 
-            QMD16_01_10_03:
+            QMD16_01_08_03:
                 model: survey.label
                 value: 'c) Outra pessoa (especificar)'
 
@@ -379,6 +365,6 @@ QMD16:
 
     QMD16_03:
         model: survey.page
-        title: 'Lista de todos os medicamentos que o paciente utilizou nos últimos 15 dias, incluindo as receitas que tiver.'
+        title: 'Lista de todos os medicamentos que o paciente utilizou nos últimos 15 dias, incluindo as receitas que tiver (Questionário de medicamento individual).'
         description: 'Preencher os medicamentos que o paciente utilizou.'
 

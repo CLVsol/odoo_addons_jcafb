@@ -14,56 +14,42 @@ FSE16:
 
         FSE16_01_01:
             model: survey.question
-            question: 'Identificação do Questionário (Código)'
+            question: 'Código do Questionário (preencher somente após a validação das respostas):'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Código do Questionário.'
+            constr_error_msg: 'Preencher com o Código do Questionário.'
 
         FSE16_01_02:
             model: survey.question
-            question: 'Identificação da Família (Nome)'
+            question: 'Data da Entrevista (yyyy-mm-dd):'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Nome da Família.'
+            constr_error_msg: 'Preencher com a data da entrevista.'
 
         FSE16_01_03:
             model: survey.question
-            question: 'Identificação da Família (Código)'
-            type: textbox
+            question: 'Códigos do(s) Entrevistador(es) (um em cada linha):'
+            type: free_text
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Código da Família.'
+            constr_error_msg: 'Informar os Códigos quem fez a entrevista.'
 
         FSE16_01_04:
             model: survey.question
-            question: 'Aplicação do Questionário (Nome)'
+            question: 'Nome da Família'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Nome de quem aplicou o questionário.'
+            constr_error_msg: 'Preencher com o Nome da Família.'
 
         FSE16_01_05:
             model: survey.question
-            question: 'Aplicação do Questionário (Código)'
+            question: 'Código da Família'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Preencher o Código de quem aplicou o questionário.'
+            constr_error_msg: 'Preencher com o Código da Família.'
 
         FSE16_01_06:
             model: survey.question
-            question: 'Aplicação do Questionário (Data)'
-            type: datetime
-            constr_mandatory: True
-            constr_error_msg: 'Preencher a data de aplicação do questionário.'
-
-        FSE16_01_07:
-            model: survey.question
-            question: 'Entrevistador'
-            type: free_text
-            constr_mandatory: True
-            constr_error_msg: 'Informar quem fez a entrevista.'
-
-        FSE16_01_08:
-            model: survey.question
-            question: 'Entrevistado'
+            question: 'Entrevistado:'
             type: simple_choice
             display_mode: columns
             column_nb: 12
@@ -72,19 +58,19 @@ FSE16:
             comments_allowed: True
             comments_message: 'Nome e grau de parentesco e, se a resposta for "Outro", especificar:'
 
-            FSE16_01_08_01:
+            FSE16_01_06_01:
                 model: survey.label
                 value: 'a) Responsável pela(s) Criança(s) da casa'
 
-            FSE16_01_08_02:
+            FSE16_01_06_02:
                 model: survey.label
                 value: 'b) Paciente Idoso'
 
-            FSE16_01_08_03:
+            FSE16_01_06_03:
                 model: survey.label
                 value: 'c) Cuidador (da(s) Criança(s) ou do(s) Idoso(s) da casa'
 
-            FSE16_01_08_04:
+            FSE16_01_06_04:
                 model: survey.label
                 value: 'd) Outro (especificar)'
 
