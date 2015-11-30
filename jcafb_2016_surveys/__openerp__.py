@@ -29,6 +29,8 @@ This module will install all the JCAF 2016 surveys.
     ''',
     'depends': [
         'survey',
+        'clv_document',
+        'clv_patient',
         ],
     'data': [
         # 'survey_jcafb_2016_data.xml',
@@ -39,6 +41,9 @@ This module will install all the JCAF 2016 surveys.
         'LMD16/survey_jcafb_LMD16.xml',
         'QAN16/survey_jcafb_QAN16.xml',
         'QDH16/survey_jcafb_QDH16.xml',
+        'clv_document_view.xml',
+        'clv_patient_view.xml',
+        'clv_family_view.xml',
         ],
     'test': [],
     'installable': True,

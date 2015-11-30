@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 ################################################################################
 #                                                                              #
-# Copyright (C) 2014-Today  Carlos Eduardo Vercelino - CLVsol                  #
+# Copyright (C) 2013-Today  Carlos Eduardo Vercelino - CLVsol                  #
 #                                                                              #
 # This program is free software: you can redistribute it and/or modify         #
 # it under the terms of the GNU Affero General Public License as published by  #
@@ -17,6 +17,15 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.        #
 ################################################################################
 
-import clv_document
-import clv_patient
-import clv_family
+from openerp import models, fields
+
+
+class clv_patient(models.Model):
+    _inherit = 'clv_patient'
+
+    # document_request_ids = fields.One2many('clv_document.patient',
+    #                                        'patient_id',
+    #                                        'Document Requests')
+    document_ids = fields.One2many('clv_document',
+                                   'patient_id',
+                                   'Documents')
