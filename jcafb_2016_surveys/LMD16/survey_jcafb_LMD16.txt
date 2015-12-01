@@ -1,5 +1,5 @@
 [LMD16] JCAFB 2016 - Lista de Medicamentos
-    [LMD16_01] Preâmbulo
+    [LMD16_01] Identificação do Questionário
         [LMD16_01_01] Código do Questionário (preencher somente após a validação das respostas):
             (textbox)
             ____________________________________
@@ -12,51 +12,52 @@
             ____________________________________
             ____________________________________
             ____________________________________
-        [LMD16_01_04] Nome do Paciente:
+    [LMD16_02] Identificação do Entrevistado
+        [LMD16_02_01] Nome do Paciente:
             (textbox)
             ____________________________________
-        [LMD16_01_05] Código do Paciente:
+        [LMD16_02_02] Código do Paciente:
             (textbox)
             ____________________________________
-        [LMD16_01_06] Nome da Família
+        [LMD16_02_03] Nome da Família
             (textbox)
             ____________________________________
-        [LMD16_01_07] Código da Família
+        [LMD16_02_04] Código da Família
             (textbox)
             ____________________________________
-        [LMD16_01_08] Entrevistado
+        [LMD16_02_05] Entrevistado
             (simple_choice)
             a) Paciente
             b) Cuidador
             c) Outra pessoa (especificar)
             Nome do Cuidador e, se a resposta for "Outro", especificar nome e grau de parentesco____________________________________
-    [LMD16_02] Medicamento
-        [LMD16_02_01] Nome do Medicamento:
+    [LMD16_03] Medicamento
+        [LMD16_03_01] Nome do Medicamento:
             (textbox)
             ____________________________________
-        [LMD16_02_02] Princípio Ativo:
+        [LMD16_03_02] Princípio Ativo:
             (textbox)
             ____________________________________
-        [LMD16_02_03] Consentração:
+        [LMD16_03_03] Concentração:
             (textbox)
             ____________________________________
-        [LMD16_02_04] Forma de Apresentação:
+        [LMD16_03_04] Forma de Apresentação:
             (textbox)
             ____________________________________
-        [LMD16_02_05] Laboratório:
+        [LMD16_03_05] Laboratório:
             (textbox)
             ____________________________________
-        [LMD16_02_06] Outras Informações:
+        [LMD16_03_06] Outras Informações:
             (textbox)
             ____________________________________
-    [LMD16_03] Validade da Receita 
-        [LMD16_03_01] Receita válida?
+    [LMD16_04] Validade da Receita 
+        [LMD16_04_01] Receita válida?
             (simple_choice)
             Sim
             Não
             Receita não apresentada
-    [LMD16_04] Como foi prescrito na receita?
-        [LMD16_04_01] Via de Administração
+    [LMD16_05] Como foi prescrito na receita?
+        [LMD16_05_01] Via de Administração
             (simple_choice)
             a) oral
             b) inalatória
@@ -68,10 +69,10 @@
             i) outra
             j) Não se aplica
             Se "outra", especificar.____________________________________
-        [LMD16_04_02] Dose:
+        [LMD16_05_02] Dose:
             (textbox)
             ____________________________________
-        [LMD16_04_03] Unidade da dose:
+        [LMD16_05_03] Unidade da dose:
             (simple_choice)
             g
             mg
@@ -83,22 +84,22 @@
             outra
             não se aplica
             Se "outra", especificar____________________________________
-        [LMD16_04_04] Usar de quantas em quantas horas:
+        [LMD16_05_04] Usar de quantas em quantas horas:
             (textbox)
             ____________________________________
-        [LMD16_04_05] Duração do Tratamento:
+        [LMD16_05_05] Duração do Tratamento:
             (simple_choice)
             a) Uso Contínuo
             b) Período Definido
             c) Uso somente em caso de necessidade (se dor, se febre, etc.)
             d) Não se aplica.
             Em caso de Período Definido, por quanto tempo?____________________________________
-        [LMD16_04_06] O Medicamento foi prescrito para uso em jejum?
+        [LMD16_05_06] O Medicamento foi prescrito para uso em jejum?
             (simple_choice)
             Sim
             Não
             Não se Aplica
-        [LMD16_04_07] Medicamento foi prescrito para uso em horário determinado?
+        [LMD16_05_07] Medicamento foi prescrito para uso em horário determinado?
             (simple_choice)
             a) Com as refeições
             b) De manhã
@@ -108,14 +109,14 @@
             f) Não
             g) Não se aplica
             Se "Outro", informar o horário determinado.____________________________________
-        [LMD16_04_08] Comentários sobre o modo de uso prescrito na receita:
+        [LMD16_05_08] Comentários sobre o modo de uso prescrito na receita:
             (free_text)
             ____________________________________
             ____________________________________
             ____________________________________
             ____________________________________
-    [LMD16_05] Local de Aquisição
-        [LMD16_05_01] Onde o Sr.(a) adquire esse medicamento?
+    [LMD16_06] Local de Aquisição
+        [LMD16_06_01] Onde o Sr.(a) adquire esse medicamento?
             (multiple_choice)
             a) Posto (UBS)
             b) Farmácia  Popular
@@ -128,8 +129,8 @@
             h) Não sabe
             i) Não quis responder
             Se "Outros", especificar____________________________________
-    [LMD16_06] Motivo de Uso segundo o Paciente
-        [LMD16_06_01] Para que o Sr.(a) acha tem que tomar/utilizar este medicamento?
+    [LMD16_07] Motivo de Uso segundo o Paciente
+        [LMD16_07_01] Para que o Sr.(a) acha tem que tomar/utilizar este medicamento?
             (multiple_choice)
             a) Hipertensão Arterial
             b) Diabetes
@@ -145,8 +146,8 @@
             l) Não sabe
             j) Não quis responder
             Em caso de outros, especifique:____________________________________
-    [LMD16_07] Conservação do Medicament
-        [LMD16_07_01] Onde guarda o Medicamento?
+    [LMD16_08] Conservação do Medicament
+        [LMD16_08_01] Onde guarda o Medicamento?
             (multiple_choice)
             a) Dentro da Geladeira
             b) Cozinha/Banheiro
@@ -155,7 +156,7 @@
             e) Não sabe
             f) Não quis responder
             Se em outro lugar, especificar:____________________________________
-        [LMD16_07_02] Como conserva o Medicamento?
+        [LMD16_08_02] Como conserva o Medicamento?
             (simple_choice)
             a) Fora do Blíster
             b) Blíster cortado nos potinhos das ACS
@@ -164,8 +165,8 @@
             e) Não se Aplica
             f) Não sabe
             f) Não quis responder
-    [LMD16_08] Como o paciente utiliza o Medicamento
-        [LMD16_08_01] Via de Administração
+    [LMD16_09] Como o paciente utiliza o Medicamento
+        [LMD16_09_01] Via de Administração
             (simple_choice)
             a) oral
             b) inalatória
@@ -179,10 +180,10 @@
             k) Não sabe
             k) Não quis responder
             Se "outra", especificar.____________________________________
-        [LMD16_08_02] Dose:
+        [LMD16_09_02] Dose:
             (textbox)
             ____________________________________
-        [LMD16_08_03] Unidade da dose:
+        [LMD16_09_03] Unidade da dose:
             (simple_choice)
             g
             mg
@@ -196,10 +197,10 @@
             não sabe
             não quis responder
             Se "outra", especificar____________________________________
-        [LMD16_08_04] Usa de quantas em quantas horas:
+        [LMD16_09_04] Usa de quantas em quantas horas:
             (textbox)
             ____________________________________
-        [LMD16_08_05] Duração do Tratamento:
+        [LMD16_09_05] Duração do Tratamento:
             (simple_choice)
             a) Usa continuamente
             b) Usa por período definido
@@ -208,14 +209,14 @@
             e) Não sabe.
             e) Não quis responder.
             Em caso de Período Definido, por quanto tempo irá usar?____________________________________
-        [LMD16_08_06] O Medicamento está sendo usado em jejum?
+        [LMD16_09_06] O Medicamento está sendo usado em jejum?
             (simple_choice)
             Sim
             Não
             Não se Aplica
             Não sabe
             Não quis responder
-        [LMD16_08_07] O Medicamento está sendo usado em horário determinado?
+        [LMD16_09_07] O Medicamento está sendo usado em horário determinado?
             (simple_choice)
             a) Com as refeições
             b) De manhã
@@ -227,7 +228,7 @@
             h) Não sabe
             h) Não quis responder
             Se "Outro", informar o horário determinado.____________________________________
-        [LMD16_08_08] Há quanto tempo o Sr.(a) utiliza este medicamento?
+        [LMD16_09_08] Há quanto tempo o Sr.(a) utiliza este medicamento?
             (simple_choice)
             a) Até 3 meses
             b) 3 meses a 1 ano
@@ -236,20 +237,20 @@
             e) Não sabe
             f) Não quis responder
             Comments____________________________________
-        [LMD16_08_09] Comentários sobre o modo de uso pelo paciente:
+        [LMD16_09_09] Comentários sobre o modo de uso pelo paciente:
             (free_text)
             ____________________________________
             ____________________________________
             ____________________________________
             ____________________________________
-        [LMD16_08_10] É condizente com o modo prescrito na receita?
+        [LMD16_09_10] É condizente com o modo prescrito na receita?
             (simple_choice)
             Sim
             Não
             Não se aplica
             Comentários:____________________________________
-    [LMD16_09] Adesão
-        [LMD16_09_01] Quantas vezes o Sr.(a) esqueceu de tomar este medicamento nos últimos 15 dias?
+    [LMD16_10] Adesão
+        [LMD16_10_01] Quantas vezes o Sr.(a) esqueceu de tomar este medicamento nos últimos 15 dias?
             (simple_choice)
             a) Nenhuma
             b) Até 3 vezes
@@ -258,23 +259,23 @@
             e) Não sabe
             f) Não quis responder
             Comentários:____________________________________
-        [LMD16_09_02] Adere?
+        [LMD16_10_02] Adere?
             (simple_choice)
             Sim
             Não
             Não é possível determinar
             Comentários____________________________________
-    [LMD16_10] Validade do Medicamento
-        [LMD16_10_01] O medicamento está dentro do prazo de validade?
+    [LMD16_11] Validade do Medicamento
+        [LMD16_11_01] O medicamento está dentro do prazo de validade?
             (simple_choice)
             Sim
             Não
             Não é possível determinar
             Commentários____________________________________
-    [LMD16_11] Conhecimento sobre indicação
-        [LMD16_11_01] Conhecimento sobre indicação?
+    [LMD16_12] Conhecimento sobre indicação
+        [LMD16_12_01] Conhecimento sobre indicação?
             (simple_choice)
             Sim
             Não
-            Não foi possível determlinar
+            Não foi possível determinar
             Comments____________________________________
