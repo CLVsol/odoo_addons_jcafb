@@ -1,5 +1,5 @@
 [QMD16] JCAFB 2016 - Questionário Medicamento
-    [QMD16_01] Preâmbulo
+    [QMD16_01] Identificação do Questionário
         [QMD16_01_01] Código do Questionário (preencher somente após a validação das respostas):
             (textbox)
             ____________________________________
@@ -12,26 +12,27 @@
             ____________________________________
             ____________________________________
             ____________________________________
-        [QMD16_01_04] Nome do Paciente:
+    [QMD16_02] Identificação do Entrevistado
+        [QMD16_02_01] Nome do Paciente:
             (textbox)
             ____________________________________
-        [QMD16_01_05] Código do Paciente:
+        [QMD16_02_02] Código do Paciente:
             (textbox)
             ____________________________________
-        [QMD16_01_06] Nome da Família
+        [QMD16_02_03] Nome da Família
             (textbox)
             ____________________________________
-        [QMD16_01_07] Código da Família
+        [QMD16_02_04] Código da Família
             (textbox)
             ____________________________________
-        [QMD16_01_08] Entrevistado
+        [QMD16_02_05] Entrevistado
             (simple_choice)
             a) Paciente
             b) Cuidador
             c) Outra pessoa (especificar)
             Nome do Cuidador e, se a resposta for "Outro", especificar nome e grau de parentesco____________________________________
-    [QMD16_02] Questionário
-        [QMD16_02_01] Quem administra os medicamentos do(a) Sr.(a)?
+    [QMD16_03] Questionário
+        [QMD16_03_01] Quem administra os medicamentos do(a) Sr.(a)?
             (multiple_choice)
             a) Cuidador não remunerado
             b) Cuidador remunerado
@@ -41,14 +42,14 @@
             f) Não quis responder
             g) Não se aplica
             Se outra pessoa, especificar____________________________________
-        [QMD16_02_02] Pratica automedicação?
+        [QMD16_03_02] Pratica automedicação?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QMD16_02_03] O(a) Sr.(a) tomou medicamentos, sem prescrição, nos últimos 15 dias?
+        [QMD16_03_03] O(a) Sr.(a) tomou medicamentos, sem prescrição, nos últimos 15 dias?
             (simple_choice)
             a) Não
             b) Sim (especificar)
@@ -56,7 +57,7 @@
             d) Não quis responder
             e) Não se aplica
             Se sim, especificar____________________________________
-        [QMD16_02_04] De modo geral, como o Sr.(a) identifica seus remédios? (Pode assinalar mais de uma alternativa)?
+        [QMD16_03_04] De modo geral, como o Sr.(a) identifica seus remédios? (Pode assinalar mais de uma alternativa)?
             (multiple_choice)
             a) Pelo tamanho
             b) Pela cor
@@ -69,7 +70,7 @@
             i) Não quis responder
             j) Não se aplica
             Se "Outro", especificar____________________________________
-        [QMD16_02_05] O(A) Sr.(a) utilizou algum chá ou alguma planta medicinal nos últimos 15 dias?
+        [QMD16_03_05] O(A) Sr.(a) utilizou algum chá ou alguma planta medicinal nos últimos 15 dias?
             (simple_choice)
             a) Não
             b) Sim (especificar)
@@ -77,25 +78,25 @@
             d) Não quis responder
             e) Não se aplica
             Se sim, especificar____________________________________
-        [QMD16_02_06] O idoso possui diagnóstico de hipertensão?
+        [QMD16_03_06] O idoso possui diagnóstico de hipertensão?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QMD16_02_07] O Sr.(a) às vezes esquece de tomar os seus remédios para pressão?
+        [QMD16_03_07] O Sr.(a) às vezes esquece de tomar os seus remédios para pressão?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QMD16_02_08] O Sr.(a) já parou de tomar seus remédios ou diminuiu a dose sem avisar seu médico porque se sentia pior quando os tomava?
+        [QMD16_03_08] O Sr.(a) já parou de tomar seus remédios ou diminuiu a dose sem avisar seu médico porque se sentia pior quando os tomava?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-    [QMD16_03] Lista de todos os medicamentos que o paciente utilizou nos últimos 15 dias, incluindo as receitas que tiver (Questionário de medicamento individual).
+    [QMD16_04] Lista de todos os medicamentos que o paciente utilizou nos últimos 15 dias, incluindo as receitas que tiver (Questionário de medicamento individual).
