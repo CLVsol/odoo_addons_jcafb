@@ -1,0 +1,51 @@
+[TID16] JCAFB 2016 - TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO PARA REALIZAÇÃO DE EXAME DE URINA, COPROPARASITOLÓGICO, DETECÇÃO DE ANEMIA E QUESTIONÁRIO SOCIOECONÔMICO
+    [TID16_01] Identificação do Termo de Consentimento
+        [TID16_01_01] Código do Termo de Consentimento (preencher somente após a validação do preenchimento):
+            (textbox)
+            ____________________________________
+        [TID16_01_02] Data da Assinatura (yyyy-mm-dd):
+            (textbox)
+            ____________________________________
+        [TID16_01_03] Código do Professor Responsável:
+            (textbox)
+            ____________________________________
+        [TID16_01_04] Códigos do(s) Coletor(es) (um em cada linha):
+            (free_text)
+            ____________________________________
+            ____________________________________
+            ____________________________________
+            ____________________________________
+    [TID16_02] Identificação do Indivíduo
+        [TID16_02_01] Nome do Indivíduo:
+            (textbox)
+            ____________________________________
+        [TID16_02_02] Código do Indivíduo:
+            (textbox)
+            ____________________________________
+        [TID16_02_03] Nome do Responsável Legal
+            (textbox)
+            ____________________________________
+        [TID16_02_04] Código do Responsável Legal
+            (textbox)
+            ____________________________________
+        [TID16_02_05] Quem assinou o Termo de Consentimento?
+            (simple_choice)
+            a) Indivíduo
+            b) Responsável Legal
+    [TID16_03] Termos
+        [TID16_03_01] Termo 1
+            (simple_choice)
+            Concordo em participar do Questionário Socioeconômico
+            Não concordo em participar do Questionário Socioeconômico
+        [TID16_03_02] Termo 2
+            (simple_choice)
+            Concordo em participar do Exame coproparasitológico
+            Não concordo em participar do Exame coproparasitológico
+        [TID16_03_03] Termo 3
+            (simple_choice)
+            Concordo em participar do Exame de urina
+            Não concordo em participar do Exame de urina
+        [TID16_03_04] Termo 4
+            (simple_choice)
+            Concordo em participar do Exame de anemia
+            Não concordo em participar do Exame de anemia
