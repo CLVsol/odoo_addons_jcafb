@@ -1,5 +1,5 @@
 [FSE16] JCAFB 2016 - Questionário Socioeconômico Familiar (Crianças e Idosos)
-    [FSE16_01] Preâmbulo
+    [FSE16_01] Identificação do Questionário
         [FSE16_01_01] Código do Questionário (preencher somente após a validação das respostas):
             (textbox)
             ____________________________________
@@ -12,21 +12,22 @@
             ____________________________________
             ____________________________________
             ____________________________________
-        [FSE16_01_04] Nome da Família
+    [FSE16_02] Identificação do Entrevistado
+        [FSE16_02_01] Nome da Família
             (textbox)
             ____________________________________
-        [FSE16_01_05] Código da Família
+        [FSE16_02_02] Código da Família
             (textbox)
             ____________________________________
-        [FSE16_01_06] Entrevistado:
+        [FSE16_02_03] Entrevistado:
             (simple_choice)
             a) Responsável pela(s) Criança(s) da casa
             b) Paciente Idoso
             c) Cuidador (da(s) Criança(s) ou do(s) Idoso(s) da casa
             d) Outro (especificar)
             Nome e grau de parentesco e, se a resposta for "Outro", especificar:____________________________________
-    [FSE16_02] Residência
-        [FSE16_02_01] Como é o banheiro da casa?
+    [FSE16_03] Residência
+        [FSE16_03_01] Como é o banheiro da casa?
             (simple_choice)
             a) Banheiro com rede de esgoto
             b) Banheiro que dá na fossa
@@ -35,7 +36,7 @@
             e) Não quis responder
             f) Não se aplica
             Se outro, como?____________________________________
-        [FSE16_02_02] A casa possui (preencher no caso de residência de idosos; se residência de crianças, escolher "Não se aplica"):
+        [FSE16_03_02] A casa possui (preencher no caso de residência de idosos; se residência de crianças, escolher "Não se aplica"):
             (multiple_choice)
             a) Degraus/desníveis
             b) Tapetes
@@ -46,15 +47,15 @@
             g) Não sabe
             h) Não quis responder
             i) Não se aplica
-    [FSE16_03] Horta
-        [FSE16_03_01] Plantam alguma coisa para consumo? (vende, come..)
+    [FSE16_04] Horta
+        [FSE16_04_01] Plantam alguma coisa para consumo? (vende, come..)
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [FSE16_03_02] Usam adubo?
+        [FSE16_04_02] Usam adubo?
             (multiple_choice)
             a) Não
             b) Sim, adubo orgânico com esterco
@@ -63,7 +64,7 @@
             e) Não sabe
             f) Não quis responder
             g) Não se aplica
-        [FSE16_03_03] Qual fonte de água é utilizada para irrigar a horta?
+        [FSE16_04_03] Qual fonte de água é utilizada para irrigar a horta?
             (simple_choice)
             a) Reservatório da prefeitura
             b) Outros (Poço, lagoa, córrego, cisterna, etc).
@@ -71,8 +72,8 @@
             d) Não quis responder
             e) Não se aplica
             Se outros, quais?____________________________________
-    [FSE16_04] Água
-        [FSE16_04_01] De onde vem a água da casa?
+    [FSE16_05] Água
+        [FSE16_05_01] De onde vem a água da casa?
             (simple_choice)
             a) Reservatório da prefeitura
             b) Outros (Poço, lagoa, córrego, cisterna, etc).
@@ -80,14 +81,14 @@
             d) Não quis responder
             e) Não se aplica
             Se outros, quais?____________________________________
-        [FSE16_04_02] Existe contato das pessoas da casa com o local de armazenamento?
+        [FSE16_05_02] Existe contato das pessoas da casa com o local de armazenamento?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [FSE16_04_03] Na falta de água, onde é obtida?
+        [FSE16_05_03] Na falta de água, onde é obtida?
             (simple_choice)
             a) Reservatório da prefeitura
             b) Outros (Poço, lagoa, córrego, cisterna, etc).
@@ -95,7 +96,7 @@
             d) Não quis responder
             e) Não se aplica
             Se outros, quais?____________________________________
-        [FSE16_04_04] Antes do consumo de água, é realizado algum dos tratamentos abaixo? (pode-se marcar mais de uma opção)
+        [FSE16_05_04] Antes do consumo de água, é realizado algum dos tratamentos abaixo? (pode-se marcar mais de uma opção)
             (multiple_choice)
             a) Filtração
             b) Fervura
@@ -106,8 +107,8 @@
             g) Não quis responder
             h) Não se aplica
             Se outros, quais?____________________________________
-    [FSE16_05] Alimentação / Animais
-        [FSE16_05_01] Criam animais de estimação?
+    [FSE16_06] Alimentação / Animais
+        [FSE16_06_01] Criam animais de estimação?
             (multiple_choice)
             a) Não criam
             b) Galinha
@@ -120,14 +121,14 @@
             i) Não quis responder
             j) Não se aplica
             Se outros, quais?____________________________________
-        [FSE16_05_02] Como são criados?
+        [FSE16_06_02] Como são criados?
             (simple_choice)
             a) Soltos (ou seja, vai pra rua, ou fora de cercados e chiqueiros)
             b) Presos
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [FSE16_05_03] Criam animais para a alimentação?
+        [FSE16_06_03] Criam animais para a alimentação?
             (multiple_choice)
             a) Não criam
             b) Galinha
@@ -139,14 +140,14 @@
             h) Não quis responder
             i) Não se aplica
             Se outros, quais?____________________________________
-        [FSE16_05_04] Como são criados?
+        [FSE16_06_04] Como são criados?
             (simple_choice)
             a) Soltos (ou seja, vai pra rua, ou fora de cercados e chiqueiros)
             b) Presos
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [FSE16_05_05] Costumam consumir carne proveniente de: (pode-se marcar mais de uma opção)
+        [FSE16_06_05] Costumam consumir carne proveniente de: (pode-se marcar mais de uma opção)
             (multiple_choice)
             a) Não consomem carne
             b) Criação própria
@@ -157,7 +158,7 @@
             g) Não quis responder
             h) Não se aplica
             Se outros, quais?____________________________________
-        [FSE16_05_06] Ao preparar os alimentos crus (pode-se marcar mais de uma opção), costumam:
+        [FSE16_06_06] Ao preparar os alimentos crus (pode-se marcar mais de uma opção), costumam:
             (multiple_choice)
             a) Lavar em água corrente
             b) Colocar de molho em água
@@ -168,15 +169,15 @@
             g) Não quis responder
             h) Não se aplica
             Se outros, quais?____________________________________
-    [FSE16_06] Medicamentos (geral)
-        [FSE16_06_01] Costumam tomar medicamentos sem receita médica?
+    [FSE16_07] Medicamentos (geral)
+        [FSE16_07_01] Costumam tomar medicamentos sem receita médica?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [FSE16_06_02] Possuem remédios na residência?
+        [FSE16_07_02] Possuem remédios na residência?
             (simple_choice)
             a) Não
             b) Sim
@@ -184,7 +185,7 @@
             d) Não quis responder
             e) Não se aplica
             Se outros, quais?____________________________________
-        [FSE16_06_03] De que modo adquirem os medicamentos que utilizam?
+        [FSE16_07_03] De que modo adquirem os medicamentos que utilizam?
             (multiple_choice)
             a) Farmácia
             b) Posto
@@ -193,7 +194,7 @@
             e) Não quis responder
             f) Não se aplica
             Se "Outro", especificar____________________________________
-        [FSE16_06_04] Onde guardam os remédios?
+        [FSE16_07_04] Onde guardam os remédios?
             (multiple_choice)
             a) Na cozinha
             b) No banheiro
@@ -203,7 +204,7 @@
             f) Não quis responder
             g) Não se aplica
             Se outros, onde?____________________________________
-        [FSE16_06_05] Como descartam os medicamentos?
+        [FSE16_07_05] Como descartam os medicamentos?
             (multiple_choice)
             a) Não descartam
             b) Lixo
@@ -216,7 +217,7 @@
             i) Não quis responder
             j) Não se aplica
             Se outros, quais?____________________________________
-        [FSE16_06_06] O que utilizam quando alguém tem diarreia?
+        [FSE16_07_06] O que utilizam quando alguém tem diarreia?
             (multiple_choice)
             a) Nada. Esperam passar
             b) Soro caseiro
@@ -226,22 +227,22 @@
             f) Não quis responder
             g) Não se aplica
             Se outros, quais?____________________________________
-        [FSE16_06_07] Conhecem o soro caseiro?
+        [FSE16_07_07] Conhecem o soro caseiro?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [FSE16_06_08] Sabem como preparar?
+        [FSE16_07_08] Sabem como preparar?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-    [FSE16_07] Parasitoses
-        [FSE16_07_01] Conhecem algum verme (parasitose)?
+    [FSE16_08] Parasitoses
+        [FSE16_08_01] Conhecem algum verme (parasitose)?
             (multiple_choice)
             a) Não
             b) Barriga d água, "xistose" (Esquistossomose)
@@ -253,14 +254,14 @@
             h) Não sabe
             i) Não quis responder
             j) Não se aplica
-        [FSE16_07_02] Sabem como se prevenir de pegar vermes?
+        [FSE16_08_02] Sabem como se prevenir de pegar vermes?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe responder
             d) Não quis responder
             e) Não se aplica
-        [FSE16_07_03] Alguém na casa já pegou verme? Qual?
+        [FSE16_08_03] Alguém na casa já pegou verme? Qual?
             (multiple_choice)
             a) Não
             b) Sim, mas não sabe qual verme
@@ -274,8 +275,8 @@
             j) Não sabe
             k) Não quis responder
             l) Não se aplica
-    [FSE16_08] Aspecto Econômico
-        [FSE16_08_01] Qual o valor do rendimento mensal familiar aproximado?
+    [FSE16_09] Aspecto Econômico
+        [FSE16_09_01] Qual o valor do rendimento mensal familiar aproximado?
             (simple_choice)
             a) Valor
             b) Não sabe

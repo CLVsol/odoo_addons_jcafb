@@ -4,13 +4,13 @@ QAN16:
     stage_id: survey.stage_in_progress
     auth_required: False
     users_can_go_back: True
-    description: 'Description.'
-    thank_you_message: 'Thank you message.'
+    description: ''
+    thank_you_message: 'Obrigado por sua participação.'
 
     QAN16_01:
         model: survey.page
-        title: 'Preâmbulo'
-        description: 'Descrição.'
+        title: 'Identificação do Questionário'
+        description: ''
 
         QAN16_01_01:
             model: survey.question
@@ -33,35 +33,40 @@ QAN16:
             constr_mandatory: True
             constr_error_msg: 'Informar os Códigos quem fez a entrevista.'
 
-        QAN16_01_04:
+    QAN16_02:
+        model: survey.page
+        title: 'Identificação do Entrevistado'
+        description: ''
+
+        QAN16_02_01:
             model: survey.question
             question: 'Nome do Paciente:'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher com o Nome do Paciente.'
 
-        QAN16_01_05:
+        QAN16_02_02:
             model: survey.question
             question: 'Código do Paciente:'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher com o Código do Paciente.'
 
-        QAN16_01_06:
+        QAN16_02_03:
             model: survey.question
             question: 'Nome da Família'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher com o Nome da Família.'
 
-        QAN16_01_07:
+        QAN16_02_04:
             model: survey.question
             question: 'Código da Família'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher com o Código da Família.'
 
-        QAN16_01_08:
+        QAN16_02_05:
             model: survey.question
             question: 'Entrevistado'
             type: simple_choice
@@ -70,91 +75,91 @@ QAN16:
             constr_mandatory: True
             constr_error_msg: 'Informar quem respondeu ao questionário.'
             comments_allowed: True
-            comments_message: 'Nome e grau de parentesco do Responsável ou do Cuidador; se "Outro", especificar:'
+            comments_message: 'Nome e grau de parentesco do Responsável ou do Cuidador; se "Outra Pessoa", especificar:'
 
-            QAN16_01_08_01:
+            QAN16_02_05_01:
                 model: survey.label
                 value: 'a) Responsável'
 
-            QAN16_01_08_02:
+            QAN16_02_05_02:
                 model: survey.label
                 value: 'b) Paciente'
 
-            QAN16_01_08_03:
+            QAN16_02_05_03:
                 model: survey.label
                 value: 'c) Cuidador'
 
-            QAN16_01_08_04:
+            QAN16_02_05_04:
                 model: survey.label
-                value: 'c) Outra pessoa (especificar)'
+                value: 'd) Outra Pessoa (especificar)'
 
-    QAN16_02:
+    QAN16_03:
         model: survey.page
         title: 'Peso e Altura'
-        description: 'Descrição.'
+        description: ''
 
-        QAN16_02_01:
+        QAN16_03_01:
             model: survey.question
             question: 'Peso (kg):'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Informar o peso do paciente (kg).'
 
-        QAN16_02_02:
+        QAN16_03_02:
             model: survey.question
             question: 'Responsável pela medida:'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Informar o código do responsável pela medida do peso.'
 
-        QAN16_02_03:
+        QAN16_03_03:
             model: survey.question
             question: 'Altura (cm):'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Informar a altura do paciente (cm).'
 
-        QAN16_02_04:
+        QAN16_03_04:
             model: survey.question
             question: 'Responsável pela medida:'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Informar o código do responsável pela medida da altura.'
 
-    QAN16_03:
+    QAN16_04:
         model: survey.page
         title: 'Hemoglobina'
-        description: 'Descrição.'
+        description: ''
 
-        QAN16_03_01:
+        QAN16_04_01:
             model: survey.question
             question: 'Horário da coleta:'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Informar o horário em que foi feita a coleta.'
 
-        QAN16_03_02:
+        QAN16_04_02:
             model: survey.question
             question: 'Responsável pela coleta:'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Informar o código do responsável pela coleta.'
 
-        QAN16_03_03:
+        QAN16_04_03:
             model: survey.question
             question: 'Valor da Hemoglobina (g/dL):'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Informar o valor da hemoglobina (g/dL) do paciente.'
 
-        QAN16_03_04:
+        QAN16_04_04:
             model: survey.question
             question: 'Responsável pela anállise:'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Informar o código do responsável pela análise.'
 
-        QAN16_03_05:
+        QAN16_04_05:
             model: survey.question
             question: 'Interpretação do Resultado de Hemoglobina (Wintrobe, 12ª ed., 2009)'
             type: simple_choice
@@ -165,24 +170,24 @@ QAN16:
             comments_allowed: True
             comments_message: 'Observações:'
 
-            QAN16_03_05_01:
+            QAN16_04_05_01:
                 model: survey.label
                 value: 'a) Normal'
 
-            QAN16_03_05_02:
+            QAN16_04_05_02:
                 model: survey.label
                 value: 'b) Abaixo do normal (anemia)'
 
-            QAN16_03_05_03:
+            QAN16_04_05_03:
                 model: survey.label
                 value: 'c) Acima do normal'
 
-    QAN16_04:
+    QAN16_05:
         model: survey.page
         title: 'Histórico'
-        description: 'Descrição.'
+        description: ''
 
-        QAN16_04_01:
+        QAN16_05_01:
             model: survey.question
             question: 'Já realizou exame para diagnosticar Anemia?'
             type: simple_choice
@@ -193,27 +198,27 @@ QAN16:
             comments_allowed: False
             comments_message: ''
 
-            QAN16_04_01_01:
+            QAN16_05_01_01:
                 model: survey.label
                 value: 'a) Não'
 
-            QAN16_04_01_02:
+            QAN16_05_01_02:
                 model: survey.label
                 value: 'b) Sim'
 
-            QAN16_04_01_03:
+            QAN16_05_01_03:
                 model: survey.label
                 value: 'c) Não sabe'
 
-            QAN16_04_01_04:
+            QAN16_05_01_04:
                 model: survey.label
                 value: 'd) Não quis responder'
 
-            QAN16_04_01_05:
+            QAN16_05_01_05:
                 model: survey.label
                 value: 'e) Não se aplica'
 
-        QAN16_04_02:
+        QAN16_05_02:
             model: survey.question
             question: 'Já teve Anemia diagnosticada?'
             type: simple_choice
@@ -224,27 +229,27 @@ QAN16:
             comments_allowed: False
             comments_message: ''
 
-            QAN16_04_02_01:
+            QAN16_05_02_01:
                 model: survey.label
                 value: 'a) Não'
 
-            QAN16_04_02_02:
+            QAN16_05_02_02:
                 model: survey.label
                 value: 'b) Sim'
 
-            QAN16_04_02_03:
+            QAN16_05_02_03:
                 model: survey.label
                 value: 'c) Não sabe'
 
-            QAN16_04_02_04:
+            QAN16_05_02_04:
                 model: survey.label
                 value: 'd) Não quis responder'
 
-            QAN16_04_02_05:
+            QAN16_05_02_05:
                 model: survey.label
                 value: 'e) Não se aplica'
 
-        QAN16_04_03:
+        QAN16_05_03:
             model: survey.question
             question: 'Se sim, o que fez para curar?'
             type: multiple_choice
@@ -254,39 +259,39 @@ QAN16:
             comments_allowed: True
             comments_message: 'Se "Outras medidas", especificar'
 
-            QAN16_04_03_01:
+            QAN16_05_03_01:
                 model: survey.label
                 value: 'a) Medicamentos'
 
-            QAN16_04_03_02:
+            QAN16_05_03_02:
                 model: survey.label
                 value: 'b) Alimentação adequada'
 
-            QAN16_04_03_03:
+            QAN16_05_03_03:
                 model: survey.label
                 value: 'c) Vitaminas'
 
-            QAN16_04_03_04:
+            QAN16_05_03_04:
                 model: survey.label
                 value: 'd) Outras medidas'
 
-            QAN16_04_03_05:
+            QAN16_05_03_05:
                 model: survey.label
                 value: 'e) Nada'
 
-            QAN16_04_03_06:
+            QAN16_05_03_06:
                 model: survey.label
                 value: 'f) Não sabe'
 
-            QAN16_04_03_07:
+            QAN16_05_03_07:
                 model: survey.label
                 value: 'g) Não quis responder'
 
-            QAN16_04_03_08:
+            QAN16_05_03_08:
                 model: survey.label
                 value: 'h) Não se aplica'
 
-        QAN16_04_04:
+        QAN16_05_04:
             model: survey.question
             question: 'Ainda tem?'
             type: simple_choice
@@ -297,27 +302,27 @@ QAN16:
             comments_allowed: False
             comments_message: ''
 
-            QAN16_04_04_01:
+            QAN16_05_04_01:
                 model: survey.label
                 value: 'a) Não'
 
-            QAN16_04_04_02:
+            QAN16_05_04_02:
                 model: survey.label
                 value: 'b) Sim'
 
-            QAN16_04_04_03:
+            QAN16_05_04_03:
                 model: survey.label
                 value: 'c) Não sabe'
 
-            QAN16_04_04_04:
+            QAN16_05_04_04:
                 model: survey.label
                 value: 'd) Não quis responder'
 
-            QAN16_04_04_05:
+            QAN16_05_04_05:
                 model: survey.label
                 value: 'e) Não se aplica'
 
-        QAN16_04_05:
+        QAN16_05_05:
             model: survey.question
             question: 'Toma algum cuidado para evitar a Anemia?'
             type: multiple_choice
@@ -327,164 +332,164 @@ QAN16:
             comments_allowed: True
             comments_message: 'Se "Outro", especificar'
 
-            QAN16_04_05_01:
+            QAN16_05_05_01:
                 model: survey.label
                 value: 'a) Consumo de feijão'
 
-            QAN16_04_05_02:
+            QAN16_05_05_02:
                 model: survey.label
                 value: 'b) Consumo de verduras verde-escuras'
 
-            QAN16_04_05_03:
+            QAN16_05_05_03:
                 model: survey.label
                 value: 'c) Consumo de frutas'
 
-            QAN16_04_05_04:
+            QAN16_05_05_04:
                 model: survey.label
                 value: 'd) Consumo de carne vermelha'
 
-            QAN16_04_05_05:
+            QAN16_05_05_05:
                 model: survey.label
                 value: 'e) Outro (especificar) '
 
-            QAN16_04_05_06:
+            QAN16_05_05_06:
                 model: survey.label
                 value: 'f) Não toma nenhum cuidado'
 
-            QAN16_04_05_07:
+            QAN16_05_05_07:
                 model: survey.label
                 value: 'g) Não sabe'
 
-            QAN16_04_05_08:
+            QAN16_05_05_08:
                 model: survey.label
                 value: 'h) Não quis responder'
 
-            QAN16_04_05_09:
+            QAN16_05_05_09:
                 model: survey.label
                 value: 'i) Não se aplica'
 
-    QAN16_05:
+    QAN16_06:
         model: survey.page
         title: 'Alimentação'
-        description: 'Descrição.'
+        description: ''
 
-        QAN16_05_01:
+        QAN16_06_01:
             model: survey.question
-            question: 'Alimentos que a criança consome (Alimentos ricos em Ferro, B12 e ácido fólico)'
+            question: 'Alimentos que o paciente consome (Alimentos ricos em Ferro, B12 e ácido fólico)'
             type: matrix
             matrix_subtype: simple
             constr_mandatory: True
-            constr_error_msg: 'Preencher os alimentos que a criança consome.'
+            constr_error_msg: 'Preencher os alimentos que o paciente consome.'
 
-            QAN16_05_01_01:
+            QAN16_06_01_01:
                 model: survey.label.col
                 value: '0 dias ou raramente'
 
-            QAN16_05_01_02:
+            QAN16_06_01_02:
                 model: survey.label.col
                 value: '1-2 dias'
 
-            QAN16_05_01_03:
+            QAN16_06_01_03:
                 model: survey.label.col
                 value: '3-4 dias'
 
-            QAN16_05_01_04:
+            QAN16_06_01_04:
                 model: survey.label.col
                 value: '5 ou mais dias'
 
-            QAN16_05_01_05:
+            QAN16_06_01_05:
                 model: survey.label.col
                 value: 'Não quis responder'
 
-            QAN16_05_01_06:
+            QAN16_06_01_06:
                 model: survey.label.col
                 value: 'Não sabe'
 
-            QAN16_05_01_07:
+            QAN16_06_01_07:
                 model: survey.label.col
                 value: 'Não se aplica'
 
-            QAN16_05_01_08:
+            QAN16_06_01_08:
                 model: survey.label.row
                 value: 'Feijão (leguminosas)'
 
-            QAN16_05_01_09:
+            QAN16_06_01_09:
                 model: survey.label.row
                 value: 'Fígado de boi'
 
-            QAN16_05_01_10:
+            QAN16_06_01_10:
                 model: survey.label.row
                 value: 'Carnes vermelhas'
 
-            QAN16_05_01_11:
+            QAN16_06_01_11:
                 model: survey.label.row
                 value: 'Verduras e hortaliças verdes escuras (couve, brócolis, agrião, rúcula, escarola)'
 
-            QAN16_05_01_12:
+            QAN16_06_01_12:
                 model: survey.label.row
                 value: 'Carne branca (peixe, frango)'
 
-            QAN16_05_01_13:
+            QAN16_06_01_13:
                 model: survey.label.row
                 value: 'Miúdos (rim, coração)'
 
-        QAN16_05_02:
+        QAN16_06_02:
             model: survey.question
-            question: 'Alimentos que a criança consome (Alimentos que interferem na absorção de Ferro)'
+            question: 'Alimentos que o paciente consome (Alimentos que interferem na absorção de Ferro)'
             type: matrix
             matrix_subtype: simple
             constr_mandatory: True
-            constr_error_msg: 'Preencher os alimentos que a criança consome.'
+            constr_error_msg: 'Preencher os alimentos que o paciente consome.'
 
-            QAN16_05_02_01:
+            QAN16_06_02_01:
                 model: survey.label.col
                 value: '0 dias ou raramente'
 
-            QAN16_05_02_02:
+            QAN16_06_02_02:
                 model: survey.label.col
                 value: '1-2 dias'
 
-            QAN16_05_02_03:
+            QAN16_06_02_03:
                 model: survey.label.col
                 value: '3-4 dias'
 
-            QAN16_05_02_04:
+            QAN16_06_02_04:
                 model: survey.label.col
                 value: '5 ou mais dias'
 
-            QAN16_05_02_05:
+            QAN16_06_02_05:
                 model: survey.label.col
                 value: 'Não quis responder'
 
-            QAN16_05_02_06:
+            QAN16_06_02_06:
                 model: survey.label.col
                 value: 'Não sabe'
 
-            QAN16_05_02_07:
+            QAN16_06_02_07:
                 model: survey.label.col
                 value: 'Não se aplica'
 
-            QAN16_05_02_08:
+            QAN16_06_02_08:
                 model: survey.label.row
                 value: 'Suco de limão, laranja, acerola, junto da refeição'
 
-            QAN16_05_02_09:
+            QAN16_06_02_09:
                 model: survey.label.row
                 value: 'Laranja, após a refeição'
 
-            QAN16_05_02_10:
+            QAN16_06_02_10:
                 model: survey.label.row
                 value: 'Leite e queijo (laticínios)'
 
-            QAN16_05_02_11:
+            QAN16_06_02_11:
                 model: survey.label.row
                 value: 'Espinafre'
 
-            QAN16_05_02_12:
+            QAN16_06_02_12:
                 model: survey.label.row
                 value: 'Café'
 
-            QAN16_05_02_13:
+            QAN16_06_02_13:
                 model: survey.label.row
                 value: 'Refrigerante a base de cola'
 

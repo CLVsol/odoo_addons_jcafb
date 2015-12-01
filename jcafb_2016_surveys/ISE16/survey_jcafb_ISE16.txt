@@ -1,5 +1,5 @@
 [ISE16] JCAFB 2016 - Questionário Socioeconômico Individual (Idosos)
-    [ISE16_01] Preâmbulo
+    [ISE16_01] Identificação do Questionário
         [ISE16_01_01] Código do Questionário (preencher somente após a validação das respostas):
             (textbox)
             ____________________________________
@@ -12,26 +12,27 @@
             ____________________________________
             ____________________________________
             ____________________________________
-        [ISE16_01_04] Nome do Paciente:
+    [ISE16_02] Identificação do Entrevistado
+        [ISE16_02_01] Nome do Paciente:
             (textbox)
             ____________________________________
-        [ISE16_01_05] Código do Paciente:
+        [ISE16_02_02] Código do Paciente:
             (textbox)
             ____________________________________
-        [ISE16_01_06] Nome da Família
+        [ISE16_02_03] Nome da Família
             (textbox)
             ____________________________________
-        [ISE16_01_07] Código da Família
+        [ISE16_02_04] Código da Família
             (textbox)
             ____________________________________
-        [ISE16_01_08] Entrevistado
+        [ISE16_02_05] Entrevistado
             (simple_choice)
             a) Paciente
             b) Cuidador
             c) Outro
             Nome e, se a resposta for "Outro", especificar____________________________________
-    [ISE16_02] Aspectos Sociais
-        [ISE16_02_01] Qual a relação de parentesco do cuidador com o(a) Sr.(a)?
+    [ISE16_03] Aspectos Sociais
+        [ISE16_03_01] Qual a relação de parentesco do cuidador com o(a) Sr.(a)?
             (multiple_choice)
             a) Não possui Cuidador
             b) Filho
@@ -44,7 +45,7 @@
             i) Não quis responder
             j) Não se aplica
             Se outro familiar, qual a relação de parentesco?____________________________________
-        [ISE16_02_02] Tempo de Escolaridade do cuidador
+        [ISE16_03_02] Tempo de Escolaridade do cuidador
             (simple_choice)
             a) 0 anos
             b) 1 a 3 anos
@@ -54,7 +55,7 @@
             f) Não sabe
             g) Não quis responder
             h) Não se aplica
-        [ISE16_02_03] O(A) Sr.(a) é:
+        [ISE16_03_03] O(A) Sr.(a) é:
             (simple_choice)
             a) Solteiro(a)
             b) Casado(a) ou unido(a)
@@ -64,7 +65,7 @@
             f) Não sabe
             g) Não quis responder
             h) Não se aplica
-        [ISE16_02_04] Quem mora com o Sr(a) na sua casa? (além do idoso)
+        [ISE16_03_04] Quem mora com o Sr(a) na sua casa? (além do idoso)
             (multiple_choice)
             a) Ninguém. Moro sozinho.
             b) Familiar - esposa 
@@ -75,14 +76,14 @@
             g) Não quis responder
             h) Não se aplica
             Especificar quando necessário____________________________________
-        [ISE16_02_05] O Sr(a) tem filhos?
+        [ISE16_03_05] O Sr(a) tem filhos?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [ISE16_02_06] Escolaridade do paciente ("Qual a última série (e de que grau) da escola que o Sr.(a) obteve aprovação?")
+        [ISE16_03_06] Escolaridade do paciente ("Qual a última série (e de que grau) da escola que o Sr.(a) obteve aprovação?")
             (simple_choice)
             a) É analfabeto
             b) Não é analfabeto, mas não frequentou a escola
@@ -98,14 +99,14 @@
             l) Não sabe
             m) Não quis responder
             n) Não se aplica
-        [ISE16_02_07] O(A) Sr.(a) sabe ler e escrever um recado?
+        [ISE16_03_07] O(A) Sr.(a) sabe ler e escrever um recado?
             (simple_choice)
             a) Não
             b) Sim
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [ISE16_02_08] Qual destas opções o(a) descreve melhor:
+        [ISE16_03_08] Qual destas opções o(a) descreve melhor:
             (simple_choice)
             a) Branco(a)
             b) Negro(a)
@@ -117,7 +118,7 @@
             h) Não quis responder
             i) Não se aplica
             Se outro, qual?____________________________________
-        [ISE16_02_09] Qual é a sua religião?
+        [ISE16_03_09] Qual é a sua religião?
             (simple_choice)
             a) Católica Apostólica Romana
             b) Evangélica
@@ -130,8 +131,8 @@
             i) Não quis responder
             j) Não se aplica
             Se outra, qual?____________________________________
-    [ISE16_03] Hábitos
-        [ISE16_03_01] O que costuma fazer no tempo livre?
+    [ISE16_04] Hábitos
+        [ISE16_04_01] O que costuma fazer no tempo livre?
             (multiple_choice)
             a) Caminha pela cidade
             b) Pratica exercícios físicos
@@ -145,7 +146,7 @@
             j) Não quis responder
             k) Não se aplica
             Se outra atividade, qual?____________________________________
-        [ISE16_03_02] O(A) Sr.(a) realiza alguma atividade ou ocupação que não seja remunerada?
+        [ISE16_04_02] O(A) Sr.(a) realiza alguma atividade ou ocupação que não seja remunerada?
             (simple_choice)
             a) Sim. Qual
             b) Não
@@ -153,7 +154,7 @@
             d) Não quis responder
             e) Não se aplica
             Se realiza, qual?____________________________________
-        [ISE16_03_03] Com que frequência caminha ou pratica exercícios?
+        [ISE16_04_03] Com que frequência caminha ou pratica exercícios?
             (simple_choice)
             a) 1x por semana
             b) 2x por semana
@@ -166,7 +167,7 @@
             i) Não sabe
             j) Não quis responder
             k) Não se aplica
-        [ISE16_03_04] O(A) Sr.(a) tem ou teve o hábito de fumar?
+        [ISE16_04_04] O(A) Sr.(a) tem ou teve o hábito de fumar?
             (simple_choice)
             a) Nunca fumou
             b) Fuma atualmente
@@ -174,7 +175,7 @@
             d) Não sabe
             e) Não quis responder
             f) Não se aplica
-        [ISE16_03_05] O(A) Sr. (a) tem o hábito de tomar bebidas alcoólicas?
+        [ISE16_04_05] O(A) Sr. (a) tem o hábito de tomar bebidas alcoólicas?
             (simple_choice)
             a) Não
             b) Sim, esporadicamente (menos que 1 vez por mês)
@@ -186,8 +187,8 @@
             h) Não quis responder
             i) Não se aplica
             Se a resposta for diferente de "Não", especificar o tipo de bebida e a quantidade. Se for "Outra resposta", colocar também a resposta dada, além do tipo de bebida e quantidade).____________________________________
-    [ISE16_04] Saúde
-        [ISE16_04_01] Tem alguma dificuldade para:
+    [ISE16_05] Saúde
+        [ISE16_05_01] Tem alguma dificuldade para:
             (multiple_choice)
             a) Falar
             b) Engolir
@@ -201,7 +202,7 @@
             j) Não quis responder
             k) Não se aplica
             Se outras, quais?____________________________________
-        [ISE16_04_02] O(A) Sr.(a) diria que sua saúde é:
+        [ISE16_05_02] O(A) Sr.(a) diria que sua saúde é:
             (simple_choice)
             a) Muito boa
             b) Boa
@@ -211,7 +212,7 @@
             f) Não sabe
             g) Não quis responder
             h) Não se aplica
-        [ISE16_04_03] Comparando sua saúde de hoje com a de 12 meses atrás, o(a) Sr.(a) diria que agora a sua saúde é
+        [ISE16_05_03] Comparando sua saúde de hoje com a de 12 meses atrás, o(a) Sr.(a) diria que agora a sua saúde é
             (simple_choice)
             a) Melhor
             b) Igual
@@ -219,8 +220,8 @@
             d) Não sabe
             e) Não quis responder
             f) Não se aplica
-    [ISE16_05] Médico
-        [ISE16_05_01] Que motivo(s) o leva(m) a procurar atendimento médico?
+    [ISE16_06] Médico
+        [ISE16_06_01] Que motivo(s) o leva(m) a procurar atendimento médico?
             (multiple_choice)
             a) Somente quando está doente
             b) Realizam tratamento
@@ -231,7 +232,7 @@
             g) Não quis responder
             h) Não se aplica
             Se outros, quais?____________________________________
-        [ISE16_05_02] Nos últimos 12 meses, visitou o médico frequentemente (todo mês)?
+        [ISE16_06_02] Nos últimos 12 meses, visitou o médico frequentemente (todo mês)?
             (simple_choice)
             a) Sim
             b) Não
@@ -239,7 +240,7 @@
             d) Não quis responder
             e) Não se aplica
             Se não, quantas vezes?____________________________________
-        [ISE16_05_03] Nos últimos 12 meses, quantas vezes o(a) Sr.(a) esteve internado?
+        [ISE16_06_03] Nos últimos 12 meses, quantas vezes o(a) Sr.(a) esteve internado?
             (simple_choice)
             a) Nenhuma 
             b) 1 a 2 vezes
@@ -251,7 +252,7 @@
             h) Não quis responder
             i) Não se aplica
             Se a resposta for "Outra resposta", especificar____________________________________
-        [ISE16_05_04] O Sr. (a) teve alguma queda depois que completou 60 anos?
+        [ISE16_06_04] O Sr. (a) teve alguma queda depois que completou 60 anos?
             (simple_choice)
             a) Não
             b) Sim
@@ -259,7 +260,7 @@
             d) Não quis responder
             e) Não se aplica
             Se sim, quantas vezes?____________________________________
-        [ISE16_05_05] Alguma vez um médico lhe disse que tem alguma doença?
+        [ISE16_06_05] Alguma vez um médico lhe disse que tem alguma doença?
             (simple_choice)
             a) Não
             b) Sim
@@ -267,8 +268,8 @@
             d) Não quis responder
             e) Não se aplica
             Se sim, quais?____________________________________
-    [ISE16_06] Alimentação
-        [ISE16_06_01] Como o Sr(a) costuma consumir a carne?
+    [ISE16_07] Alimentação
+        [ISE16_07_01] Como o Sr(a) costuma consumir a carne?
             (simple_choice)
             a) Não consome carne
             b) Bem passada
@@ -276,8 +277,8 @@
             d) Não sabe
             e) Não quis responder
             f) Não se aplica
-    [ISE16_07] Parasitoses
-        [ISE16_07_01] O Sr(a) já fez exame de fezes?
+    [ISE16_08] Parasitoses
+        [ISE16_08_01] O Sr(a) já fez exame de fezes?
             (multiple_choice)
             a) Não
             b) Sim, resultado negativo para verme
@@ -287,7 +288,7 @@
             f) Não quis responder
             g) Não se aplica
             Qual verme?____________________________________
-        [ISE16_07_02] Como descobriu que estava com a doença?
+        [ISE16_08_02] Como descobriu que estava com a doença?
             (multiple_choice)
             a) Com resultado de exame de fezes
             b) Saiu nas fezes
@@ -297,7 +298,7 @@
             f) Não quis responder
             g) Não se aplica
             Se outros, quais?____________________________________
-        [ISE16_07_03] Já tomou vermífugo (lombrigueira)?
+        [ISE16_08_03] Já tomou vermífugo (lombrigueira)?
             (simple_choice)
             a) Não
             b) Sim, há seis meses ou menos e "botou" verme
@@ -307,8 +308,8 @@
             f) Não sabe
             g) Não quis responder
             h) Não se aplica
-    [ISE16_08] Aspecto Econômico
-        [ISE16_08_01] O(A) Sr.(a) trabalha?
+    [ISE16_09] Aspecto Econômico
+        [ISE16_09_01] O(A) Sr.(a) trabalha?
             (simple_choice)
             a) Não (e não é aposentado)
             b) Não. É aposentado
@@ -316,7 +317,7 @@
             d) Não sabe
             e) Não quis responder
             f) Não se aplica
-        [ISE16_08_02] O(A) Sr.(a) trabalha (remunerado) atualmente?
+        [ISE16_09_02] O(A) Sr.(a) trabalha (remunerado) atualmente?
             (simple_choice)
             a) Não
             b) Sim
@@ -324,7 +325,7 @@
             d) Não quis responder
             e) Não se aplica
             Qual?____________________________________
-        [ISE16_08_03] Qual o valor do(s) seu(s) rendimento(s) mensal(ais) aproximado(s) (independente do rendimento familiar)?
+        [ISE16_09_03] Qual o valor do(s) seu(s) rendimento(s) mensal(ais) aproximado(s) (independente do rendimento familiar)?
             (simple_choice)
             a) Valor
             b) Não sabe

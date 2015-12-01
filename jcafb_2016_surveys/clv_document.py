@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 ################################################################################
 #                                                                              #
-# Copyright (C) 2014-Today  Carlos Eduardo Vercelino - CLVsol                  #
+# Copyright (C) 2013-Today  Carlos Eduardo Vercelino - CLVsol                  #
 #                                                                              #
 # This program is free software: you can redistribute it and/or modify         #
 # it under the terms of the GNU Affero General Public License as published by  #
@@ -17,6 +17,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.        #
 ################################################################################
 
-import clv_document
-import clv_patient
-import clv_family
+from openerp import models, fields
+
+
+class clv_document(models.Model):
+    _inherit = 'clv_document'
+
+    survey_id = fields.Many2one('survey.survey', 'Survey Type', help="Survey Type")
+    survey_user_input_id = fields.Many2one('survey.user_input', 'Survey User Input', help="Survey User Input")
+    patient_id = fields.Many2one('clv_patient', 'Patient', help="Patient")
+    family_id = fields.Many2one('clv_family', 'Family', help="Family")
