@@ -92,7 +92,7 @@ ISE16:
     ISE16_03:
         model: survey.page
         title: 'Aspectos Sociais'
-        description: 'Aspectos Sociais'
+        description: ''
 
         ISE16_03_01:
             model: survey.question

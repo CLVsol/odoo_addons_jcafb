@@ -379,7 +379,7 @@ def survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_file
 
     xml_file.write('<?xml version="1.0" encoding="utf-8"?>\n')
     xml_file.write('<openerp>\n')
-    xml_file.write('    <data noupdate="1">\n')
+    xml_file.write('    <data noupdate="0">\n')
     xml_file.write('\n')
 
     for key1 in sorted(doc.keys()):
