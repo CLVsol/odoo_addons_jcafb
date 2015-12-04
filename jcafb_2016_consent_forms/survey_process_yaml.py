@@ -406,52 +406,24 @@ if __name__ == '__main__':
 
     print '--> Executing survey_process_yaml.py ...'
 
-    yaml_filename = 'FSE16/survey_jcafb_FSE16.yaml'
-    yaml_out_filename = 'FSE16/survey_jcafb_FSE16_out.yaml'
-    xml_filename = 'FSE16/survey_jcafb_FSE16.xml'
-    txt_filename = 'FSE16/survey_jcafb_FSE16.txt'
+    yaml_filename = 'TCP16/survey_jcafb_TCP16.yaml'
+    yaml_out_filename = 'TCP16/survey_jcafb_TCP16_out.yaml'
+    xml_filename = 'TCP16/survey_jcafb_TCP16.xml'
+    txt_filename = 'TCP16/survey_jcafb_TCP16.txt'
     print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
     survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
 
-    yaml_filename = 'ISE16/survey_jcafb_ISE16.yaml'
-    yaml_out_filename = 'ISE16/survey_jcafb_ISE16_out.yaml'
-    xml_filename = 'ISE16/survey_jcafb_ISE16.xml'
-    txt_filename = 'ISE16/survey_jcafb_ISE16.txt'
+    yaml_filename = 'TCR16/survey_jcafb_TCR16.yaml'
+    yaml_out_filename = 'TCR16/survey_jcafb_TCR16_out.yaml'
+    xml_filename = 'TCR16/survey_jcafb_TCR16.xml'
+    txt_filename = 'TCR16/survey_jcafb_TCR16.txt'
     print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
     survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
 
-    yaml_filename = 'CSE16/survey_jcafb_CSE16.yaml'
-    yaml_out_filename = 'CSE16/survey_jcafb_CSE16_out.yaml'
-    xml_filename = 'CSE16/survey_jcafb_CSE16.xml'
-    txt_filename = 'CSE16/survey_jcafb_CSE16.txt'
-    print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
-    survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
-
-    yaml_filename = 'QMD16/survey_jcafb_QMD16.yaml'
-    yaml_out_filename = 'QMD16/survey_jcafb_QMD16_out.yaml'
-    xml_filename = 'QMD16/survey_jcafb_QMD16.xml'
-    txt_filename = 'QMD16/survey_jcafb_QMD16.txt'
-    print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
-    survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
-
-    yaml_filename = 'LMD16/survey_jcafb_LMD16.yaml'
-    yaml_out_filename = 'LMD16/survey_jcafb_LMD16_out.yaml'
-    xml_filename = 'LMD16/survey_jcafb_LMD16.xml'
-    txt_filename = 'LMD16/survey_jcafb_LMD16.txt'
-    print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
-    survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
-
-    yaml_filename = 'QAN16/survey_jcafb_QAN16.yaml'
-    yaml_out_filename = 'QAN16/survey_jcafb_QAN16_out.yaml'
-    xml_filename = 'QAN16/survey_jcafb_QAN16.xml'
-    txt_filename = 'QAN16/survey_jcafb_QAN16.txt'
-    print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
-    survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
-
-    yaml_filename = 'QDH16/survey_jcafb_QDH16.yaml'
-    yaml_out_filename = 'QDH16/survey_jcafb_QDH16_out.yaml'
-    xml_filename = 'QDH16/survey_jcafb_QDH16.xml'
-    txt_filename = 'QDH16/survey_jcafb_QDH16.txt'
+    yaml_filename = 'TID16/survey_jcafb_TID16.yaml'
+    yaml_out_filename = 'TID16/survey_jcafb_TID16_out.yaml'
+    xml_filename = 'TID16/survey_jcafb_TID16.xml'
+    txt_filename = 'TID16/survey_jcafb_TID16.txt'
     print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
     survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
 

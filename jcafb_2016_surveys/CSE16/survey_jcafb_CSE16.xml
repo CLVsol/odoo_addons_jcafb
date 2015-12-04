@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-    <data noupdate="1">
+    <data noupdate="0">
 
         <!-- [CSE16] JCAFB 2016 - Questionário Socioeconômico Individual (Crianças) -->
         <record model="survey.survey" id="CSE16">
