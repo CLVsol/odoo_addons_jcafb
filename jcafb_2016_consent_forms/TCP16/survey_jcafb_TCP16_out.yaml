@@ -38,7 +38,7 @@ TCP16:
             question: 'Códigos do(s) Coletor(es) (um em cada linha):'
             type: free_text
             constr_mandatory: True
-            constr_error_msg: 'Informar os Códigos quem colheu a assinatura.'
+            constr_error_msg: 'Informar os Códigos de quem colheu a assinatura do Termo.'
 
     TCP16_02:
         model: survey.page
@@ -99,7 +99,7 @@ TCP16:
 
         TCP16_03_01:
             model: survey.question
-            question: 'Termo 1'
+            question: 'Consentimento'
             type: simple_choice
             display_mode: columns
             column_nb: 12

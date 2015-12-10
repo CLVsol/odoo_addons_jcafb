@@ -38,7 +38,7 @@ TCR16:
             question: 'Códigos do(s) Coletor(es) (um em cada linha):'
             type: free_text
             constr_mandatory: True
-            constr_error_msg: 'Informar os Códigos quem colheu a assinatura.'
+            constr_error_msg: 'Informar os Códigos de quem colheu a assinatura do Termo.'
 
     TCR16_02:
         model: survey.page
@@ -94,12 +94,12 @@ TCR16:
 
     TCR16_03:
         model: survey.page
-        title: 'Termos'
+        title: 'Consentimentos'
         description: ''
 
         TCR16_03_01:
             model: survey.question
-            question: 'Termo 1'
+            question: '1) Questionário Socioeconômico'
             type: simple_choice
             display_mode: columns
             column_nb: 12
@@ -110,15 +110,15 @@ TCR16:
 
             TCR16_03_01_01:
                 model: survey.label
-                value: 'Concordo em participar do Questionário Socioeconômico'
+                value: 'Concordo em participar'
 
             TCR16_03_01_02:
                 model: survey.label
-                value: 'Não concordo em participar do Questionário Socioeconômico'
+                value: 'Não concordo em participar'
 
         TCR16_03_02:
             model: survey.question
-            question: 'Termo 2'
+            question: '2) Exame coproparasitológico'
             type: simple_choice
             display_mode: columns
             column_nb: 12
@@ -129,15 +129,15 @@ TCR16:
 
             TCR16_03_02_01:
                 model: survey.label
-                value: 'Concordo em participar do Exame coproparasitológico'
+                value: 'Concordo em participar'
 
             TCR16_03_02_02:
                 model: survey.label
-                value: 'Não concordo em participar do Exame coproparasitológico'
+                value: 'Não concordo em participar'
 
         TCR16_03_03:
             model: survey.question
-            question: 'Termo 3'
+            question: '3) Swab Anal'
             type: simple_choice
             display_mode: columns
             column_nb: 12
@@ -148,15 +148,15 @@ TCR16:
 
             TCR16_03_03_01:
                 model: survey.label
-                value: 'Concordo em participar do Swab anal'
+                value: 'Concordo em participar'
 
             TCR16_03_03_02:
                 model: survey.label
-                value: 'Não concordo em participar do Swab anal'
+                value: 'Não concordo em participar'
 
         TCR16_03_04:
             model: survey.question
-            question: 'Termo 4'
+            question: '4) Exame de Anemia'
             type: simple_choice
             display_mode: columns
             column_nb: 12
@@ -167,9 +167,9 @@ TCR16:
 
             TCR16_03_04_01:
                 model: survey.label
-                value: 'Concordo em participar do Exame de anemia'
+                value: 'Concordo em participar'
 
             TCR16_03_04_02:
                 model: survey.label
-                value: 'Não concordo em participar do Exame de anemia'
+                value: 'Não concordo em participar'
 

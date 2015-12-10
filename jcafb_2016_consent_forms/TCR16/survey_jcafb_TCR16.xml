@@ -57,7 +57,7 @@
                     <field name="page_id" ref="TCR16_01"/>
                     <field name="sequence" eval="40"/>
                     <field name="constr_mandatory">True</field>
-                    <field name="constr_error_msg">Informar os Códigos quem colheu a assinatura.</field>
+                    <field name="constr_error_msg">Informar os Códigos de quem colheu a assinatura do Termo.</field>
                 </record>
 
             <!-- [TCR16_02] Identificação do Indivíduo -->
@@ -134,17 +134,17 @@
                         <field name="sequence" eval="20"/>
                     </record>
 
-            <!-- [TCR16_03] Termos -->
+            <!-- [TCR16_03] Consentimentos -->
             <record model="survey.page" id="TCR16_03">
-                <field name="title">[TCR16_03] Termos</field>
+                <field name="title">[TCR16_03] Consentimentos</field>
                 <field name="survey_id" ref="TCR16"/>
                 <field name="sequence" eval="30"/>
                 <field name="description">&lt;p&gt;[TCR16_03] &lt;/p&gt;</field>
             </record>
 
-                <!-- [TCR16_03_01] Termo 1 -->
+                <!-- [TCR16_03_01] 1) Questionário Socioeconômico -->
                 <record model="survey.question" id="TCR16_03_01">
-                    <field name="question">[TCR16_03_01] Termo 1</field>
+                    <field name="question">[TCR16_03_01] 1) Questionário Socioeconômico</field>
                     <field name="type">simple_choice</field>
                     <field name="page_id" ref="TCR16_03"/>
                     <field name="sequence" eval="10"/>
@@ -157,20 +157,20 @@
                 </record>
 
                     <record model="survey.label" id="TCR16_03_01_01">
-                        <field name="value">Concordo em participar do Questionário Socioeconômico</field>
+                        <field name="value">Concordo em participar</field>
                         <field name="question_id" ref="TCR16_03_01"/>
                         <field name="sequence" eval="10"/>
                     </record>
 
                     <record model="survey.label" id="TCR16_03_01_02">
-                        <field name="value">Não concordo em participar do Questionário Socioeconômico</field>
+                        <field name="value">Não concordo em participar</field>
                         <field name="question_id" ref="TCR16_03_01"/>
                         <field name="sequence" eval="20"/>
                     </record>
 
-                <!-- [TCR16_03_02] Termo 2 -->
+                <!-- [TCR16_03_02] 2) Exame coproparasitológico -->
                 <record model="survey.question" id="TCR16_03_02">
-                    <field name="question">[TCR16_03_02] Termo 2</field>
+                    <field name="question">[TCR16_03_02] 2) Exame coproparasitológico</field>
                     <field name="type">simple_choice</field>
                     <field name="page_id" ref="TCR16_03"/>
                     <field name="sequence" eval="20"/>
@@ -183,20 +183,20 @@
                 </record>
 
                     <record model="survey.label" id="TCR16_03_02_01">
-                        <field name="value">Concordo em participar do Exame coproparasitológico</field>
+                        <field name="value">Concordo em participar</field>
                         <field name="question_id" ref="TCR16_03_02"/>
                         <field name="sequence" eval="10"/>
                     </record>
 
                     <record model="survey.label" id="TCR16_03_02_02">
-                        <field name="value">Não concordo em participar do Exame coproparasitológico</field>
+                        <field name="value">Não concordo em participar</field>
                         <field name="question_id" ref="TCR16_03_02"/>
                         <field name="sequence" eval="20"/>
                     </record>
 
-                <!-- [TCR16_03_03] Termo 3 -->
+                <!-- [TCR16_03_03] 3) Swab Anal -->
                 <record model="survey.question" id="TCR16_03_03">
-                    <field name="question">[TCR16_03_03] Termo 3</field>
+                    <field name="question">[TCR16_03_03] 3) Swab Anal</field>
                     <field name="type">simple_choice</field>
                     <field name="page_id" ref="TCR16_03"/>
                     <field name="sequence" eval="30"/>
@@ -209,20 +209,20 @@
                 </record>
 
                     <record model="survey.label" id="TCR16_03_03_01">
-                        <field name="value">Concordo em participar do Swab anal</field>
+                        <field name="value">Concordo em participar</field>
                         <field name="question_id" ref="TCR16_03_03"/>
                         <field name="sequence" eval="10"/>
                     </record>
 
                     <record model="survey.label" id="TCR16_03_03_02">
-                        <field name="value">Não concordo em participar do Swab anal</field>
+                        <field name="value">Não concordo em participar</field>
                         <field name="question_id" ref="TCR16_03_03"/>
                         <field name="sequence" eval="20"/>
                     </record>
 
-                <!-- [TCR16_03_04] Termo 4 -->
+                <!-- [TCR16_03_04] 4) Exame de Anemia -->
                 <record model="survey.question" id="TCR16_03_04">
-                    <field name="question">[TCR16_03_04] Termo 4</field>
+                    <field name="question">[TCR16_03_04] 4) Exame de Anemia</field>
                     <field name="type">simple_choice</field>
                     <field name="page_id" ref="TCR16_03"/>
                     <field name="sequence" eval="40"/>
@@ -235,13 +235,13 @@
                 </record>
 
                     <record model="survey.label" id="TCR16_03_04_01">
-                        <field name="value">Concordo em participar do Exame de anemia</field>
+                        <field name="value">Concordo em participar</field>
                         <field name="question_id" ref="TCR16_03_04"/>
                         <field name="sequence" eval="10"/>
                     </record>
 
                     <record model="survey.label" id="TCR16_03_04_02">
-                        <field name="value">Não concordo em participar do Exame de anemia</field>
+                        <field name="value">Não concordo em participar</field>
                         <field name="question_id" ref="TCR16_03_04"/>
                         <field name="sequence" eval="20"/>
                     </record>

@@ -33,7 +33,7 @@
             a) Indivíduo
             b) Responsável Legal
     [TCP16_03] Termos
-        [TCP16_03_01] Termo 1
+        [TCP16_03_01] Consentimento
             (simple_choice)
             Sim, declaro que entendi o texto acima e concordo em participar da Campanha Gratuita para Detecção de Diabetes, Hipertensão Arterial e Hipercolesterolemia.
             Não concordo em participar.
