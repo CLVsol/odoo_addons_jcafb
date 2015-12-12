@@ -21,7 +21,7 @@ ISE16:
 
         ISE16_01_02:
             model: survey.question
-            question: 'Data da Entrevista (aaaa-mm-dd):'
+            question: 'Data da Entrevista (yyyy-mm-dd):'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher com a data da entrevista.'
@@ -35,7 +35,7 @@ ISE16:
 
     ISE16_02:
         model: survey.page
-        title: 'Identificação do Paciente/Entrevistado'
+        title: 'Identificação do Entrevistado'
         description: ''
 
         ISE16_02_01:
@@ -92,7 +92,7 @@ ISE16:
     ISE16_03:
         model: survey.page
         title: 'Aspectos Sociais'
-        description: 'Aspectos Sociais'
+        description: ''
 
         ISE16_03_01:
             model: survey.question
@@ -102,7 +102,7 @@ ISE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se "Outro familiar", qual a relação de parentesco?'
+            comments_message: 'Se outro familiar, qual a relação de parentesco?'
 
             ISE16_03_01_01:
                 model: survey.label
@@ -173,7 +173,7 @@ ISE16:
 
             ISE16_03_02_05:
                 model: survey.label
-                value: 'e) Mais que 22 anos'
+                value: 'e) 22 anos ou mais'
 
             ISE16_03_02_06:
                 model: survey.label
@@ -216,7 +216,7 @@ ISE16:
 
             ISE16_03_03_05:
                 model: survey.label
-                value: 'e) Divorciado(a)'
+                value: 'e) Divorciado (a)'
 
             ISE16_03_03_06:
                 model: survey.label
@@ -410,7 +410,7 @@ ISE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se "Outro", qual?'
+            comments_message: 'Se outro, qual?'
 
             ISE16_03_08_01:
                 model: survey.label
@@ -457,7 +457,7 @@ ISE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se "Outra", qual?'
+            comments_message: 'Se outra, qual?'
 
             ISE16_03_09_01:
                 model: survey.label
@@ -512,7 +512,7 @@ ISE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se "Outra atividade", qual?'
+            comments_message: 'Se outra atividade, qual?'
 
             ISE16_04_01_01:
                 model: survey.label
@@ -571,7 +571,7 @@ ISE16:
 
             ISE16_04_02_01:
                 model: survey.label
-                value: 'a) Sim. Qual?'
+                value: 'a) Sim. Qual'
 
             ISE16_04_02_02:
                 model: survey.label
@@ -739,7 +739,7 @@ ISE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se "Outras", quais?'
+            comments_message: 'Se outras, quais?'
 
             ISE16_05_01_01:
                 model: survey.label
@@ -876,7 +876,7 @@ ISE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se "Outros", quais?'
+            comments_message: 'Se outros, quais?'
 
             ISE16_06_01_01:
                 model: survey.label
@@ -919,7 +919,7 @@ ISE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se "Não", quantas vezes?'
+            comments_message: 'Se não, quantas vezes?'
 
             ISE16_06_02_01:
                 model: survey.label
@@ -990,14 +990,14 @@ ISE16:
 
         ISE16_06_04:
             model: survey.question
-            question: 'O Sr(a). teve alguma queda depois que completou 60 anos?'
+            question: 'O Sr. (a) teve alguma queda depois que completou 60 anos?'
             type: simple_choice
             display_mode: columns
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se "Sim", quantas vezes?'
+            comments_message: 'Se sim, quantas vezes?'
 
             ISE16_06_04_01:
                 model: survey.label
@@ -1028,7 +1028,7 @@ ISE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se "Sim", quais?'
+            comments_message: 'Se sim, quais?'
 
             ISE16_06_05_01:
                 model: survey.label
@@ -1103,7 +1103,7 @@ ISE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se a resposta for "d", qual verme?'
+            comments_message: 'Qual verme?'
 
             ISE16_08_01_01:
                 model: survey.label
@@ -1141,7 +1141,7 @@ ISE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se "Outros", quais?'
+            comments_message: 'Se outros, quais?'
 
             ISE16_08_02_01:
                 model: survey.label
@@ -1262,8 +1262,8 @@ ISE16:
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
-            comments_allowed: False
-            comments_message: ''
+            comments_allowed: True
+            comments_message: 'Qual?'
 
             ISE16_09_02_01:
                 model: survey.label
@@ -1294,11 +1294,11 @@ ISE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Colocar o valor (somente o número)'
+            comments_message: 'Qual?'
 
             ISE16_09_03_01:
                 model: survey.label
-                value: 'a) Valor (colocar abaixo)'
+                value: 'a) Valor'
 
             ISE16_09_03_02:
                 model: survey.label
