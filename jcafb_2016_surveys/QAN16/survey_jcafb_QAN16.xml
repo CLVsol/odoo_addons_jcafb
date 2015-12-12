@@ -30,9 +30,9 @@
                     <field name="constr_error_msg">Preencher com o Código do Questionário.</field>
                 </record>
 
-                <!-- [QAN16_01_02] Data da Entrevista (yyyy-mm-dd): -->
+                <!-- [QAN16_01_02] Data da Entrevista (aaaa-mm-dd): -->
                 <record model="survey.question" id="QAN16_01_02">
-                    <field name="question">[QAN16_01_02] Data da Entrevista (yyyy-mm-dd):</field>
+                    <field name="question">[QAN16_01_02] Data da Entrevista (aaaa-mm-dd):</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="QAN16_01"/>
                     <field name="sequence" eval="20"/>
@@ -50,9 +50,9 @@
                     <field name="constr_error_msg">Informar os Códigos quem fez a entrevista.</field>
                 </record>
 
-            <!-- [QAN16_02] Identificação do Entrevistado -->
+            <!-- [QAN16_02] Identificação do Paciente/Entrevistado -->
             <record model="survey.page" id="QAN16_02">
-                <field name="title">[QAN16_02] Identificação do Entrevistado</field>
+                <field name="title">[QAN16_02] Identificação do Paciente/Entrevistado</field>
                 <field name="survey_id" ref="QAN16"/>
                 <field name="sequence" eval="20"/>
                 <field name="description">&lt;p&gt;[QAN16_02] &lt;/p&gt;</field>
@@ -109,7 +109,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Informar quem respondeu ao questionário.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Nome e grau de parentesco do Responsável ou do Cuidador; se "Outra Pessoa", especificar:</field>
+                    <field name="comments_message">Nome e grau de parentesco do Responsável ou do Cuidador; se "Outro", especificar:</field>
                 </record>
 
                     <record model="survey.label" id="QAN16_02_05_01">
@@ -131,14 +131,14 @@
                     </record>
 
                     <record model="survey.label" id="QAN16_02_05_04">
-                        <field name="value">d) Outra Pessoa (especificar)</field>
+                        <field name="value">d) Outro</field>
                         <field name="question_id" ref="QAN16_02_05"/>
                         <field name="sequence" eval="40"/>
                     </record>
 
-            <!-- [QAN16_03] Peso e Altura -->
+            <!-- [QAN16_03] Medidas de Peso e Altura -->
             <record model="survey.page" id="QAN16_03">
-                <field name="title">[QAN16_03] Peso e Altura</field>
+                <field name="title">[QAN16_03] Medidas de Peso e Altura</field>
                 <field name="survey_id" ref="QAN16"/>
                 <field name="sequence" eval="30"/>
                 <field name="description">&lt;p&gt;[QAN16_03] &lt;/p&gt;</field>
@@ -184,17 +184,17 @@
                     <field name="constr_error_msg">Informar o código do responsável pela medida da altura.</field>
                 </record>
 
-            <!-- [QAN16_04] Hemoglobina -->
+            <!-- [QAN16_04] Dosagem de Hemoglobina -->
             <record model="survey.page" id="QAN16_04">
-                <field name="title">[QAN16_04] Hemoglobina</field>
+                <field name="title">[QAN16_04] Dosagem de Hemoglobina</field>
                 <field name="survey_id" ref="QAN16"/>
                 <field name="sequence" eval="40"/>
                 <field name="description">&lt;p&gt;[QAN16_04] &lt;/p&gt;</field>
             </record>
 
-                <!-- [QAN16_04_01] Horário da coleta: -->
+                <!-- [QAN16_04_01] Horário da coleta (hh:mm): -->
                 <record model="survey.question" id="QAN16_04_01">
-                    <field name="question">[QAN16_04_01] Horário da coleta:</field>
+                    <field name="question">[QAN16_04_01] Horário da coleta (hh:mm):</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="QAN16_04"/>
                     <field name="sequence" eval="10"/>
@@ -222,9 +222,9 @@
                     <field name="constr_error_msg">Informar o valor da hemoglobina (g/dL) do paciente.</field>
                 </record>
 
-                <!-- [QAN16_04_04] Responsável pela anállise: -->
+                <!-- [QAN16_04_04] Responsável pela dosagem: -->
                 <record model="survey.question" id="QAN16_04_04">
-                    <field name="question">[QAN16_04_04] Responsável pela anállise:</field>
+                    <field name="question">[QAN16_04_04] Responsável pela dosagem:</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="QAN16_04"/>
                     <field name="sequence" eval="40"/>
@@ -576,13 +576,13 @@
                     </record>
 
                     <record model="survey.label" id="QAN16_06_01_05">
-                        <field name="value">Não quis responder</field>
+                        <field name="value">Não sabe</field>
                         <field name="question_id" ref="QAN16_06_01"/>
                         <field name="sequence" eval="50"/>
                     </record>
 
                     <record model="survey.label" id="QAN16_06_01_06">
-                        <field name="value">Não sabe</field>
+                        <field name="value">Não quis responder</field>
                         <field name="question_id" ref="QAN16_06_01"/>
                         <field name="sequence" eval="60"/>
                     </record>
@@ -665,13 +665,13 @@
                     </record>
 
                     <record model="survey.label" id="QAN16_06_02_05">
-                        <field name="value">Não quis responder</field>
+                        <field name="value">Não sabe</field>
                         <field name="question_id" ref="QAN16_06_02"/>
                         <field name="sequence" eval="50"/>
                     </record>
 
                     <record model="survey.label" id="QAN16_06_02_06">
-                        <field name="value">Não sabe</field>
+                        <field name="value">Não quis responder</field>
                         <field name="question_id" ref="QAN16_06_02"/>
                         <field name="sequence" eval="60"/>
                     </record>
