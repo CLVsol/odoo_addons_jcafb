@@ -30,9 +30,9 @@
                     <field name="constr_error_msg">Preencher com o Código do Questionário.</field>
                 </record>
 
-                <!-- [QMD16_01_02] Data da Entrevista (yyyy-mm-dd): -->
+                <!-- [QMD16_01_02] Data da Entrevista (aaaa-mm-dd): -->
                 <record model="survey.question" id="QMD16_01_02">
-                    <field name="question">[QMD16_01_02] Data da Entrevista (yyyy-mm-dd):</field>
+                    <field name="question">[QMD16_01_02] Data da Entrevista (aaaa-mm-dd):</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="QMD16_01"/>
                     <field name="sequence" eval="20"/>
@@ -50,9 +50,9 @@
                     <field name="constr_error_msg">Informar os Códigos quem fez a entrevista.</field>
                 </record>
 
-            <!-- [QMD16_02] Identificação do Entrevistado -->
+            <!-- [QMD16_02] Identificação do Paciente/Entrevistado -->
             <record model="survey.page" id="QMD16_02">
-                <field name="title">[QMD16_02] Identificação do Entrevistado</field>
+                <field name="title">[QMD16_02] Identificação do Paciente/Entrevistado</field>
                 <field name="survey_id" ref="QMD16"/>
                 <field name="sequence" eval="20"/>
                 <field name="description">&lt;p&gt;[QMD16_02] &lt;/p&gt;</field>
@@ -113,21 +113,27 @@
                 </record>
 
                     <record model="survey.label" id="QMD16_02_05_01">
-                        <field name="value">a) Paciente</field>
+                        <field name="value">a) Responsável</field>
                         <field name="question_id" ref="QMD16_02_05"/>
                         <field name="sequence" eval="10"/>
                     </record>
 
                     <record model="survey.label" id="QMD16_02_05_02">
-                        <field name="value">b) Cuidador</field>
+                        <field name="value">b) Paciente</field>
                         <field name="question_id" ref="QMD16_02_05"/>
                         <field name="sequence" eval="20"/>
                     </record>
 
                     <record model="survey.label" id="QMD16_02_05_03">
-                        <field name="value">c) Outra pessoa (especificar)</field>
+                        <field name="value">c) Cuidador</field>
                         <field name="question_id" ref="QMD16_02_05"/>
                         <field name="sequence" eval="30"/>
+                    </record>
+
+                    <record model="survey.label" id="QMD16_02_05_04">
+                        <field name="value">d) Outro</field>
+                        <field name="question_id" ref="QMD16_02_05"/>
+                        <field name="sequence" eval="40"/>
                     </record>
 
             <!-- [QMD16_03] Questionário -->
@@ -148,7 +154,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se outra pessoa, especificar</field>
+                    <field name="comments_message">Se "Outra pessoa", especificar</field>
                 </record>
 
                     <record model="survey.label" id="QMD16_03_01_01">
@@ -248,7 +254,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se sim, especificar</field>
+                    <field name="comments_message">Se "Sim", especificar</field>
                 </record>
 
                     <record model="survey.label" id="QMD16_03_03_01">
@@ -365,7 +371,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se sim, especificar</field>
+                    <field name="comments_message">Se "Sim, especificar</field>
                 </record>
 
                     <record model="survey.label" id="QMD16_03_05_01">
@@ -486,9 +492,9 @@
                         <field name="sequence" eval="50"/>
                     </record>
 
-                <!-- [QMD16_03_08] O Sr.(a) já parou de tomar seus remédios ou diminuiu a dose sem avisar seu médico porque se sentia pior quando os tomava? -->
+                <!-- [QMD16_03_08] O Sr.(a) já parou de tomar seus remédios ou diminuiu a dose, sem avisar seu médico, porque se sentia pior quando os tomava? -->
                 <record model="survey.question" id="QMD16_03_08">
-                    <field name="question">[QMD16_03_08] O Sr.(a) já parou de tomar seus remédios ou diminuiu a dose sem avisar seu médico porque se sentia pior quando os tomava?</field>
+                    <field name="question">[QMD16_03_08] O Sr.(a) já parou de tomar seus remédios ou diminuiu a dose, sem avisar seu médico, porque se sentia pior quando os tomava?</field>
                     <field name="type">simple_choice</field>
                     <field name="page_id" ref="QMD16_03"/>
                     <field name="sequence" eval="80"/>
@@ -530,9 +536,9 @@
                         <field name="sequence" eval="50"/>
                     </record>
 
-            <!-- [QMD16_04] Lista de todos os medicamentos que o paciente utilizou nos últimos 15 dias, incluindo as receitas que tiver (Questionário de medicamento individual). -->
+            <!-- [QMD16_04] Lista de todos os medicamentos que o paciente utilizou nos últimos 15 dias, incluindo as receitas que tiver -->
             <record model="survey.page" id="QMD16_04">
-                <field name="title">[QMD16_04] Lista de todos os medicamentos que o paciente utilizou nos últimos 15 dias, incluindo as receitas que tiver (Questionário de medicamento individual).</field>
+                <field name="title">[QMD16_04] Lista de todos os medicamentos que o paciente utilizou nos últimos 15 dias, incluindo as receitas que tiver</field>
                 <field name="survey_id" ref="QMD16"/>
                 <field name="sequence" eval="40"/>
                 <field name="description">&lt;p&gt;[QMD16_04] &lt;/p&gt;</field>
