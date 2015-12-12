@@ -3,7 +3,7 @@
         [CSE16_01_01] Código do Questionário (preencher somente após a validação das respostas):
             (textbox)
             ____________________________________
-        [CSE16_01_02] Data da Entrevista (yyyy-mm-dd):
+        [CSE16_01_02] Data da Entrevista (aaaa-mm-dd):
             (textbox)
             ____________________________________
         [CSE16_01_03] Códigos do(s) Entrevistador(es) (um em cada linha):
@@ -12,7 +12,7 @@
             ____________________________________
             ____________________________________
             ____________________________________
-    [CSE16_02] Identificação do Entrevistado
+    [CSE16_02] Identificação da Criança/Entrevistado
         [CSE16_02_01] Nome da Criança:
             (textbox)
             ____________________________________
@@ -42,14 +42,14 @@
             f) Não sabe
             g) Não quis responder
             h) Não se aplica
-            Se outros, onde?____________________________________
+            Se "Outros", onde?____________________________________
         [CSE16_03_02] Tempo de Escolaridade da pessoa que fica mais tempo com a criança (fora da escola):
             (simple_choice)
             a) 0 anos
             b) 1 a 3 anos
             c) 4 a 11 anos
             d) 12 a 22 anos
-            e) 22 anos ou mais
+            e) Mais que 22 anos
             f) Não sabe
             g) Não quis responder
             h) Não se aplica
@@ -108,7 +108,7 @@
             e) Não sabe
             f) Não quis responder
             g) Não se aplica
-            Qual verme?____________________________________
+            Se a resposta for "d", qual verme?____________________________________
         [CSE16_06_02] Como descobriu que estava com a doença?
             (multiple_choice)
             a) Com resultado de exame de fezes
@@ -118,7 +118,7 @@
             e) Não sabe
             f) Não quis responder
             g) Não se aplica
-            Se outros, quais?____________________________________
+            Se "Outros", quais?____________________________________
         [CSE16_06_03] A criança já tomou vermífugo (lombrigueira)?
             (simple_choice)
             a) Não

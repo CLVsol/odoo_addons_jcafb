@@ -30,9 +30,9 @@
                     <field name="constr_error_msg">Preencher com o Código do Questionário.</field>
                 </record>
 
-                <!-- [CSE16_01_02] Data da Entrevista (yyyy-mm-dd): -->
+                <!-- [CSE16_01_02] Data da Entrevista (aaaa-mm-dd): -->
                 <record model="survey.question" id="CSE16_01_02">
-                    <field name="question">[CSE16_01_02] Data da Entrevista (yyyy-mm-dd):</field>
+                    <field name="question">[CSE16_01_02] Data da Entrevista (aaaa-mm-dd):</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="CSE16_01"/>
                     <field name="sequence" eval="20"/>
@@ -50,9 +50,9 @@
                     <field name="constr_error_msg">Informar os Códigos quem fez a entrevista.</field>
                 </record>
 
-            <!-- [CSE16_02] Identificação do Entrevistado -->
+            <!-- [CSE16_02] Identificação da Criança/Entrevistado -->
             <record model="survey.page" id="CSE16_02">
-                <field name="title">[CSE16_02] Identificação do Entrevistado</field>
+                <field name="title">[CSE16_02] Identificação da Criança/Entrevistado</field>
                 <field name="survey_id" ref="CSE16"/>
                 <field name="sequence" eval="20"/>
                 <field name="description">&lt;p&gt;[CSE16_02] &lt;/p&gt;</field>
@@ -148,7 +148,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se outros, onde?</field>
+                    <field name="comments_message">Se "Outros", onde?</field>
                 </record>
 
                     <record model="survey.label" id="CSE16_03_01_01">
@@ -238,7 +238,7 @@
                     </record>
 
                     <record model="survey.label" id="CSE16_03_02_05">
-                        <field name="value">e) 22 anos ou mais</field>
+                        <field name="value">e) Mais que 22 anos</field>
                         <field name="question_id" ref="CSE16_03_02"/>
                         <field name="sequence" eval="50"/>
                     </record>
@@ -555,7 +555,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Qual verme?</field>
+                    <field name="comments_message">Se a resposta for "d", qual verme?</field>
                 </record>
 
                     <record model="survey.label" id="CSE16_06_01_01">
@@ -610,7 +610,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se outros, quais?</field>
+                    <field name="comments_message">Se "Outros", quais?</field>
                 </record>
 
                     <record model="survey.label" id="CSE16_06_02_01">

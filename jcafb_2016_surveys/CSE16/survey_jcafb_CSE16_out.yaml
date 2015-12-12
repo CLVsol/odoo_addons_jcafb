@@ -21,7 +21,7 @@ CSE16:
 
         CSE16_01_02:
             model: survey.question
-            question: 'Data da Entrevista (yyyy-mm-dd):'
+            question: 'Data da Entrevista (aaaa-mm-dd):'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher com a data da entrevista.'
@@ -35,7 +35,7 @@ CSE16:
 
     CSE16_02:
         model: survey.page
-        title: 'Identificação do Entrevistado'
+        title: 'Identificação da Criança/Entrevistado'
         description: ''
 
         CSE16_02_01:
@@ -102,7 +102,7 @@ CSE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se outros, onde?'
+            comments_message: 'Se "Outros", onde?'
 
             CSE16_03_01_01:
                 model: survey.label
@@ -165,7 +165,7 @@ CSE16:
 
             CSE16_03_02_05:
                 model: survey.label
-                value: 'e) 22 anos ou mais'
+                value: 'e) Mais que 22 anos'
 
             CSE16_03_02_06:
                 model: survey.label
@@ -383,7 +383,7 @@ CSE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Qual verme?'
+            comments_message: 'Se a resposta for "d", qual verme?'
 
             CSE16_06_01_01:
                 model: survey.label
@@ -421,7 +421,7 @@ CSE16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se outros, quais?'
+            comments_message: 'Se "Outros", quais?'
 
             CSE16_06_02_01:
                 model: survey.label
