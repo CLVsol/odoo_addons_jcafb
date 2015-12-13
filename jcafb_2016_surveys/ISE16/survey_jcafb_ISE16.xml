@@ -30,9 +30,9 @@
                     <field name="constr_error_msg">Preencher com o Código do Questionário.</field>
                 </record>
 
-                <!-- [ISE16_01_02] Data da Entrevista (yyyy-mm-dd): -->
+                <!-- [ISE16_01_02] Data da Entrevista (aaaa-mm-dd): -->
                 <record model="survey.question" id="ISE16_01_02">
-                    <field name="question">[ISE16_01_02] Data da Entrevista (yyyy-mm-dd):</field>
+                    <field name="question">[ISE16_01_02] Data da Entrevista (aaaa-mm-dd):</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="ISE16_01"/>
                     <field name="sequence" eval="20"/>
@@ -50,9 +50,9 @@
                     <field name="constr_error_msg">Informar os Códigos quem fez a entrevista.</field>
                 </record>
 
-            <!-- [ISE16_02] Identificação do Entrevistado -->
+            <!-- [ISE16_02] Identificação do Paciente/Entrevistado -->
             <record model="survey.page" id="ISE16_02">
-                <field name="title">[ISE16_02] Identificação do Entrevistado</field>
+                <field name="title">[ISE16_02] Identificação do Paciente/Entrevistado</field>
                 <field name="survey_id" ref="ISE16"/>
                 <field name="sequence" eval="20"/>
                 <field name="description">&lt;p&gt;[ISE16_02] &lt;/p&gt;</field>
@@ -135,7 +135,7 @@
                 <field name="title">[ISE16_03] Aspectos Sociais</field>
                 <field name="survey_id" ref="ISE16"/>
                 <field name="sequence" eval="30"/>
-                <field name="description">&lt;p&gt;[ISE16_03] &lt;/p&gt;</field>
+                <field name="description">&lt;p&gt;[ISE16_03] Aspectos Sociais&lt;/p&gt;</field>
             </record>
 
                 <!-- [ISE16_03_01] Qual a relação de parentesco do cuidador com o(a) Sr.(a)? -->
@@ -148,7 +148,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se outro familiar, qual a relação de parentesco?</field>
+                    <field name="comments_message">Se "Outro familiar", qual a relação de parentesco?</field>
                 </record>
 
                     <record model="survey.label" id="ISE16_03_01_01">
@@ -250,7 +250,7 @@
                     </record>
 
                     <record model="survey.label" id="ISE16_03_02_05">
-                        <field name="value">e) 22 anos ou mais</field>
+                        <field name="value">e) Mais que 22 anos</field>
                         <field name="question_id" ref="ISE16_03_02"/>
                         <field name="sequence" eval="50"/>
                     </record>
@@ -312,7 +312,7 @@
                     </record>
 
                     <record model="survey.label" id="ISE16_03_03_05">
-                        <field name="value">e) Divorciado (a)</field>
+                        <field name="value">e) Divorciado(a)</field>
                         <field name="question_id" ref="ISE16_03_03"/>
                         <field name="sequence" eval="50"/>
                     </record>
@@ -593,7 +593,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se outro, qual?</field>
+                    <field name="comments_message">Se "Outro", qual?</field>
                 </record>
 
                     <record model="survey.label" id="ISE16_03_08_01">
@@ -661,7 +661,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se outra, qual?</field>
+                    <field name="comments_message">Se "Outra", qual?</field>
                 </record>
 
                     <record model="survey.label" id="ISE16_03_09_01">
@@ -742,7 +742,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se outra atividade, qual?</field>
+                    <field name="comments_message">Se "Outra atividade", qual?</field>
                 </record>
 
                     <record model="survey.label" id="ISE16_04_01_01">
@@ -826,7 +826,7 @@
                 </record>
 
                     <record model="survey.label" id="ISE16_04_02_01">
-                        <field name="value">a) Sim. Qual</field>
+                        <field name="value">a) Sim. Qual?</field>
                         <field name="question_id" ref="ISE16_04_02"/>
                         <field name="sequence" eval="10"/>
                     </record>
@@ -1071,7 +1071,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se outras, quais?</field>
+                    <field name="comments_message">Se "Outras", quais?</field>
                 </record>
 
                     <record model="survey.label" id="ISE16_05_01_01">
@@ -1270,7 +1270,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se outros, quais?</field>
+                    <field name="comments_message">Se "Outros", quais?</field>
                 </record>
 
                     <record model="survey.label" id="ISE16_06_01_01">
@@ -1332,7 +1332,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se não, quantas vezes?</field>
+                    <field name="comments_message">Se "Não", quantas vezes?</field>
                 </record>
 
                     <record model="survey.label" id="ISE16_06_02_01">
@@ -1433,9 +1433,9 @@
                         <field name="sequence" eval="90"/>
                     </record>
 
-                <!-- [ISE16_06_04] O Sr. (a) teve alguma queda depois que completou 60 anos? -->
+                <!-- [ISE16_06_04] O Sr(a). teve alguma queda depois que completou 60 anos? -->
                 <record model="survey.question" id="ISE16_06_04">
-                    <field name="question">[ISE16_06_04] O Sr. (a) teve alguma queda depois que completou 60 anos?</field>
+                    <field name="question">[ISE16_06_04] O Sr(a). teve alguma queda depois que completou 60 anos?</field>
                     <field name="type">simple_choice</field>
                     <field name="page_id" ref="ISE16_06"/>
                     <field name="sequence" eval="40"/>
@@ -1444,7 +1444,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se sim, quantas vezes?</field>
+                    <field name="comments_message">Se "Sim", quantas vezes?</field>
                 </record>
 
                     <record model="survey.label" id="ISE16_06_04_01">
@@ -1488,7 +1488,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se sim, quais?</field>
+                    <field name="comments_message">Se "Sim", quais?</field>
                 </record>
 
                     <record model="survey.label" id="ISE16_06_05_01">
@@ -1597,7 +1597,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Qual verme?</field>
+                    <field name="comments_message">Se a resposta for "d", qual verme?</field>
                 </record>
 
                     <record model="survey.label" id="ISE16_08_01_01">
@@ -1652,7 +1652,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se outros, quais?</field>
+                    <field name="comments_message">Se "Outros", quais?</field>
                 </record>
 
                     <record model="survey.label" id="ISE16_08_02_01">
@@ -1827,8 +1827,8 @@
                     <field name="column_nb">12</field>
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
-                    <field name="comments_allowed">True</field>
-                    <field name="comments_message">Qual?</field>
+                    <field name="comments_allowed">False</field>
+                    <field name="comments_message"></field>
                 </record>
 
                     <record model="survey.label" id="ISE16_09_02_01">
@@ -1872,11 +1872,11 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Qual?</field>
+                    <field name="comments_message">Colocar o valor (somente o número)</field>
                 </record>
 
                     <record model="survey.label" id="ISE16_09_03_01">
-                        <field name="value">a) Valor</field>
+                        <field name="value">a) Valor (colocar abaixo)</field>
                         <field name="question_id" ref="ISE16_09_03"/>
                         <field name="sequence" eval="10"/>
                     </record>

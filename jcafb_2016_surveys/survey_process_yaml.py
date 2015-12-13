@@ -20,6 +20,7 @@
 
 import yaml
 
+
 def survey_label_matrix(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, key4, question_type, question_id, label_sequence):
 
     _value_ = doc[key1][key2][key3][key4]['value'].encode("utf-8")
@@ -55,6 +56,7 @@ def survey_label_matrix(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3
     xml_file.write('                    </record>\n')
     xml_file.write('\n')
 
+
 def survey_label(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, key4, question_type, question_id, label_sequence):
 
     _value_ = doc[key1][key2][key3][key4]['value'].encode("utf-8")
@@ -83,6 +85,7 @@ def survey_label(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, key4,
 
     xml_file.write('                    </record>\n')
     xml_file.write('\n')
+
 
 def survey_question(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, page_id, question_sequence):
 
@@ -276,6 +279,7 @@ def survey_question(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, pa
             except Exception, e:
                 pass
 
+
 def survey_page(doc, yaml_out_file, xml_file, txt_file, key1, key2, survey_id, page_sequence):
 
     _title_ = doc[key1][key2]['title'].encode("utf-8")
@@ -319,6 +323,7 @@ def survey_page(doc, yaml_out_file, xml_file, txt_file, key1, key2, survey_id, p
                 survey_question(doc, yaml_out_file, xml_file, txt_file, key1, key2, key3, _id_, question_sequence)
         except Exception, e:
             pass
+
 
 def survey(doc, yaml_out_file, xml_file, txt_file, key1):
 
@@ -368,6 +373,7 @@ def survey(doc, yaml_out_file, xml_file, txt_file, key1):
         except Exception, e:
             pass
 
+
 def survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename):
 
     yaml_file = open(yaml_filename, 'r')
@@ -396,8 +402,10 @@ def survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_file
     txt_file.close()
     xml_file.close()
 
+
 def secondsToStr(t):
     return "%d:%02d:%02d.%03d" % reduce(lambda ll,b : divmod(ll[0],b) + ll[1:],[(t*1000,),1000,60,60])
+
 
 if __name__ == '__main__':
 
@@ -452,6 +460,13 @@ if __name__ == '__main__':
     yaml_out_filename = 'QDH16/survey_jcafb_QDH16_out.yaml'
     xml_filename = 'QDH16/survey_jcafb_QDH16.xml'
     txt_filename = 'QDH16/survey_jcafb_QDH16.txt'
+    print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
+    survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
+
+    yaml_filename = 'ITM16/survey_jcafb_ITM16.yaml'
+    yaml_out_filename = 'ITM16/survey_jcafb_ITM16_out.yaml'
+    xml_filename = 'ITM16/survey_jcafb_ITM16.xml'
+    txt_filename = 'ITM16/survey_jcafb_ITM16.txt'
     print '--> Executing survey_process_yaml(%s, %s, %s) ...' % (yaml_filename, xml_filename, txt_filename)
     survey_process_yaml(yaml_filename, yaml_out_filename, xml_filename, txt_filename)
 

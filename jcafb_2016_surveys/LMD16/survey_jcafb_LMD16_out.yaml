@@ -21,7 +21,7 @@ LMD16:
 
         LMD16_01_02:
             model: survey.question
-            question: 'Data da Entrevista (yyyy-mm-dd):'
+            question: 'Data da Entrevista (aaaa-mm-dd):'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher com a data da entrevista.'

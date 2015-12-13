@@ -1,0 +1,130 @@
+[ITM16] JCAFB 2016 - Interpretação da Tabela de Medicamentos
+    [ITM16_01] Identificação do Questionário
+        [ITM16_01_01] Código do Questionário (preencher somente após a validação das respostas):
+            (textbox)
+            ____________________________________
+        [ITM16_01_02] Data da Entrevista (aaaa-mm-dd):
+            (textbox)
+            ____________________________________
+        [ITM16_01_03] Códigos do(s) Entrevistador(es) (um em cada linha):
+            (free_text)
+            ____________________________________
+            ____________________________________
+            ____________________________________
+            ____________________________________
+    [ITM16_02] Identificação do Paciente/Entrevistado
+        [ITM16_02_01] Nome do Paciente:
+            (textbox)
+            ____________________________________
+        [ITM16_02_02] Código do Paciente:
+            (textbox)
+            ____________________________________
+    [ITM16_03] MEDICAMENTOS
+        [ITM16_03_01] Nº DE MEDICAMENTOS: Quantos medicamentos o paciente está tomando atualmente?
+            (simple_choice)
+            a) Nenhum
+            b) 1 a 3
+            c) 4 a 6
+            d) 7 a 10
+            e) 11 a 15
+            f) Mais que 15
+            g) Não sabe
+            h) Não quis responder
+            i) Não se aplica
+        [ITM16_03_02] RECEITAS VÁLIDAS: Dos medicamentos em uso, qual a porcentagem aproximada dos que possuem receita médica válida?
+            (simple_choice)
+            a) 0%
+            b) 1 a 20%
+            c) 21 a 40%
+            d) 41 a 60%
+            e) 61 a 80%
+            f) 81 a 99%
+            g) 100%
+            h) Não determinado. Por que?
+            i) Não se aplica
+            Se "h) Não determinado", especificar____________________________________
+        [ITM16_03_03] Onde os medicamentos são adquiridos?
+            (multiple_choice)
+            a) Farmácia
+            b) Posto
+            c) Outro (especificar)
+            d) Não sabe
+            Se “Outro”, especificar: ____________________________________
+        [ITM16_03_04] CONSERVAÇÃO: Que porcentagem aproximada dos medicamentos o paciente guarda em local apropriado?
+            (simple_choice)
+            a) 0%
+            b) 1 a 20%
+            c) 21 a 40%
+            d) 41 a 60%
+            e) 61 a 80%
+            f) 81 a 100%
+            g) Não sabe
+            h) Não quis responder
+            i) Não se aplica
+        [ITM16_03_05] INDICAÇÃO: Dos medicamentos em uso(com ou sem receita médica), de quantos o paciente tem conhecimento da indicação, isto é, sabe porque está tomando? (em % aproximada) ?
+            (simple_choice)
+            a) 0%
+            b) 1 a 20%
+            c) 21 a 40%
+            d) 41 a 60%
+            e) 61 a 80%
+            f) 81 a 99%
+            g) 100%
+            h) Não determinado. Por que?
+            i) Não se aplica
+            Se "h) Não determinado", especificar____________________________________
+        [ITM16_03_06] Quantos dos medicamentos em uso atualmente são tomados/utilizados corretamente? (em % aproximada)
+            (simple_choice)
+            a) 0%
+            b) 1 a 20%
+            c) 21 a 40%
+            d) 41 a 60%
+            e) 61 a 80%
+            f) 81 a 99%
+            g) 100%
+            h) Não determinado. Por que?
+            i) Não se aplica
+            Se a resposta for “h) Não determinado”, especificar:____________________________________
+        [ITM16_03_07] Quantas vezes o paciente esqueceu de tomar UM MESMO MEDICAMENTO nos últimos 15 dias?
+            (simple_choice)
+            a) 1 vez
+            b) 2 vezes
+            c) 3 vezes
+            d) 4 vezes
+            e) Mais que 4 vezes
+            f) Não sabe
+            g) Não quis responder
+            h) Não se aplica
+        [ITM16_03_08] TEMPO DE USO: Quantos dos medicamentos em uso (com ou sem receita médica) o paciente toma há mais de 1 ano? (em % aproximada)?
+            (simple_choice)
+            a) 0%
+            b) 1 a 20%
+            c) 21 a 40%
+            d) 41 a 60%
+            e) 61 a 80%
+            f) 81 a 100%
+            g) Não sabe
+            h) Não quis responder
+            i) Não se aplica
+        [ITM16_03_09] PRAZO DE VALIDADE: dos medicamentos em uso (com ou sem receita médica), quantos estão fora do prazo de validade? (em % aproximada)?
+            (simple_choice)
+            a) 0%
+            b) 1 a 20%
+            c) 21 a 40%
+            d) 41 a 60%
+            e) 61 a 80%
+            f) 81 a 99%
+            g) 100%
+            h) Não determinado. Por que?
+            i) Não se aplica
+            Se "h) Não determinado", especificar____________________________________
+        [ITM16_03_10] ADESÃO: Qual o grau de adesão do paciente aos tratamentos, isto é, até onde ele toma os medicamentos obedecendo fielmente à prescrição médica? (em % aproximada)?
+            (simple_choice)
+            a) Não adesão (em 0% dos casos)
+            b) Baixa adesão (em até 30% dos casos)
+            c) Média Adesão (em 31 a 70% dos casos)
+            d) d) Alta adesão (em 71 a 99% dos casos)
+            e) Adesão total (em 100% dos casos)
+            f) Não determinado. Por que?
+            g) Não se aplica
+            Se "h) Não determinado", especificar____________________________________

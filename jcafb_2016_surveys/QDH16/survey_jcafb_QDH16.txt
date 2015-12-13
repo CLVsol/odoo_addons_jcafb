@@ -3,7 +3,7 @@
         [QDH16_01_01] Código do Questionário (preencher somente após a validação das respostas):
             (textbox)
             ____________________________________
-        [QDH16_01_02] Data da Entrevista (yyyy-mm-dd):
+        [QDH16_01_02] Data da Entrevista (aaaa-mm-dd):
             (textbox)
             ____________________________________
         [QDH16_01_03] Códigos do(s) Entrevistador(es) (um em cada linha):
@@ -12,7 +12,7 @@
             ____________________________________
             ____________________________________
             ____________________________________
-    [QDH16_02] Identificação do Entrevistado
+    [QDH16_02] Identificação do Paciente/Entrevistado
         [QDH16_02_01] Nome do Paciente:
             (textbox)
             ____________________________________
@@ -30,7 +30,7 @@
             a) Responsável
             b) Paciente
             c) Cuidador
-            c) Outra pessoa (especificar)
+            c) Outro
             Nome e grau de parentesco do Responsável ou do Cuidador; se "Outro", especificar:____________________________________
     [QDH16_03] Geral
         [QDH16_03_01] Escolaridade do paciente ("Qual a última série (e de que grau) da escola que o Sr.(a) obteve aprovação?")
@@ -58,7 +58,7 @@
             e) Não quis responder
             f) Não se aplica
             Observações:____________________________________
-    [QDH16_04] Peso e Altura
+    [QDH16_04] Medidas Antropométricas
         [QDH16_04_01] Peso (kg):
             (textbox)
             ____________________________________
@@ -71,81 +71,13 @@
         [QDH16_04_04] Responsável pela medida:
             (textbox)
             ____________________________________
-        [QDH16_04_05] Circunferência abdominal (cm):
+        [QDH16_04_05] IMC (kg/m²) (=Peso/(Altura x Altura)):
             (textbox)
             ____________________________________
         [QDH16_04_06] Responsável pela medida:
             (textbox)
             ____________________________________
-        [QDH16_04_07] Interpretação do valor de Circunferência Abdominal (ABESO; Adultos)
-            (simple_choice)
-            a) Normal (H:&#60;94 cm; M:&#60;80 cm)
-            b) Risco aumentado (H:&#62;=94 cm; M:&#62;=80 cm)
-            c) Risco aumentado substancialmente (H:&#62;=102 cm; M:&#62;=88 cm))
-            d) Não interpretado (justificar em observações)
-            e) Não se aplica
-            Observações:____________________________________
-    [QDH16_05] Glicemia
-        [QDH16_05_01] Glicemia (mg/dL):
-            (textbox)
-            ____________________________________
-        [QDH16_05_02] Responsável pela medida:
-            (textbox)
-            ____________________________________
-        [QDH16_05_03] Interpretação do valor de Glicemia (Assosciação Americana de Diabetes (2014))
-            (simple_choice)
-            a) Normal para jejum de 8-12 hs(&#60;= 99 mg/dL)
-            b) Pré-diabetes (para jejum de 8-12 hs) = risco aumentado para diabetes (100-25 mg/dL)
-            c) Diabetes - para jejum de 8-12 hs (&#62;126 mg/dL, )
-            d) Jejum INFERIOR a 8 hs: Normal (até 140 mg/dL)
-            e) Jejum INFERIOR a 8 hs: Aumentado (&#62;=140 mg/dL)
-            f) Não avaliado (justificar)
-            g) Não se aplica
-            Outras situações:____________________________________
-    [QDH16_06] Pressão Arterial
-        [QDH16_06_01] Pressão arterial autom. (mmHg):
-            (textbox)
-            ____________________________________
-        [QDH16_06_02] Responsável pela medida:
-            (textbox)
-            ____________________________________
-        [QDH16_06_03] Pressão arterial manual (mmHg):
-            (textbox)
-            ____________________________________
-        [QDH16_06_04] Responsável pela medida:
-            (textbox)
-            ____________________________________
-        [QDH16_06_05] Interpretação do valor de Pressão Arterial (Diretrizes Brasileiras de Hipertensão Arterial de 2010)
-            (simple_choice)
-            a) Normal (PAS&#60;130 mmHg e PAD&#60;85 mmHg)
-            b) Limítrofe (PAS:130-139 mmHg e PAD:85-89 mmHg)
-            c) Alta (PAS:&#62;=140 mmHg e PAD:&#62;=90 mmHg)
-            d) Não interpretado (justificar em "Observações")
-            e) Não se aplica
-            Observações:____________________________________
-    [QDH16_07] Colesterol
-        [QDH16_07_01] Colesterol (mg/dL):
-            (textbox)
-            ____________________________________
-        [QDH16_07_02] Responsável pela medida:
-            (textbox)
-            ____________________________________
-        [QDH16_07_03] Interpretação do valor de Colesterol (Diretrizes Brasileiras de Dislipidemias e Prevenção da Aterosclerose-2013)
-            (simple_choice)
-            a) Desejável:Acima de 20 anos:&#60;200 mg/dL;2-19 anos:&#60;150 mg/dL
-            b) Limítrofe:Acima de 20 anos:200–39 mg/dL;2-19 anos:150-169 mg/dL
-            c) Elevado: Acima de 20 anos:&#62;=240 mg/dL;2-19 anos:&#62;=170 mg/dL
-            d) Não interpretado (justificar em "Observações")
-            e) Não se aplica
-            Observações:____________________________________
-    [QDH16_08] IMC
-        [QDH16_08_01] IMC (kg/m²) (=Peso/(Altura x Altura)):
-            (textbox)
-            ____________________________________
-        [QDH16_08_02] Responsável pela medida:
-            (textbox)
-            ____________________________________
-        [QDH16_08_03] Interpretação do valor de IMC (OMS; Adultos.: 19 a 64 anos; Idosos:&#62;=65 anos)
+        [QDH16_04_07] Interpretação do valor de IMC (OMS; Adultos.: 19 a 64 anos; Idosos:&#62;=65 anos)
             (simple_choice)
             a) Baixo peso (Adultos:&#60;18,5; Idosos (M e F):&#60;21,9)
             b) Peso Normal (Adultos: 18,5 a 24,9; Idosos (M e F): 22,0 a 27,0)
@@ -156,8 +88,74 @@
             g) Não interpretado (justificar em "Observações")
             h) Não se aplica
             Observações:____________________________________
-    [QDH16_09] Histórico de Doenças
-        [QDH16_09_01] Possui alguma dessas doenças: Doença de Chagas, Hepatite, Vírus HIV (AIDS)? (se possível, especificar)
+        [QDH16_04_08] Circunferência abdominal (cm):
+            (textbox)
+            ____________________________________
+        [QDH16_04_09] Responsável pela medida:
+            (textbox)
+            ____________________________________
+        [QDH16_04_10] Interpretação do valor de Circunferência Abdominal (ABESO; Adultos)
+            (simple_choice)
+            a) Normal (H:&#60;94 cm; M:&#60;80 cm)
+            b) Risco aumentado (H:&#62;=94 cm; M:&#62;=80 cm)
+            c) Risco aumentado substancialmente (H:&#62;=102 cm; M:&#62;=88 cm))
+            d) Não interpretado (justificar em observações)
+            e) Não se aplica
+            Observações:____________________________________
+    [QDH16_05] Medidas da Pressão Arterial
+        [QDH16_05_01] Pressão arterial autom. (mmHg):
+            (textbox)
+            ____________________________________
+        [QDH16_05_02] Responsável pela medida:
+            (textbox)
+            ____________________________________
+        [QDH16_05_03] Pressão arterial manual (mmHg) (se medida não realizada, escrever nd):
+            (textbox)
+            ____________________________________
+        [QDH16_05_04] Responsável pela medida (se medida não realizada, escrever nd):
+            (textbox)
+            ____________________________________
+        [QDH16_05_05] Interpretação do valor de Pressão Arterial (Diretrizes Brasileiras de Hipertensão Arterial de 2010)
+            (simple_choice)
+            a) Normal (PAS&#60;130 mmHg e PAD&#60;85 mmHg)
+            b) Limítrofe (PAS:130-139 mmHg e PAD:85-89 mmHg)
+            c) Alta (PAS:&#62;=140 mmHg e PAD:&#62;=90 mmHg)
+            d) Não interpretado (justificar em "Observações")
+            e) Não se aplica
+            Observações:____________________________________
+    [QDH16_06] Glicemia e Colesterolemia
+        [QDH16_06_01] Glicemia (mg/dL):
+            (textbox)
+            ____________________________________
+        [QDH16_06_02] Responsável pela medida:
+            (textbox)
+            ____________________________________
+        [QDH16_06_03] Interpretação do valor de Glicemia (Associação Americana de Diabetes (2014))
+            (simple_choice)
+            a) Normal para jejum de 8-12 hs(&#60;= 99 mg/dL)
+            b) Pré-diabetes (para jejum de 8-12 hs) = risco aumentado para diabetes (100-125 mg/dL)
+            c) Diabetes - para jejum de 8-12 hs (&#62;126 mg/dL, )
+            d) Jejum INFERIOR a 8 hs: Normal (até 140 mg/dL)
+            e) Jejum INFERIOR a 8 hs: Aumentado (&#62;=140 mg/dL)
+            f) Não avaliado (justificar)
+            g) Não se aplica
+            Outras situações:____________________________________
+        [QDH16_06_04] Colesterol (mg/dL) (se medida não realizada, escrever nd):
+            (textbox)
+            ____________________________________
+        [QDH16_06_05] Responsável pela medida (se medida não realizada, escrever nd):
+            (textbox)
+            ____________________________________
+        [QDH16_06_06] Interpretação do valor de Colesterol (Diretrizes Brasileiras de Dislipidemias e Prevenção da Aterosclerose-2013)
+            (simple_choice)
+            a) Desejável:Acima de 20 anos:&#60;200 mg/dL;2-19 anos:&#60;150 mg/dL
+            b) Limítrofe:Acima de 20 anos:200–239 mg/dL;2-19 anos:150-169 mg/dL
+            c) Elevado: Acima de 20 anos:&#62;=240 mg/dL;2-19 anos:&#62;=170 mg/dL
+            d) Não interpretado (justificar em "Observações")
+            e) Não se aplica
+            Observações:____________________________________
+    [QDH16_07] Histórico de Doenças
+        [QDH16_07_01] Possui alguma dessas doenças: Doença de Chagas, Hepatite, Vírus HIV (AIDS)? (se possível, especificar)
             (simple_choice)
             a) Sim (especificar em "Observações", se possível)
             b) Não
@@ -165,15 +163,23 @@
             d) Não quis responder
             e) Não se aplica
             Observações:____________________________________
-    [QDH16_10] Histórico de DHC
-        [QDH16_10_01] Possui DIABETES?
+    [QDH16_08] Histórico de DHC
+        [QDH16_08_01] Já realizou exame para diagnosticar DIABETES?
             (simple_choice)
             a) Sim
             b) Não
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QDH16_10_02] Faz uso de medicamento para tratamento de DIABETES?
+        [QDH16_08_02] Possui DIABETES?
+            (simple_choice)
+            a) Sim
+            b) Não
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+            Esta questão precisa ser respondida.____________________________________
+        [QDH16_08_03] Faz uso de medicamento para tratamento DIABETES?
             (simple_choice)
             a) Não
             b) Hipoglicemiante
@@ -181,100 +187,92 @@
             d) Não sabe
             e) Não quis responder
             f) Não se aplica
-            Esta questão precisa ser respondida.____________________________________
-        [QDH16_10_03] Fez uso hoje (do medicamento para DIABETES)?
+        [QDH16_08_04] Fez uso hoje (de medicamento para DIABETES)?
+            (simple_choice)
+            a) Sim
+            b) Não
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QDH16_08_05] Teve DIABETES em alguma gestação?
+            (simple_choice)
+            a) Sim
+            b) Não
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QDH16_08_06] Já realizou exame para diagnosticar HIPERTENSÃO?
+            (simple_choice)
+            a) Sim
+            b) Não
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QDH16_08_07] Possui HIPERTENSÃO?
+            (simple_choice)
+            a) Sim
+            b) Não
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QDH16_08_08] Faz uso de medicamento para tratamento de HIPERTENSÃO?
+            (simple_choice)
+            a) Sim
+            b) Não
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QDH16_08_09] Fez uso hoje (do medicamento para HIPERTENSÃO)?
+            (simple_choice)
+            a) Sim
+            b) Não
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QDH16_08_10] Teve HIPERTENSÃO em alguma gestação?
+            (simple_choice)
+            a) Sim
+            b) Não
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QDH16_08_11] Já realizou exame para diagnosticar HIPERCOLESTEROLEMIA?
+            (simple_choice)
+            a) Sim
+            b) Não
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QDH16_08_12] Possui HIPERCOLESTEROLEMIA?
+            (simple_choice)
+            a) Sim
+            b) Não
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QDH16_08_13] Faz uso de medicamento para tratamento de HIPERCOLESTEROLEMIA?
+            (simple_choice)
+            a) Sim
+            b) Não
+            c) Não sabe
+            d) Não quis responder
+            e) Não se aplica
+        [QDH16_08_14] Fez uso hoje (do medicamento para HIPERCOLESTEROLEMIA)?
             (simple_choice)
             a) Sim
             b) Não
             d) Não sabe
             e) Não quis responder
             f) Não se aplica
-        [QDH16_10_04] Já realizou exame para diagnosticar DIABETES?
+        [QDH16_08_15] Teve HIPERCOLESTEROLEMIA em alguma gestação?
             (simple_choice)
             a) Sim
             b) Não
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QDH16_10_05] Teve DIABETES em alguma gestação?
-            (simple_choice)
-            a) Sim
-            b) Não
-            c) Não sabe
-            d) Não quis responder
-            e) Não se aplica
-        [QDH16_10_06] Possui HIPERTENSÃO?
-            (simple_choice)
-            a) Sim
-            b) Não
-            c) Não sabe
-            d) Não quis responder
-            e) Não se aplica
-        [QDH16_10_07] Faz uso de medicamento para tratamento de HIPERTENSÃO?
-            (simple_choice)
-            a) Sim
-            b) Não
-            c) Não sabe
-            d) Não quis responder
-            e) Não se aplica
-        [QDH16_10_08] Fez uso hoje (do medicamento para HIPERTENSÃO)?
-            (simple_choice)
-            a) Sim
-            b) Não
-            c) Não sabe
-            d) Não quis responder
-            e) Não se aplica
-        [QDH16_10_09] Já realizou exame para diagnosticar HIPERTENSÃO?
-            (simple_choice)
-            a) Sim
-            b) Não
-            c) Não sabe
-            d) Não quis responder
-            e) Não se aplica
-        [QDH16_10_10] Teve HIPERTENSÃO em alguma gestação?
-            (simple_choice)
-            a) Sim
-            b) Não
-            c) Não sabe
-            d) Não quis responder
-            e) Não se aplica
-        [QDH16_10_11] Possui HIPERCOLESTEROLEMIA?
-            (simple_choice)
-            a) Sim
-            b) Não
-            c) Não sabe
-            d) Não quis responder
-            e) Não se aplica
-        [QDH16_10_12] Faz uso de medicamento para tratamento de HIPERCOLESTEROLEMIA?
-            (simple_choice)
-            a) Sim
-            b) Não
-            c) Não sabe
-            d) Não quis responder
-            e) Não se aplica
-        [QDH16_10_13] Fez uso hoje (do medicamento para HIPERCOLESTEROLEMIA)?
-            (simple_choice)
-            a) Sim
-            b) Não
-            c) Não sabe
-            d) Não quis responder
-            e) Não se aplica
-        [QDH16_10_14] Já realizou exame para diagnosticar HIPERCOLESTEROLEMIA?
-            (simple_choice)
-            a) Sim
-            b) Não
-            d) Não sabe
-            e) Não quis responder
-            f) Não se aplica
-        [QDH16_10_15] Teve HIPERCOLESTEROLEMIA em alguma gestação?
-            (simple_choice)
-            a) Sim
-            b) Não
-            c) Não sabe
-            d) Não quis responder
-            e) Não se aplica
-    [QDH16_11] Histórico Familiar
-        [QDH16_11_01] Possui algum parente de sangue que sofre/sofreu de OBESIDADE?
+    [QDH16_09] Histórico Familiar
+        [QDH16_09_01] Possui algum parente de sangue que sofre/sofreu de OBESIDADE?
             (multiple_choice)
             a) Não
             b) Sim. Avós, tios ou primos
@@ -282,7 +280,7 @@
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QDH16_11_02] Possui algum parente de sangue que sofre/sofreu de DIABETES?
+        [QDH16_09_02] Possui algum parente de sangue que sofre/sofreu de DIABETES?
             (multiple_choice)
             a) Não
             b) Sim. Avós, tios ou primos
@@ -290,7 +288,7 @@
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QDH16_11_03] Possui algum parente de sangue que sofre/sofreu de DOENÇAS DO CORAÇÃO?
+        [QDH16_09_03] Possui algum parente de sangue que sofre/sofreu de DOENÇAS DO CORAÇÃO?
             (multiple_choice)
             a) Não
             b) Sim. Avós, tios ou primos
@@ -298,7 +296,7 @@
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QDH16_11_04] Possui algum parente de sangue que sofre/sofreu de PRESSÃO ALTA?
+        [QDH16_09_04] Possui algum parente de sangue que sofre/sofreu de PRESSÃO ALTA?
             (multiple_choice)
             a) Não
             b) Sim. Avós, tios ou primos
@@ -306,7 +304,7 @@
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QDH16_11_05] Possui algum parente de sangue que sofre/sofreu de COLESTEROL ALTO?
+        [QDH16_09_05] Possui algum parente de sangue que sofre/sofreu de COLESTEROL ALTO?
             (multiple_choice)
             a) Não
             b) Sim. Avós, tios ou primos
@@ -314,8 +312,8 @@
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-    [QDH16_12] Hábitos de Vida
-        [QDH16_12_01] Que motivo(s) o leva(m) a procurar atendimento médico?
+    [QDH16_10] Hábitos de Vida
+        [QDH16_10_01] Que motivo(s) o leva(m) a procurar atendimento médico?
             (multiple_choice)
             a) Somente quando está doente
             b) Realizam tratamento
@@ -325,8 +323,8 @@
             f) Não sabe
             g) Não quis responder
             h) Não se aplica
-            Se outros, quais?____________________________________
-        [QDH16_12_02] O(A) Sr.(a) tem ou teve o hábito de fumar?
+            Se "Outros", quais?____________________________________
+        [QDH16_10_02] O(A) Sr.(a) tem ou teve o hábito de fumar?
             (simple_choice)
             a) Nunca fumou
             b) Fuma atualmente
@@ -335,14 +333,14 @@
             e) Não quis responder
             f) Não se aplica
             Esta questão precisa ser respondida.____________________________________
-        [QDH16_12_03] Alguém na casa fuma?
+        [QDH16_10_03] Alguém na casa fuma?
             (simple_choice)
             a) Sim
             b) Não
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QDH16_12_04] O(A) Sr. (a) tem o hábito de tomar bebidas alcoólicas?
+        [QDH16_10_04] O(A) Sr. (a) tem o hábito de tomar bebidas alcoólicas?
             (simple_choice)
             a) Não
             b) Sim, esporadicamente (menos que 1 vez por mês)
@@ -354,20 +352,20 @@
             h) Não quis responder
             i) Não se aplica
             Se a resposta for diferente de "Não", especificar o tipo de bebida e a quantidade. Se for "Outra resposta", colocar também a resposta dada, além do tipo de bebida e quantidade).____________________________________
-        [QDH16_12_05] Nos últimos 30 dias, chegou a consumir 4 ou mais doses de bebida alcoólica em uma única ocasião? (4 doses seria equivalente a 4 latas de cerveja, 4 taças de vinho ou 4 doses de qualquer outra bebida alcoólica destilada)
+        [QDH16_10_05] Nos últimos 30 dias, chegou a consumir 4 ou mais doses de bebida alcoólica em uma única ocasião? (4 doses seriam equivalentes a 4 latas de cerveja, 4 taças de vinho ou 4 doses de qualquer outra bebida alcoólica destilada)
             (simple_choice)
             a) Não
             b) Sim, em um único dia no mês
             c) Sim, em 2 dias
             d) Sim, em 4 dias
-            e) Sim, em 6 dias
-            f) Sim, todos os dias
-            g) Outra resposta
-            h) Não sabe
-            i) Não quis responder
-            j) Não se aplica
+            b) Sim, em 6 dias
+            c) Sim, todos os dias
+            d) Outra resposta
+            e) Não sabe
+            f) Não quis responder
+            g) Não se aplica
             Se a resposta for diferente de "Não", especificar o tipo de bebida e a quantidade. Se for "Outra resposta", colocar também a resposta dada, além do tipo de bebida e quantidade).____________________________________
-        [QDH16_12_06] Pratica uma ou mais das atividades físicas abaixo?
+        [QDH16_10_06] Pratica uma ou mais das atividades físicas abaixo?
             (multiple_choice)
             a) Não pratica nenhuma atividade
             b) Atividades domésticas (faxina)
@@ -377,18 +375,18 @@
             f) Não sabe
             g) Não quis responder
             h) Não se aplica
-            Se outros, quais?____________________________________
-        [QDH16_12_07] Se a resposta for diferente de "Não", especificar o tipo de bebida e a quantidade. Se for "Outra resposta", colocar também a resposta dada, além do tipo de bebida e quantidade).
-            (simple_choice)
+            Se "Outros", quais?____________________________________
+        [QDH16_10_07] Quantos dias por semana costuma praticar essa atividade?
+            (multiple_choice)
             a) 1 a 2 dias por semana
-            b) a 4 dias por semana
+            b) 3 a 4 dias por semana
             c) 5 a 6 dias por semana
             d) Todos os dias
             e) Não sabe
             f) Não quis responder
             g) Não se aplica
-    [QDH16_13] Hábitos Alimentares
-        [QDH16_13_01] Você toma alguma das bebidas abaixo com açúcar?
+    [QDH16_11] Hábitos Alimentares
+        [QDH16_11_01] Você toma alguma das bebidas abaixo com açúcar?
             (multiple_choice)
             a) Café ou Leite
             b) Suco
@@ -397,32 +395,33 @@
             e) Não sabe
             f) Não quis responder
             g) Não se aplica
-            Se outra, especificar____________________________________
-        [QDH16_13_02] Utiliza tempero pronto? (Knorr, Sazon, etc.)?
+            Se "Outra", especificar____________________________________
+        [QDH16_11_02] Utiliza tempero pronto? (Knorr, Sazon, etc.)?
             (simple_choice)
             a) Sim
             b) Não
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QDH16_13_03] Costuma adicionar sal na comida, depois de pronta? (Tem saleiro na mesa?)
+        [QDH16_11_03] Costuma adicionar sal na comida, depois de pronta? (Tem saleiro na mesa?)
             (simple_choice)
             a) Sim
             b) Não
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-        [QDH16_13_04] Com que frequência consome fritura? (alimento submerso em óleo quente)?
+        [QDH16_11_04] Com que frequência consome fritura? (alimento submerso em óleo quente)?
             (simple_choice)
             a) Não consome
-            b) 1 a 2x por semana
-            c) 3 a 4x por semana
-            d) 5 a 6x por semana
-            e) Todos os dias
-            f) Não sabe
-            g) Não quis responder
-            h) Não se aplica
-        [QDH16_13_05] Consome carne vermelha com gordura?
+            b) Esporadicamente (menos que 1 vez por semana)
+            c) 1 a 2x por semana
+            d) 3 a 4x por semana
+            e) 5 a 6x por semana
+            f) Todos os dias
+            g) Não sabe
+            h) Não quis responder
+            i) Não se aplica
+        [QDH16_11_05] Consome carne vermelha com gordura?
             (simple_choice)
             a) Não consome carne vermelha
             b) Retira o excesso de gordura
@@ -430,16 +429,16 @@
             d) Não sabe
             e) Não quis responder
             f) Não se aplica
-        [QDH16_13_06] Consome frango/galinha com pele?
+        [QDH16_11_06] Consome frango/galinha com pele?
             (simple_choice)
             a) Não consome frango/galinha
-            b) Retira o excesso de gordura
+            b) Retira a pele
             c) Consome com pele
             d) Não sabe
             e) Não quis responder
             f) Não se aplica
-    [QDH16_14] Hábitos Alimentares 2
-        [QDH16_14_01] Consome qual dos itens abaixo e com que frequência na semana?
+    [QDH16_12] Hábitos Alimentares 2
+        [QDH16_12_01] Consome qual dos ítens abaixo e com que frequência na semana?
             (matrix, simple)
             [row]Frutas ou suco natural
             [row]Salada crua

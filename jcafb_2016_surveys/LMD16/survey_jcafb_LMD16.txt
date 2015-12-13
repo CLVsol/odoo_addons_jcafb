@@ -3,7 +3,7 @@
         [LMD16_01_01] Código do Questionário (preencher somente após a validação das respostas):
             (textbox)
             ____________________________________
-        [LMD16_01_02] Data da Entrevista (yyyy-mm-dd):
+        [LMD16_01_02] Data da Entrevista (aaaa-mm-dd):
             (textbox)
             ____________________________________
         [LMD16_01_03] Códigos do(s) Entrevistador(es) (um em cada linha):
