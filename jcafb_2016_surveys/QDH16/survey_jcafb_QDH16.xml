@@ -679,7 +679,7 @@
                     <field name="page_id" ref="QDH16_06"/>
                     <field name="sequence" eval="50"/>
                     <field name="constr_mandatory">True</field>
-                    <field name="constr_error_msg">Informar o código do responsável pela medida do clesterol.</field>
+                    <field name="constr_error_msg">Informar o código do responsável pela medida do colesterol.</field>
                 </record>
 
                 <!-- [QDH16_06_06] Interpretação do valor de Colesterol (Diretrizes Brasileiras de Dislipidemias e Prevenção da Aterosclerose-2013) -->
@@ -2020,7 +2020,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se "Outros", quais?</field>
+                    <field name="comments_message">Se "Outras", quais?</field>
                 </record>
 
                     <record model="survey.label" id="QDH16_10_06_01">
@@ -2048,7 +2048,7 @@
                     </record>
 
                     <record model="survey.label" id="QDH16_10_06_05">
-                        <field name="value">e) Outros</field>
+                        <field name="value">e) Outras</field>
                         <field name="question_id" ref="QDH16_10_06"/>
                         <field name="sequence" eval="50"/>
                     </record>

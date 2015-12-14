@@ -371,11 +371,11 @@
             b) Atividades domésticas (faxina)
             c) Atividades pesadas (lavoura/olaria)
             d) Atividade específica com duração de 30 minutos ou mais (treina algum esporte, caminha, corre)
-            e) Outros
+            e) Outras
             f) Não sabe
             g) Não quis responder
             h) Não se aplica
-            Se "Outros", quais?____________________________________
+            Se "Outras", quais?____________________________________
         [QDH16_10_07] Quantos dias por semana costuma praticar essa atividade?
             (multiple_choice)
             a) 1 a 2 dias por semana
