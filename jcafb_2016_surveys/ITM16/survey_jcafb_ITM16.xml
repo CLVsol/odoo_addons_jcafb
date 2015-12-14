@@ -30,9 +30,9 @@
                     <field name="constr_error_msg">Preencher com o Código do Questionário.</field>
                 </record>
 
-                <!-- [ITM16_01_02] Data da Entrevista (aaaa-mm-dd): -->
+                <!-- [ITM16_01_02] Data da Entrevista (dd-mm-aaaa): -->
                 <record model="survey.question" id="ITM16_01_02">
-                    <field name="question">[ITM16_01_02] Data da Entrevista (aaaa-mm-dd):</field>
+                    <field name="question">[ITM16_01_02] Data da Entrevista (dd-mm-aaaa):</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="ITM16_01"/>
                     <field name="sequence" eval="20"/>

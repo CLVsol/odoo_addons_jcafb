@@ -21,7 +21,7 @@ QDH16:
 
         QDH16_01_02:
             model: survey.question
-            question: 'Data da Entrevista (aaaa-mm-dd):'
+            question: 'Data da Entrevista (dd-mm-aaaa):'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher com a data da entrevista.'
