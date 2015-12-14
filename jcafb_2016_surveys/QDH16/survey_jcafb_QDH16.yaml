@@ -21,7 +21,7 @@ QDH16:
 
         QDH16_01_02:
             model: survey.question
-            question: 'Data da Entrevista (aaaa-mm-dd):'
+            question: 'Data da Entrevista (dd-mm-aaaa):'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher com a data da entrevista.'
@@ -469,7 +469,7 @@ QDH16:
             question: 'Responsável pela medida (se medida não realizada, escrever nd):'
             type: textbox
             constr_mandatory: True
-            constr_error_msg: 'Informar o código do responsável pela medida do clesterol.'
+            constr_error_msg: 'Informar o código do responsável pela medida do colesterol.'
 
         QDH16_06_06:
             model: survey.question
@@ -1376,27 +1376,27 @@ QDH16:
 
             QDH16_10_05_05:
                 model: survey.label
-                value: 'b) Sim, em 6 dias'
+                value: 'e) Sim, em 6 dias'
 
             QDH16_10_05_06:
                 model: survey.label
-                value: 'c) Sim, todos os dias'
+                value: 'f) Sim, todos os dias'
 
             QDH16_10_05_07:
                 model: survey.label
-                value: 'd) Outra resposta'
+                value: 'g) Outra resposta'
 
             QDH16_10_05_08:
                 model: survey.label
-                value: 'e) Não sabe'
+                value: 'h) Não sabe'
 
             QDH16_10_05_09:
                 model: survey.label
-                value: 'f) Não quis responder'
+                value: 'i) Não quis responder'
 
             QDH16_10_05_10:
                 model: survey.label
-                value: 'g) Não se aplica'
+                value: 'j) Não se aplica'
 
         QDH16_10_06:
             model: survey.question
@@ -1406,7 +1406,7 @@ QDH16:
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
             comments_allowed: True
-            comments_message: 'Se "Outros", quais?'
+            comments_message: 'Se "Outras", quais?'
 
             QDH16_10_06_01:
                 model: survey.label
@@ -1426,7 +1426,7 @@ QDH16:
 
             QDH16_10_06_05:
                 model: survey.label
-                value: 'e) Outros'
+                value: 'e) Outras'
 
             QDH16_10_06_06:
                 model: survey.label

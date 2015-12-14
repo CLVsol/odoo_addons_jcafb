@@ -3,7 +3,7 @@
         [QDH16_01_01] Código do Questionário (preencher somente após a validação das respostas):
             (textbox)
             ____________________________________
-        [QDH16_01_02] Data da Entrevista (aaaa-mm-dd):
+        [QDH16_01_02] Data da Entrevista (dd-mm-aaaa):
             (textbox)
             ____________________________________
         [QDH16_01_03] Códigos do(s) Entrevistador(es) (um em cada linha):
@@ -358,12 +358,12 @@
             b) Sim, em um único dia no mês
             c) Sim, em 2 dias
             d) Sim, em 4 dias
-            b) Sim, em 6 dias
-            c) Sim, todos os dias
-            d) Outra resposta
-            e) Não sabe
-            f) Não quis responder
-            g) Não se aplica
+            e) Sim, em 6 dias
+            f) Sim, todos os dias
+            g) Outra resposta
+            h) Não sabe
+            i) Não quis responder
+            j) Não se aplica
             Se a resposta for diferente de "Não", especificar o tipo de bebida e a quantidade. Se for "Outra resposta", colocar também a resposta dada, além do tipo de bebida e quantidade).____________________________________
         [QDH16_10_06] Pratica uma ou mais das atividades físicas abaixo?
             (multiple_choice)
@@ -371,11 +371,11 @@
             b) Atividades domésticas (faxina)
             c) Atividades pesadas (lavoura/olaria)
             d) Atividade específica com duração de 30 minutos ou mais (treina algum esporte, caminha, corre)
-            e) Outros
+            e) Outras
             f) Não sabe
             g) Não quis responder
             h) Não se aplica
-            Se "Outros", quais?____________________________________
+            Se "Outras", quais?____________________________________
         [QDH16_10_07] Quantos dias por semana costuma praticar essa atividade?
             (multiple_choice)
             a) 1 a 2 dias por semana

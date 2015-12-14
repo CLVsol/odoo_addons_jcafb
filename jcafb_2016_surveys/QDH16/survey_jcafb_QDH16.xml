@@ -30,9 +30,9 @@
                     <field name="constr_error_msg">Preencher com o Código do Questionário.</field>
                 </record>
 
-                <!-- [QDH16_01_02] Data da Entrevista (aaaa-mm-dd): -->
+                <!-- [QDH16_01_02] Data da Entrevista (dd-mm-aaaa): -->
                 <record model="survey.question" id="QDH16_01_02">
-                    <field name="question">[QDH16_01_02] Data da Entrevista (aaaa-mm-dd):</field>
+                    <field name="question">[QDH16_01_02] Data da Entrevista (dd-mm-aaaa):</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="QDH16_01"/>
                     <field name="sequence" eval="20"/>
@@ -679,7 +679,7 @@
                     <field name="page_id" ref="QDH16_06"/>
                     <field name="sequence" eval="50"/>
                     <field name="constr_mandatory">True</field>
-                    <field name="constr_error_msg">Informar o código do responsável pela medida do clesterol.</field>
+                    <field name="constr_error_msg">Informar o código do responsável pela medida do colesterol.</field>
                 </record>
 
                 <!-- [QDH16_06_06] Interpretação do valor de Colesterol (Diretrizes Brasileiras de Dislipidemias e Prevenção da Aterosclerose-2013) -->
@@ -1975,37 +1975,37 @@
                     </record>
 
                     <record model="survey.label" id="QDH16_10_05_05">
-                        <field name="value">b) Sim, em 6 dias</field>
+                        <field name="value">e) Sim, em 6 dias</field>
                         <field name="question_id" ref="QDH16_10_05"/>
                         <field name="sequence" eval="50"/>
                     </record>
 
                     <record model="survey.label" id="QDH16_10_05_06">
-                        <field name="value">c) Sim, todos os dias</field>
+                        <field name="value">f) Sim, todos os dias</field>
                         <field name="question_id" ref="QDH16_10_05"/>
                         <field name="sequence" eval="60"/>
                     </record>
 
                     <record model="survey.label" id="QDH16_10_05_07">
-                        <field name="value">d) Outra resposta</field>
+                        <field name="value">g) Outra resposta</field>
                         <field name="question_id" ref="QDH16_10_05"/>
                         <field name="sequence" eval="70"/>
                     </record>
 
                     <record model="survey.label" id="QDH16_10_05_08">
-                        <field name="value">e) Não sabe</field>
+                        <field name="value">h) Não sabe</field>
                         <field name="question_id" ref="QDH16_10_05"/>
                         <field name="sequence" eval="80"/>
                     </record>
 
                     <record model="survey.label" id="QDH16_10_05_09">
-                        <field name="value">f) Não quis responder</field>
+                        <field name="value">i) Não quis responder</field>
                         <field name="question_id" ref="QDH16_10_05"/>
                         <field name="sequence" eval="90"/>
                     </record>
 
                     <record model="survey.label" id="QDH16_10_05_10">
-                        <field name="value">g) Não se aplica</field>
+                        <field name="value">j) Não se aplica</field>
                         <field name="question_id" ref="QDH16_10_05"/>
                         <field name="sequence" eval="100"/>
                     </record>
@@ -2020,7 +2020,7 @@
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
                     <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se "Outros", quais?</field>
+                    <field name="comments_message">Se "Outras", quais?</field>
                 </record>
 
                     <record model="survey.label" id="QDH16_10_06_01">
@@ -2048,7 +2048,7 @@
                     </record>
 
                     <record model="survey.label" id="QDH16_10_06_05">
-                        <field name="value">e) Outros</field>
+                        <field name="value">e) Outras</field>
                         <field name="question_id" ref="QDH16_10_06"/>
                         <field name="sequence" eval="50"/>
                     </record>

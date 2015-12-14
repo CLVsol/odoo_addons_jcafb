@@ -31,9 +31,9 @@ This module will install all the JCAF 2016 Consent Forms.
         'jcafb_2016_surveys',
         ],
     'data': [
-        # 'TCP16/survey_jcafb_TCP16.xml',
-        # 'TCR16/survey_jcafb_TCR16.xml',
-        # 'TID16/survey_jcafb_TID16.xml',
+        'TCP16/survey_jcafb_TCP16.xml',
+        'TCR16/survey_jcafb_TCR16.xml',
+        'TID16/survey_jcafb_TID16.xml',
         ],
     'test': [],
     'installable': True,
