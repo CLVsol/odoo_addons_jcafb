@@ -1376,27 +1376,27 @@ QDH16:
 
             QDH16_10_05_05:
                 model: survey.label
-                value: 'b) Sim, em 6 dias'
+                value: 'e) Sim, em 6 dias'
 
             QDH16_10_05_06:
                 model: survey.label
-                value: 'c) Sim, todos os dias'
+                value: 'f) Sim, todos os dias'
 
             QDH16_10_05_07:
                 model: survey.label
-                value: 'd) Outra resposta'
+                value: 'g) Outra resposta'
 
             QDH16_10_05_08:
                 model: survey.label
-                value: 'e) Não sabe'
+                value: 'h) Não sabe'
 
             QDH16_10_05_09:
                 model: survey.label
-                value: 'f) Não quis responder'
+                value: 'i) Não quis responder'
 
             QDH16_10_05_10:
                 model: survey.label
-                value: 'g) Não se aplica'
+                value: 'j) Não se aplica'
 
         QDH16_10_06:
             model: survey.question
