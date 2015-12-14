@@ -168,7 +168,6 @@
             f) Não sabe
             g) Não quis responder
             h) Não se aplica
-            Se "Outros", quais?____________________________________
     [FSE16_07] Medicamentos (geral familiar)
         [FSE16_07_01] Costumam tomar medicamentos sem receita médica?
             (simple_choice)
@@ -185,7 +184,6 @@
             c) Não sabe
             d) Não quis responder
             e) Não se aplica
-            Se outros, quais?____________________________________
         [FSE16_07_03] De que modo adquirem os medicamentos que utilizam?
             (multiple_choice)
             a) Farmácia

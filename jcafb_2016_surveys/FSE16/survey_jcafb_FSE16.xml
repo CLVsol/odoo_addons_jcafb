@@ -894,8 +894,8 @@
                     <field name="column_nb">12</field>
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
-                    <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se "Outros", quais?</field>
+                    <field name="comments_allowed">False</field>
+                    <field name="comments_message"></field>
                 </record>
 
                     <record model="survey.label" id="FSE16_06_06_01">
@@ -1008,8 +1008,8 @@
                     <field name="column_nb">12</field>
                     <field name="constr_mandatory">True</field>
                     <field name="constr_error_msg">Esta questão precisa ser respondida.</field>
-                    <field name="comments_allowed">True</field>
-                    <field name="comments_message">Se outros, quais?</field>
+                    <field name="comments_allowed">False</field>
+                    <field name="comments_message"></field>
                 </record>
 
                     <record model="survey.label" id="FSE16_07_02_01">

@@ -617,8 +617,8 @@ FSE16:
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
-            comments_allowed: True
-            comments_message: 'Se "Outros", quais?'
+            comments_allowed: False
+            comments_message: ''
 
             FSE16_06_06_01:
                 model: survey.label
@@ -696,8 +696,8 @@ FSE16:
             column_nb: 12
             constr_mandatory: True
             constr_error_msg: 'Esta questão precisa ser respondida.'
-            comments_allowed: True
-            comments_message: 'Se outros, quais?'
+            comments_allowed: False
+            comments_message: ''
 
             FSE16_07_02_01:
                 model: survey.label
