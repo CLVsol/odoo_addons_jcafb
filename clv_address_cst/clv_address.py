@@ -19,9 +19,43 @@
 
 from openerp import models, fields, api
 
+
 class clv_address(models.Model):
     _inherit = 'clv_address'
 
+    name = fields.Char(string="Name", store=True,
+                       compute="_get_compute_name",
+                       help='Use "/" to get an automatic new Address Name.')
+
     _defaults = {
-        'active_history': True, 
+        'active_history': True,
         }
+
+    @api.depends('street', 'number', 'street2')
+    def _get_compute_name(self):
+        if self.street:
+            self.name = self.street
+            if self.number:
+                self.name = self.name + ', ' + self.number
+                if self.street2:
+                    self.name = self.name + ' - ' + self.street2
+            else:
+                if self.street2:
+                    self.name = self.name + ' - ' + self.street2
+        else:
+            self.name = False
+
+    @api.onchange('name')
+    def onchange_name(self):
+        if self.name == '/':
+            if self.street:
+                self.name = self.street
+                if self.number:
+                    self.name = self.name + ', ' + self.number
+                    if self.street2:
+                        self.name = self.name + ' - ' + self.street2
+                else:
+                    if self.street2:
+                        self.name = self.name + ' - ' + self.street2
+            else:
+                self.name = False
