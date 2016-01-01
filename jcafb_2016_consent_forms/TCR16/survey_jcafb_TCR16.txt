@@ -3,7 +3,7 @@
         [TCR16_01_01] Código do Termo de Consentimento (preencher somente após a validação do preenchimento):
             (textbox)
             ____________________________________
-        [TCR16_01_02] Data da Assinatura (yyyy-mm-dd):
+        [TCR16_01_02] Data da Assinatura (dd-mm-yyyy):
             (textbox)
             ____________________________________
         [TCR16_01_03] Código do Professor Responsável:

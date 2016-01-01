@@ -3,7 +3,7 @@
         [TCP16_01_01] Código do Termo de Consentimento (preencher somente após a validação do preenchimento):
             (textbox)
             ____________________________________
-        [TCP16_01_02] Data da Assinatura (yyyy-mm-dd):
+        [TCP16_01_02] Data da Assinatura (dd-mm-yyyy):
             (textbox)
             ____________________________________
         [TCP16_01_03] Código do Professor Responsável:

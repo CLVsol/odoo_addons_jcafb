@@ -30,9 +30,9 @@
                     <field name="constr_error_msg">Preencher com o Código do Termo de Consentimento.</field>
                 </record>
 
-                <!-- [TCR16_01_02] Data da Assinatura (yyyy-mm-dd): -->
+                <!-- [TCR16_01_02] Data da Assinatura (dd-mm-yyyy): -->
                 <record model="survey.question" id="TCR16_01_02">
-                    <field name="question">[TCR16_01_02] Data da Assinatura (yyyy-mm-dd):</field>
+                    <field name="question">[TCR16_01_02] Data da Assinatura (dd-mm-yyyy):</field>
                     <field name="type">textbox</field>
                     <field name="page_id" ref="TCR16_01"/>
                     <field name="sequence" eval="20"/>
