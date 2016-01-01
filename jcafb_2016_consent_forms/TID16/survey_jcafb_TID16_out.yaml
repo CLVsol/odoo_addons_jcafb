@@ -21,7 +21,7 @@ TID16:
 
         TID16_01_02:
             model: survey.question
-            question: 'Data da Assinatura (yyyy-mm-dd):'
+            question: 'Data da Assinatura (dd-mm-yyyy):'
             type: textbox
             constr_mandatory: True
             constr_error_msg: 'Preencher com a data da assinatura do Termo de Consentimento.'

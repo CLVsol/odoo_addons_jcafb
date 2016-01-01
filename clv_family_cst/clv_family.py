@@ -19,9 +19,26 @@
 
 from openerp import models, fields, api
 
+
 class clv_family(models.Model):
     _inherit = 'clv_family'
 
+    name = fields.Char('Name', required=True, size=128,
+                       help='Use "/" to get an automatic new Family Name.')
+
     _defaults = {
-        'active_history': True, 
+        'active_history': True,
         }
+
+    @api.onchange('address_name')
+    def onchange_address_name(self):
+        if self.address_name:
+            self.name = self.address_name
+
+    @api.onchange('name')
+    def onchange_name(self):
+        if self.name == '/':
+            if self.address_id:
+                self.name = self.address_id.name
+            else:
+                self.name = False

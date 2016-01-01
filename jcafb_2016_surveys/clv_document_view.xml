@@ -48,5 +48,19 @@
             </field>
         </record>
 
+        <record id="view_clv_document_search_survey" model="ir.ui.view">
+            <field name="name">clv_document.search</field>
+            <field name="model">clv_document</field>
+            <field name="inherit_id" ref="clv_document.view_clv_document_search"/>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <filter string="Document Type" position="after">
+                    <filter string="Survey Type" domain="[]" context="{'group_by':'survey_id'}"/>
+                    <filter string="Patient" domain="[]" context="{'group_by':'patient_id'}"/>
+                    <filter string="Family" domain="[]" context="{'group_by':'family_id'}"/>
+                </filter>
+            </field>
+        </record>
+
     </data>
 </openerp>
