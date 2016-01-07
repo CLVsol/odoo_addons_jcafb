@@ -1,0 +1,953 @@
+URI15:
+    model: survey
+    title: 'JCAFB 2015 - Exames de Laboratório - URINA TIPO I'
+    note: 'JCAFB 2015 - Exames de Laboratório' - URINA TIPO I
+    responsible_id: base.user_root
+    type: survey_type_JCAFB_2015
+    color: 5
+
+    URI15_01: survey.page
+        model: survey.page
+        title: 'Preâmbulo'
+        note: 'Preâmbulo'
+
+        URI15_01_01:
+            model: survey.question
+            question: 'Identificação do Paciente'
+            type: multiple_textboxes_diff_type
+            is_require_answer: 1
+            req_error_msg: 'Preencher o Nome e o Código do paciente, o ID Lab e a data do exame.'
+            required_type: exactly
+            req_ans: 3
+
+            URI15_01_01_01:
+                model: survey.answer
+                answer: 'Nome'
+                type: char
+
+            URI15_01_01_02:
+                model: survey.answer
+                answer: 'Código'
+                type: char
+
+             URI15_01_01_03:
+                model: survey.answer
+                answer: 'ID Lab'
+                type: char
+
+            URI15_01_01_04:
+                model: survey.answer
+                answer: 'Data do exame'
+                type: date
+
+        URI15_01_02:
+            model: survey.question
+            question: 'Examinador(es)'
+            type: multiple_textboxes_diff_type
+            is_require_answer: 1
+            req_error_msg: 'Preencher o(s) Nome(s).'
+            required_type: exactly
+            req_ans: 3
+
+            URI15_01_02_01:
+                model: survey.question
+                question: 'Nome(s)'
+                type: multiple_choice_multiple_ans
+                is_require_answer: 1
+                req_error_msg: 'Esta questão precisa ser respondida.'
+                required_type: at least
+                req_ans: 1
+
+                URI15_01_02_01_01:
+                    model: survey.answer
+                    answer: 'a) Ronaldo'
+
+                URI15_01_02_01_02:
+                    model: survey.answer
+                    answer: 'b) Beatriz'
+
+                URI15_01_02_01_03:
+                    model: survey.answer
+                    answer: 'c) Alice'
+
+    URI15_02: survey.page
+        model: survey.page
+        title: 'Resultados'
+        note: 'Resultados'
+
+        URI15_02_01:
+            model: survey.page
+            title: 'Exame Físico'
+            note: 'Exame Físico'
+
+            URI15_02_01_01:
+                model: survey.answer
+                answer: 'Volume'
+                type: textbox
+                is_require_answer: 1
+                req_error_msg: 'Preencher o Volume'
+
+            URI15_02_01_02:
+                model: survey.answer
+                answer: 'Densidade'
+                type: textbox
+                is_require_answer: 1
+                req_error_msg: 'Preencher a Densidade
+
+            URI15_02_01_03:
+                model: survey.question
+                question: 'Aspecto:'
+                type: multiple_choice_only_one_ans
+                is_require_answer: 1
+                req_error_msg: 'Preencher o Aspecto'
+
+                URI15_02_01_03_01:
+                    model: survey.answer
+                    answer: 'a) Límpido'
+
+                URI15_02_01_03_02:
+                    model: survey.answer
+                    answer: 'b) Ligeiramente turvo'
+
+                URI15_02_01_03_03:
+                    model: survey.answer
+                    answer: 'c) Turvo'
+
+            URI15_02_01_04:
+                model: survey.answer
+                answer: 'Cor'
+                type: multiple_choice_only_one_ans
+                is_require_answer: 1
+                req_error_msg: 'Preencher a Cor'
+                is_comment_require: True
+                comment_URIel: 'Se "Outras", especificar'
+
+                URI15_02_01_04_01:
+                    model: survey.answer
+                    answer: 'a) Incolor'
+
+                URI15_02_01_04_02:
+                    model: survey.answer
+                    answer: 'b) Amarela palha'
+
+                URI15_02_01_04_03:
+                    model: survey.answer
+                    answer: 'c) Amarela citrino'
+
+                URI15_02_01_04_04:
+                    model: survey.answer
+                    answer: 'd) Amarela ouro'
+
+                URI15_02_01_04_05:
+                    model: survey.answer
+                    answer: 'e) Amarela escuro'
+
+                URI15_02_01_04_06:
+                    model: survey.answer
+                    answer: 'f) Âmbar'
+
+                URI15_02_01_04_07:
+                    model: survey.answer
+                    answer: 'g) Ligeiramente Eritrocrômica'
+
+                URI15_02_01_04_08:
+                    model: survey.answer
+                    answer: 'h) Eritrocrômica'
+
+                URI15_02_01_04_09:
+                    model: survey.answer
+                    answer: 'i) Medicamentosa (laranja)'
+
+                URI15_02_01_04_10:
+                    model: survey.answer
+                    answer: 'j) Medicamentosa (verde)'
+
+                URI15_02_01_04_11:
+                    model: survey.answer
+                    answer: 'k) Azulada'
+
+                URI15_02_01_04_12:
+                    model: survey.answer
+                    answer: 'l) Rósea'
+
+                URI15_02_01_04_13:
+                    model: survey.answer
+                    answer: 'm) Outras'
+
+            URI15_02_01_05:
+                model: survey.page
+                title: 'Odor (Resposta e Interpretação)'
+                note: 'Odor (Resposta e Interpretação)'
+
+                URI15_02_01_05_01:
+                    model: survey.answer
+                    answer: 'Odor (Resposta)'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_01_05_01_01:
+                        model: survey.answer
+                        answer: 'a) Sui generis'
+
+                    URI15_02_01_05_01_02:
+                        model: survey.answer
+                        answer: 'b) Pútrido'
+
+                    URI15_02_01_05_02:
+                        model: survey.answer
+                        answer: 'Odor (Interpretação)'
+                        type: multiple_choice_only_one_ans
+                        is_require_answer: 1
+                        req_error_msg: 'Responder'
+
+                    URI15_02_01_05_02_01:
+                        model: survey.answer
+                        answer: 'a) Normal (Sui generia)'
+
+                    URI15_02_01_05_02_02:
+                        model: survey.answer
+                        answer: 'b) Alterado (Pútrido)'
+
+        URI15_02_02:
+            model: survey.page
+            title: 'Exame Químico (tiras reagentes)'
+            note: 'Exame Químico (tiras reagentes)'
+
+            URI15_02_02_01:
+                model: survey.answer
+                answer: 'pH (valor e interpretação)'
+                note: 'pH (valor e interpretação)'
+
+                URI15_02_02_01_01:
+                    model: survey.answer
+                    answer: 'pH - Valor'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_01_01:
+                        model: survey.answer
+                        answer: 'a) 5,0'
+
+                    URI15_02_03201_02:
+                        model: survey.answer
+                        answer: 'b) 5,5'
+
+                    URI15_02_02_01_03:
+                        model: survey.answer
+                        answer: 'c) 6,0'
+
+                    URI15_02_02_01_04:
+                        model: survey.answer
+                        answer: 'd) 6,5'
+
+                    URI15_02_02_01_05:
+                        model: survey.answer
+                        answer: 'e) 7,0'
+
+                    URI15_02_02_01_06:
+                        model: survey.answer
+                        answer: 'f) 7,5'
+
+                    URI15_02_02_01_07:
+                        model: survey.answer
+                        answer: 'g) 8,0'
+
+                    URI15_02_02_01_08:
+                        model: survey.answer
+                        answer: 'h) 8,5'
+
+                    URI15_02_02_01_09:
+                        model: survey.answer
+                        answer: 'i) 9,0'
+
+                URI15_02_02_01_02:
+                    model: survey.answer
+                    answer: 'pH - Interpretação'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_01_01:
+                        model: survey.answer
+                        answer: 'a) Normal (4,7 a 7,8)'
+        
+                     URI15_02_02_01_01:
+                        model: survey.answer
+                        answer: 'a) Alterado'
+
+            URI15_02_02_02:
+                model: survey.answer:
+                title: 'Proteínas (valor e interpretação)'
+                note: 'Proteínas (valor e interpretação)'
+
+                URI15_02_02_02_01:
+                    model: survey.answer
+                    answer: 'Proteínas - Valor'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_02_01_01:
+                        model: survey.answer
+                        answer: 'a) Negativo'
+
+                    URI15_02_02_02_01_02:
+                        model: survey.answer
+                        answer: 'b) Traços'
+
+                    URI15_02_02_02_01_03:
+                        model: survey.answer
+                        answer: 'c) +'
+
+                    URI15_02_02_02_01_04:
+                        model: survey.answer
+                        answer: 'd) ++'
+
+                    URI15_02_02_02_01_05:
+                        model: survey.answer
+                        answer: 'e) +++'
+
+                    URI15_02_02_02_01_06:
+                        model: survey.answer
+                        answer: 'f) ++++'
+
+                URI15_02_02_02_02:
+                    model: survey.answer
+                    answer: 'Proteínas - Interpretação'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_02_02_01:
+                        model: survey.answer
+                        answer: 'a) Normal (Negativo)'
+
+                    URI15_02_02_02_02_02:
+                        model: survey.answer
+                        answer: 'b) Alterado'
+
+            URI15_02_02_03:
+                model: survey.answer:
+                title: 'Glicose (valor e interpretação)'
+                note: 'Glicose (valor e interpretação)'
+
+                URI15_02_02_03_01:
+                    model: survey.answer
+                    answer: 'Glicose - Valor'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_03_01_01:
+                        model: survey.answer
+                        answer: 'a) Negativo'
+
+                    URI15_02_02_03_01_02:
+                        model: survey.answer
+                        answer: 'b) Traços'
+
+                    URI15_02_02_03_01_03:
+                        model: survey.answer
+                        answer: 'c) +'
+
+                    URI15_02_02_03_01_04:
+                        model: survey.answer
+                        answer: 'd) ++'
+
+                    URI15_02_02_03_01_05:
+                        model: survey.answer
+                        answer: 'e) +++'
+
+                    URI15_02_02_03_01_06:
+                        model: survey.answer
+                        answer: 'f) ++++'
+
+                URI15_02_02_03_02:
+                    model: survey.answer
+                    answer: 'Glicose - Interpretação'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_03_02_01:
+                        model: survey.answer
+                        answer: 'a) Normal (Negativo)'
+
+                    URI15_02_02_03_02_02:
+                        model: survey.answer
+                        answer: 'b) Alterado'
+
+            URI15_02_02_04:
+                model: survey.answer:
+                title: 'Cetona (valor e interpretação)'
+                note: 'Cetona (valor e interpretação)'
+
+                URI15_02_02_04_01:
+                    model: survey.answer
+                    answer: 'Cetona - Valor'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_04_01_01:
+                        model: survey.answer
+                        answer: 'a) Negativo'
+
+                    URI15_02_02_04_01_02:
+                        model: survey.answer
+                        answer: 'b) Traços'
+
+                    URI15_02_02_04_01_03:
+                        model: survey.answer
+                        answer: 'c) +'
+
+                    URI15_02_02_04_01_04:
+                        model: survey.answer
+                        answer: 'd) ++'
+
+                    URI15_02_02_04_01_05:
+                        model: survey.answer
+                        answer: 'e) +++'
+
+                    URI15_02_02_04_01_06:
+                        model: survey.answer
+                        answer: 'f) ++++'
+
+                URI15_02_03204_02:
+                    model: survey.answer
+                    answer: 'Cetona - Interpretação'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_04_02_01:
+                        model: survey.answer
+                        answer: 'a) Normal (Negativo)'
+
+                    URI15_02_02_04_02_02:
+                        model: survey.answer
+                        answer: 'b) Alterado'
+
+            URI15_02_02_05:
+                model: survey.answer:
+                title: 'Pigmentos biliares (valor e interpretação)'
+                note: 'Pigmentos biliares (valor e interpretação)'
+
+                URI15_02_02_05_01:
+                    model: survey.answer
+                    answer: 'Pigmentos biliares - Valor'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_05_01_01:
+                        model: survey.answer
+                        answer: 'a) Negativo'
+
+                    URI15_02_02_05_01_02:
+                        model: survey.answer
+                        answer: 'b) Traços'
+
+                    URI15_02_02_05_01_03:
+                        model: survey.answer
+                        answer: 'c) +'
+
+                    URI15_02_02_05_01_04:
+                        model: survey.answer
+                        answer: 'd) ++'
+
+                    URI15_02_02_05_01_05:
+                        model: survey.answer
+                        answer: 'e) +++'
+
+                    URI15_02_02_05_01_06:
+                        model: survey.answer
+                        answer: 'f) ++++'
+
+                URI15_02_02_05_02:
+                    model: survey.answer
+                    answer: 'Pigmentos biliares - Interpretação'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_05_02_01:
+                        model: survey.answer
+                        answer: 'a) Normal (Negativo)'
+
+                    URI15_02_02_03_02_02:
+                        model: survey.answer
+                        answer: 'b) Alterado' 
+
+            URI15_02_02_06:
+                model: survey.answer:
+                title: 'Sangue (valor e interpretação)'
+                note: 'Sangue (valor e interpretação)'
+
+                URI15_02_02_06_01:
+                    model: survey.answer
+                    answer: 'Sangue - Valor'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_06_01_01:
+                        model: survey.answer
+                        answer: 'a) Negativo'
+
+                    URI15_02_02_06_01_02:
+                        model: survey.answer
+                        answer: 'b) Traços'
+
+                    URI15_02_02_06_01_03:
+                        model: survey.answer
+                        answer: 'c) +'
+
+                    URI15_02_02_06_01_04:
+                        model: survey.answer
+                        answer: 'd) ++'
+
+                    URI15_02_02_06_01_05:
+                        model: survey.answer
+                        answer: 'e) +++'
+
+                    URI15_02_02_06_01_06:
+                        model: survey.answer
+                        answer: 'f) ++++'
+
+                URI15_02_02_06_02:
+                    model: survey.answer
+                    answer: 'Sangue - Interpretação'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_06_02_01:
+                        model: survey.answer
+                        answer: 'a) Normal (Negativo)'
+
+                    URI15_02_02_06_02_02:
+                        model: survey.answer
+                        answer: 'b) Alterado'
+
+            URI15_02_02_07:
+                model: survey.answer:
+                title: 'Urobilinogênio (valor e interpretação)'
+                note: 'Urobilinogênio (valor e interpretação)'
+
+                URI15_02_02_07_01:
+                    model: survey.answer
+                    answer: 'Urobilinogênio - Valor'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_07_01_01:
+                        model: survey.answer
+                        answer: 'a) Negativo'
+
+                    URI15_02_02_07_01_02:
+                        model: survey.answer
+                        answer: 'b) Positivo até diluição 1/40'
+
+                    URI15_02_02_07_01_03:
+                        model: survey.answer
+                        answer: 'c) Positivo até diluição 1/80'
+
+                    URI15_02_02_07_01_04:
+                        model: survey.answer
+                        answer: 'd) Positivo até diluição 1/160'
+
+                    URI15_02_02_07_01_05:
+                        model: survey.answer
+                        answer: 'e) Positivo até diluição 1/320'
+
+                    URI15_02_02_07_01_06:
+                        model: survey.answer
+                        answer: 'f) Positivo até diluição 1/640'
+
+                    URI15_02_02_07_01_06:
+                        model: survey.answer
+                        answer: 'g) Positivo até diluição 1/1.280'
+
+                URI15_02_02_07_02:
+                    model: survey.answer
+                    answer: 'Urobilinogênio - Interpretação'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_07_02_01:
+                        model: survey.answer
+                        answer: 'a) Normal (Até diluição 1/20)'
+
+                    URI15_02_02_07_02_02:
+                        model: survey.answer
+                        answer: 'b) Alterado'
+
+            URI15_02_02_08:
+                model: survey.answer:
+                title: 'Nitrito (valor e interpretação)'
+                note: 'Nitrito (valor e interpretação)'
+
+                URI15_02_02_08_01:
+                    model: survey.answer
+                    answer: 'Nitrito - Valor'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_08_01_01:
+                        model: survey.answer
+                        answer: 'a) Negativo'
+
+                    URI15_02_02_08_01_02:
+                        model: survey.answer
+                        answer: 'b) Positivo'
+
+                URI15_02_02_08_02:
+                    model: survey.answer
+                    answer: 'Nitrito - Interpretação'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_02_08_02_01:
+                        model: survey.answer
+                        answer: 'a) Normal (Negativo)'
+
+                    URI15_02_02_08_02_02:
+                        model: survey.answer
+                        answer: 'b) Alterado (Positivo)'
+
+        URI15_02_03:
+            model: survey.page
+            title: 'Exame Microscópico'
+            note: 'Exame Microscópico'
+
+            URI15_02_03_01:
+                model: survey.answer
+                answer: 'Células epiteliais'
+                type: multiple_choice_only_one_ans
+                is_require_answer: 1
+                req_error_msg: 'Responder'
+
+                URI15_02_03_01:
+                    model: survey.answer
+                    answer: 'a) Ausentes'
+
+                URI15_02_03_02:
+                    model: survey.answer
+                    answer: 'b) Raras'
+
+                URI15_02_03_03:
+                    model: survey.answer
+                    answer: 'c) Frequentes'
+
+                URI15_02_03_04:
+                    model: survey.answer
+                    answer: 'd) Numerosas'
+
+            URI15_02_03_02:
+                model: survey.answer
+                answer: 'Muco'
+                type: multiple_choice_only_one_ans
+                is_require_answer: 1
+                req_error_msg: 'Responder'
+
+                URI15_02_03_02_01:
+                    model: survey.answer
+                    answer: 'a) Ausente'
+
+                URI15_02_03_02_02:
+                    model: survey.answer
+                    answer: 'b) Raros filamentos'
+
+                URI15_02_03_02_03:
+                    model: survey.answer
+                    answer: 'c) Frequentes filamentos'
+
+                URI15_02_03_02_04:
+                    model: survey.answer
+                    answer: 'd) Numerosos filamentos'
+
+            URI15_02_03_03:
+                model: survey.question
+                question: 'Cristais'
+                type: matrix_of_choices_multiple_ans
+                is_require_answer: 1
+                req_error_msg: 'Responder.'
+                is_comment_require: True
+                comment_URIel: '"Outros"'
+
+                URI15_02_03_03_01:
+                    model: survey.answer
+                    answer: 'Urato amorfo'
+
+                URI15_02_03_03_02:
+                    model: survey.answer
+                    answer: 'Fosfato amorfo'
+
+                URI15_02_03_03_03:
+                    model: survey.answer
+                    answer: 'Oxalato de cálcio'
+
+                URI15_02_03_03_04:
+                    model: survey.answer
+                    answer: 'Ácido úrico'
+
+                URI15_02_03_03_05:
+                    model: survey.answer
+                    answer: 'Fosfato triplo, amoníaco-magnesiano'
+
+                URI15_02_03_03_06:
+                    model: survey.answer
+                    answer: 'Urato de amônio'
+
+                URI15_02_03_03_07:
+                    model: survey.answer
+                    answer: 'Outros'
+
+                URI15_02_03_03_08:
+                    model: survey.question.column.heading
+                    title: 'Raros'
+
+                URI15_02_03_03_09:
+                    model: survey.question.column.heading
+                    title: 'Frequentes'
+
+                URI15_02_03_03_10:
+                    model: survey.question.column.heading
+                    title: 'Numerosos'
+
+            URI15_02_03_04:
+                model: survey.answer:
+                title: 'Leucócitos (valor e interpretação)'
+                note: 'Leucócitos (valor e interpretação)'
+
+                URI15_02_03_04_01:
+                    model: survey.answer
+                    answer: 'Leucócitos - Valor'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+                    is_comment_require: True
+                    comment_URIel: 'Número/mL'
+
+                    URI15_02_03_04_01_01:
+                        model: survey.answer
+                        answer: 'a) <= 10.000/mL'
+
+                    URI15_02_03_04_01_02:
+                        model: survey.answer
+                        answer: 'b) Entre 10.000 e 50.000/mL
+
+                    URI15_02_03_04_01_03:
+                        model: survey.answer
+                        answer: 'c) Entre 50.000 e 300.000/mL
+
+                    URI15_02_03_04_01_04:
+                        model: survey.answer
+                        answer: 'd) Acima de 1.000.000/mL
+
+                URI15_02_03_04_02:
+                    model: survey.answer
+                    answer: 'Leucócitos - Interpretação'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_03_04_02_01:
+                        model: survey.answer
+                        answer: 'a) Normal (<= 10.000/mL)'
+
+                    URI15_02_03_04_02_02:
+                        model: survey.answer
+                        answer: 'b) Alterado (> 10.000/mL)'
+
+            URI15_02_03_05:
+                model: survey.answer:
+                title: 'Hemácias (valor e interpretação)'
+                note: 'Hemácias (valor e interpretação)'
+
+                URI15_02_03_05_01:
+                    model: survey.answer
+                    answer: 'Hemácias - Valor'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+                    is_comment_require: True
+                    comment_URIel: 'Número/mL'
+
+                    URI15_02_03_05_01_01:
+                        model: survey.answer
+                        answer: 'a) <= 10.000/mL'
+
+                    URI15_02_03_05_01_02:
+                        model: survey.answer
+                        answer: 'b) Entre 10.000 e 50.000/mL
+
+                    URI15_02_03_05_01_03:
+                        model: survey.answer
+                        answer: 'c) Entre 50.000 e 300.000/mL
+
+                    URI15_02_03_05_01_04:
+                        model: survey.answer
+                        answer: 'd) Acima de 1.000.000/mL
+
+                URI15_02_03_05_02:
+                    model: survey.answer
+                    answer: 'Hemácias - Interpretação'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_03_05_02_01:
+                        model: survey.answer
+                        answer: 'a) Normal (<= 10.000/mL)'
+
+                    URI15_02_03_05_02_02:
+                        model: survey.answer
+                        answer: 'b) Alterado (> 10.000/mL)'
+
+            URI15_02_03_06:
+                model: survey.answer:
+                title: 'Cilindros (valor e interpretação)'
+                note: 'Cilindros (valor e interpretação)'
+
+                URI15_02_03_06_01:
+                    model: survey.answer
+                    answer: 'Cilindros - Valor'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_03_06_01_01:
+                        model: survey.answer
+                        answer: 'a) Ausentes'
+
+                    URI15_02_03_06_01_02:
+                        model: survey.answer
+                        answer: 'b) Presentes
+
+                URI15_02_03_06_02:
+                    model: survey.question
+                    answer: 'Cilindros - Tipos'
+                    type: matrix_of_choices_multiple_ans
+                    is_require_answer: 0
+                    req_error_msg: 
+                    is_comment_require:
+                    comment_URIel: 'Número/mL'
+
+                    URI15_02_03_06_02_01:
+                        model: survey.answer
+                        answer: 'Hialinos'
+
+                    URI15_02_03_06_02_02:
+                        model: survey.answer
+                        answer: 'Granulosos'
+
+                    URI15_02_03_06_02_03:
+                        model: survey.answer
+                        answer: 'Leucocitários'
+
+                    URI15_02_03_06_02_04:
+                        model: survey.answer
+                        answer: 'Hemáticos'
+
+                    URI15_02_03_06_02_05:
+                        model: survey.answer
+                        answer: 'Céreos'
+
+                    URI15_02_03_06_02_06:
+                        model: survey.answer
+                        answer: 'Epiteliais'
+
+                    URI15_02_03_06_02_07:
+                        model: survey.answer
+                        answer: 'Outros'
+
+                    URI15_02_03_06_02_08:
+                        model: survey.question.column.heading
+                        title: '250/mL'
+
+                    URI15_02_03_06_02_09:
+                        model: survey.question.column.heading
+                        title: '500/mL'
+
+                    URI15_02_03_06_02_10:
+                        model: survey.question.column.heading
+                        title: '750/mL'
+
+                    URI15_02_03_06_02_11:
+                        model: survey.question.column.heading
+                        title: '1.000/mL'
+
+                    URI15_02_03_06_02_12:
+                        model: survey.question.column.heading
+                        title: '1.250 a 5.000/mL'
+
+                    URI15_02_03_06_02_13:
+                        model: survey.question.column.heading
+                        title: '5.250 a 10.000/mL'
+
+                    URI15_02_03_06_02_14:
+                        model: survey.question.column.heading
+                        title: 'Acima de 10.000/mL'
+
+                URI15_02_03_06_03:
+                    model: survey.answer
+                    answer: 'Cilindros - Interpretação'
+                    type: multiple_choice_only_one_ans
+                    is_require_answer: 1
+                    req_error_msg: 'Responder'
+
+                    URI15_02_03_05_02_01:
+                        model: survey.answer
+                        answer: 'a) Normal (até 1.000 cilindros hialinos/mL)'
+
+                    URI15_02_03_05_02_02:
+                        model: survey.answer
+                        answer: 'b) Alterado'
+
+        URI15_02_04:
+            model: survey.question
+            question: 'Observações'
+            type: multiple_choice_multiple_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+            required_type: at least
+            req_ans: 1
+            is_comment_require: True
+            comment_URIel: 'Se "Outras", especificar'
+
+            URI15_02_04_01:
+                model: survey.answer
+                answer: 'a) Presença de leucócitos agrupados'
+
+            URI15_02_04_02:
+                model: survey.answer
+                answer: 'b) Presença de Trichomonas sp'
+
+            URI15_02_04_03:
+                model: survey.answer
+                answer: 'c) Volume insuficiente para exame do sedimento urinário'
+
+            URI15_02_04_04:
+                model: survey.answer
+                answer: 'd) Presença de células epiteliais de vias urinárias superiores'
+
+            URI15_02_04_05:
+                model: survey.answer
+                answer: 'e) Outras observações (especificar) '
+
+            
+
+
+
+
+
+
+

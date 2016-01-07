@@ -1,0 +1,507 @@
+PAR15:
+    model: clv_survey
+    title: 'JCAFB 2015 - Exames de Laboratório - Coproparasitológicos'
+    note: 'JCAFB 2015 - Exames de Laboratório - Coproparasitológicos'
+    responsible_id: base.user_root
+    type: clv_survey_type_JCAFB_2015
+    color: 5
+
+    PAR15_01:
+        model: clv_survey.page
+        title: 'Preâmbulo'
+        note: 'Preâmbulo'
+
+        PAR15_01_01:
+            model: clv_survey.question
+            question: 'Identificação do Paciente'
+            type: multiple_textboxes_diff_type
+            is_require_answer: 1
+            req_error_msg: 'Preencher o Nome e o Código do Paciente, ID Lab e as datas.'
+            required_type: exactly
+            req_ans: 8
+
+            PAR15_01_01_01:
+                model: clv_survey.answer
+                answer: 'Nome'
+                type: char
+
+            PAR15_01_01_02:
+                model: clv_survey.answer
+                answer: 'Código'
+                type: char
+
+            PAR15_01_01_03:
+                model: clv_survey.answer
+                answer: 'ID LAB'
+                type: char
+
+            PAR15_01_01_04:
+                model: clv_survey.answer
+                answer: 'Data de entrada do Protoparasitológico:'
+                type: date
+
+            PAR15_01_01_05:
+                model: clv_survey.answer
+                answer: 'Data de saída do Protoparasitológico:'
+                type: date
+
+            PAR15_01_01_06:
+                model: clv_survey.answer
+                answer: 'Data de entrada do Swab anal:'
+                type: date
+
+            PAR15_01_01_07:
+                model: clv_survey.answer
+                answer: 'Data de saída do Swab anal:'
+                type: date
+
+            PAR15_01_01_08:
+                model: clv_survey.answer
+                answer: 'Data de liberação do laudo:'
+                type: date
+
+        PAR15_01_02:
+            model: clv_survey.question
+            question: 'Examinadores - Método de Ritchie'
+            type: multiple_choice_multiple_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+            required_type: at least
+            req_ans: 1
+            is_comment_require: True
+            comment_label: 'Leitura confirmada por:'
+
+            PAR15_01_02_01:
+                model: clv_survey.answer
+                answer: 'a) Alexandre'
+
+            PAR15_01_02_02:
+                model: clv_survey.answer
+                answer: 'b) Ana Luisa'
+
+            PAR15_01_02_03:
+                model: clv_survey.answer
+                answer: 'c) Bruna'
+
+            PAR15_01_02_04:
+                model: clv_survey.answer
+                answer: 'd) Carla'
+
+            PAR15_01_02_05:
+                model: clv_survey.answer
+                answer: 'e) Jesus'
+
+            PAR15_01_02_06:
+                model: clv_survey.answer
+                answer: 'f) Juliana'
+
+            PAR15_01_02_07:
+                model: clv_survey.answer
+                answer: 'g) Jéssica'
+
+            PAR15_01_02_08:
+                model: clv_survey.answer
+                answer: 'h) Lucas'
+
+            PAR15_01_02_09:
+                model: clv_survey.answer
+                answer: 'i) Marianna'
+
+            PAR15_01_02_10:
+                model: clv_survey.answer
+                answer: 'j) Paloma'
+
+            PAR15_01_02_11:
+                model: clv_survey.answer
+                answer: 'k) Yumi'
+
+            PAR15_01_02_12:
+                model: clv_survey.answer
+                answer: 'l) Beatriz'
+
+            PAR15_01_02_13:
+                model: clv_survey.answer
+                answer: 'm) Ronaldo'
+
+            PAR15_01_02_14:
+                model: clv_survey.answer
+                answer: 'n) Alice'
+
+        PAR15_01_03:
+            model: clv_survey.question
+            question: 'Examinadores - Método de Hoffmann'
+            type: multiple_choice_multiple_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+            required_type: at least
+            req_ans: 1
+            is_comment_require: True
+            comment_label: 'Leitura confirmada por:'
+
+            PAR15_01_03_01:
+                model: clv_survey.answer
+                answer: 'a) Alexandre'
+
+            PAR15_01_03_02:
+                model: clv_survey.answer
+                answer: 'b) Ana Luisa'
+
+            PAR15_01_03_03:
+                model: clv_survey.answer
+                answer: 'c) Bruna'
+
+            PAR15_01_03_04:
+                model: clv_survey.answer
+                answer: 'd) Carla'
+
+            PAR15_01_03_05:
+                model: clv_survey.answer
+                answer: 'e) Jesus'
+
+            PAR15_01_03_06:
+                model: clv_survey.answer
+                answer: 'f) Juliana'
+
+            PAR15_01_03_07:
+                model: clv_survey.answer
+                answer: 'g) Jéssica'
+
+            PAR15_01_03_08:
+                model: clv_survey.answer
+                answer: 'h) Lucas'
+
+            PAR15_01_03_09:
+                model: clv_survey.answer
+                answer: 'i) Marianna'
+
+            PAR15_01_03_10:
+                model: clv_survey.answer
+                answer: 'j) Paloma'
+
+            PAR15_01_03_11:
+                model: clv_survey.answer
+                answer: 'k) Yumi'
+
+            PAR15_01_03_12:
+                model: clv_survey.answer
+                answer: 'l) Beatriz'
+
+            PAR15_01_03_13:
+                model: clv_survey.answer
+                answer: 'm) Ronaldo'
+
+            PAR15_01_03_14:
+                model: clv_survey.answer
+                answer: 'n) Alice'
+
+        PAR15_01_04:
+            model: clv_survey.question
+            question: 'Examinadores - Método do Swab anal'
+            type: multiple_choice_only_one_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+            required_type: at least
+            req_ans: 1
+            is_comment_require: True
+            comment_label: 'Leitura confirmada por:'
+
+            PAR15_01_04_01:
+                model: clv_survey.answer
+                answer: 'a) Alexandre'
+
+            PAR15_01_04_02:
+                model: clv_survey.answer
+                answer: 'b) Ana Luisa'
+
+            PAR15_01_04_03:
+                model: clv_survey.answer
+                answer: 'c) Bruna'
+
+            PAR15_01_04_04:
+                model: clv_survey.answer
+                answer: 'd) Carla'
+
+            PAR15_01_04_05:
+                model: clv_survey.answer
+                answer: 'e) Jesus'
+
+            PAR15_01_04_06:
+                model: clv_survey.answer
+                answer: 'f) Juliana'
+
+            PAR15_01_04_07:
+                model: clv_survey.answer
+                answer: 'g) Jéssica'
+
+            PAR15_01_04_08:
+                model: clv_survey.answer
+                answer: 'h) Lucas'
+
+            PAR15_01_04_09:
+                model: clv_survey.answer
+                answer: 'i) Marianna'
+
+            PAR15_01_04_10:
+                model: clv_survey.answer
+                answer: 'j) Paloma'
+
+            PAR15_01_04_11:
+                model: clv_survey.answer
+                answer: 'k) Yumi'
+
+            PAR15_01_04_12:
+                model: clv_survey.answer
+                answer: 'l) Beatriz'
+
+            PAR15_01_04_13:
+                model: clv_survey.answer
+                answer: 'm) Ronaldo'
+
+            PAR15_01_04_14:
+                model: clv_survey.answer
+                answer: 'n) Alice'
+
+    PAR15_02:
+        model: clv_survey.page
+        title: 'Resultados'
+        note: 'Resultados'
+
+        PAR15_02_01:
+            model: clv_survey.question
+            question: 'Método de Ritchie'
+            type: multiple_choice_only_one_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+            required_type: at least
+            req_ans: 1
+            is_comment_require: True
+            comment_label: 'Outros:'
+
+            PAR15_02_01_01:
+                model: clv_survey.answer
+                answer: 'a) NEGATIVO'
+
+            PAR15_02_01_02:
+                model: clv_survey.answer
+                answer: 'b) NÃO REALIZADO'
+
+            PAR15_02_01_03:
+                model: clv_survey.answer
+                answer: 'c) Cistos de Endolimax nana'
+
+            PAR15_02_01_04:
+                model: clv_survey.answer
+                answer: 'd) Cistos de Entamoeba coli'
+
+            PAR15_02_01_05:
+                model: clv_survey.answer
+                answer: 'e) Cistos de Entamoeba histolytica'
+
+            PAR15_02_01_06:
+                model: clv_survey.answer
+                answer: 'f) Cistos de Giardia lamblia'
+
+            PAR15_02_01_07:
+                model: clv_survey.answer
+                answer: 'g) Cistos de Iodamoeba butschlii'
+
+            PAR15_02_01_08:
+                model: clv_survey.answer
+                answer: 'h) Cistos de Chilomastix mesnil'
+
+            PAR15_02_01_09:
+                model: clv_survey.answer
+                answer: 'i) Oocistos de Isospora belli'
+
+            PAR15_02_01_10:
+                model: clv_survey.answer
+                answer: 'j) Ovos de Ascaris lumbricoides'
+
+            PAR15_02_01_11:
+                model: clv_survey.answer
+                answer: 'k) Ovos de Ancilostomídeo'
+
+            PAR15_02_01_12:
+                model: clv_survey.answer
+                answer: 'l) Ovos de Trichuris trichiura'
+
+            PAR15_02_01_13:
+                model: clv_survey.answer
+                answer: 'm) Ovos de Taenia sp'
+
+            PAR15_02_01_14:
+                model: clv_survey.answer
+                answer: 'n) Ovos de Hymenolepis nana'
+
+            PAR15_02_01_15:
+                model: clv_survey.answer
+                answer: 'o) Ovos de Schistosoma mansoni'
+
+            PAR15_02_01_16:
+                model: clv_survey.answer
+                answer: 'p) Ovos de Enterobius vermicularis'
+
+            PAR15_02_01_17:
+                model: clv_survey.answer
+                answer: 'q) Larvas de Strongyloides stercoralis'
+
+            PAR15_02_01_18:
+                model: clv_survey.answer
+                answer: 'r) Outros'
+
+        PAR15_02_02:
+            model: clv_survey.question
+            question: 'Método de Hoffmann'
+            type: multiple_choice_only_one_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+            required_type: at least
+            req_ans: 1
+            is_comment_require: True
+            comment_label: 'Outros:'
+
+            PAR15_02_02_01:
+                model: clv_survey.answer
+                answer: 'a) NEGATIVO'
+
+            PAR15_02_02_02:
+                model: clv_survey.answer
+                answer: 'b) NÃO REALIZADO'
+
+            PAR15_02_02_03:
+                model: clv_survey.answer
+                answer: 'c) Cistos de Endolimax nana'
+
+            PAR15_02_02_04:
+                model: clv_survey.answer
+                answer: 'd) Cistos de Entamoeba coli'
+
+            PAR15_02_02_05:
+                model: clv_survey.answer
+                answer: 'e) Cistos de Entamoeba histolytica'
+
+            PAR15_02_02_06:
+                model: clv_survey.answer
+                answer: 'f) Cistos de Giardia lamblia'
+
+            PAR15_02_02_07:
+                model: clv_survey.answer
+                answer: 'g) Cistos de Iodamoeba butschlii'
+
+            PAR15_02_02_08:
+                model: clv_survey.answer
+                answer: 'h) Cistos de Chilomastix mesnil'
+
+            PAR15_02_02_09:
+                model: clv_survey.answer
+                answer: 'i) Oocistos de Isospora belli'
+
+            PAR15_02_02_10:
+                model: clv_survey.answer
+                answer: 'j) Ovos de Ascaris lumbricoides'
+
+            PAR15_02_02_11:
+                model: clv_survey.answer
+                answer: 'k) Ovos de Ancilostomídeo'
+
+            PAR15_02_02_12:
+                model: clv_survey.answer
+                answer: 'l) Ovos de Trichuris trichiura'
+
+            PAR15_02_02_13:
+                model: clv_survey.answer
+                answer: 'm) Ovos de Taenia sp'
+
+            PAR15_02_02_14:
+                model: clv_survey.answer
+                answer: 'n) Ovos de Hymenolepis nana'
+
+            PAR15_02_02_15:
+                model: clv_survey.answer
+                answer: 'o) Ovos de Schistosoma mansoni'
+
+            PAR15_02_02_16:
+                model: clv_survey.answer
+                answer: 'p) Ovos de Enterobius vermicularis'
+
+            PAR15_02_02_17:
+                model: clv_survey.answer
+                answer: 'q) Larvas de Strongyloides stercoralis'
+
+            PAR15_02_02_18:
+                model: clv_survey.answer
+                answer: 'r) Outros'
+
+        PAR15_02_03:
+            model: clv_survey.question
+            question: 'Método do Swab anal'
+            type: multiple_choice_only_one_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+            required_type: at least
+            req_ans: 1
+            is_comment_require: True
+            comment_label: 'Observações:'
+
+            PAR15_02_03_01:
+                model: clv_survey.answer
+                answer: 'a) NEGATIVO'
+
+            PAR15_02_03_02:
+                model: clv_survey.answer
+                answer: 'b) POSITIVO'
+
+            PAR15_02_03_03:
+                model: clv_survey.answer
+                answer: 'c) NÃO REALIZADO'
+
+        PAR15_02_04:
+            model: clv_survey.question
+            question: 'Método(s) Utilizado(s)'
+            type: multiple_choice_only_one_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+            required_type: at least
+            req_ans: 1
+            is_comment_require: True
+            comment_label: 'Observações:'
+
+            PAR15_02_04_01:
+                model: clv_survey.answer
+                answer: 'a) Ritchie e Hoffmann'
+
+            PAR15_02_04_02:
+                model: clv_survey.answer
+                answer: 'b) Swab anal'
+
+            PAR15_02_04_03:
+                model: clv_survey.answer
+                answer: 'c) Ritchie, Hoffmann e Swab anal'
+
+        PAR15_02_05:
+            model: clv_survey.question
+            question: 'Observações'
+            type: multiple_choice_multiple_ans
+            is_require_answer: 1
+            req_error_msg: 'Esta questão precisa ser respondida.'
+            required_type: at least
+            req_ans: 1
+            is_comment_require: True
+            comment_label: 'Observações:'
+
+            PAR15_02_05_01:
+                model: clv_survey.answer
+                answer: 'a) Análise de uma única amostra de fezes'
+
+            PAR15_02_05_02:
+                model: clv_survey.answer
+                answer: 'b) 2ª amostra'
+
+            PAR15_02_05_03:
+                model: clv_survey.answer
+                answer: 'b) Análise de 2 amostras de fezes'
+
+            PAR15_02_05_04:
+                model: clv_survey.answer
+                answer: 'c) Outras observações:'
+
